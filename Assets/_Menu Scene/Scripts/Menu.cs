@@ -19,7 +19,7 @@ public class Menu : MonoBehaviour
         {
             panel.SetActive(false);
         }
-        panelLevels.SetActive(false);
+        panelMenu.SetActive(true);
     }
     public void ButtonLevels()
     {
