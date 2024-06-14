@@ -7,15 +7,9 @@ public class PlayerMovement : MonoBehaviour
 
     private CharacterController _controller;
 
-    private void Awake()
-    {
-        _controller = GetComponent<CharacterController>();
-    }
+    private void Awake() => _controller = GetComponent<CharacterController>();
 
-    private void Update()
-    {
-        Move();
-    }
+    private void Update() => Move();
 
     private void Move()
     {
