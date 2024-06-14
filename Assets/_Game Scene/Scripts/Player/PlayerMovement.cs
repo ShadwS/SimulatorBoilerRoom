@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private int _speed;
+    [SerializeField] private Animator animator;
 
     private CharacterController _controller;
 
@@ -11,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     private float _gravity = -9.8f;
 
     private void Awake() => _controller = GetComponent<CharacterController>();
+
+    private void LateUpdate() => Animations();
 
     private void Update() => Move();
 
@@ -22,6 +25,16 @@ public class PlayerMovement : MonoBehaviour
             gameObject.transform.right * Input.GetAxis("Horizontal");
         move = move.normalized * _speed;
         _controller.Move(move * Time.deltaTime);
+    }
+    private void Animations()
+    {
+        if (Input.GetButton("Vertical") || Input.GetButton("Horizontal"))
+        {
+             animator.SetBool("Walking", true);
+        }
+        else animator.SetBool("Walking", false);
+        animator.SetFloat("y", Input.GetAxis("Vertical"));
+        animator.SetFloat("x", Input.GetAxis("Horizontal"));  
     }
 
     private void Gravity()
