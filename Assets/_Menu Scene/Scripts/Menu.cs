@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,7 +12,7 @@ public class Menu : MonoBehaviour
     [SerializeField] GameObject panelQuit;
     [SerializeField] GameObject[] panels;
     int complexsity;
-    int selectedLevel;
+    public static int selectedLevel;
 
     private void Start()
     {
@@ -42,7 +43,7 @@ public class Menu : MonoBehaviour
     public void ButtonComplexsity(int value)
     {
         complexsity = value;
-        SceneManager.LoadScene(selectedLevel + 2);
+        SceneManager.LoadScene("Loading Game");
     }
     public void BeakLevels() 
     {

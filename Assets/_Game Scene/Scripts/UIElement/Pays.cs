@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Pays : MonoBehaviour
@@ -42,4 +43,5 @@ public class Pays : MonoBehaviour
     {
         valueSensa.text = String.Format("{0:0}", value);
     }
+    public void ButtonBeakMenu() => SceneManager.LoadScene("Loading Menu");
 }
