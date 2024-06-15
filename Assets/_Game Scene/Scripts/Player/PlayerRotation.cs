@@ -1,13 +1,20 @@
 using UnityEngine;
+using System;
+using UnityEngine.UI;
 
 public class PlayerRotation : MonoBehaviour
 {
     [SerializeField] private float _sensetivity;
     [SerializeField] private Transform _camera;
+    [SerializeField] private Slider _sliderSensetivity;
+    public static event Action<float> ChangeOfSenses;
 
     private void Awake()
     {
         _sensetivity *= 100;
+        _sliderSensetivity.minValue = 0;
+        _sliderSensetivity.maxValue = _sensetivity;
+        _sliderSensetivity.value = _sensetivity;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -34,4 +41,9 @@ public class PlayerRotation : MonoBehaviour
             gameObject.transform.rotation.eulerAngles.y,
             _camera.rotation.eulerAngles.z);
     }
+    public void SliderSensetivity(float value) 
+    {
+        _sensetivity = value;
+        ChangeOfSenses?.Invoke(value);
+    } 
 }
