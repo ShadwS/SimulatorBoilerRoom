@@ -17,7 +17,7 @@ public class Menu : MonoBehaviour
     {
         for(int i = 0; i < _buttons.Length; i++)
         {
-            if(i < Settings.instance.Lvl)
+            if(i < Settings.instance.Level)
             {
                 _buttons[i].interactable = true;
             }
@@ -50,7 +50,7 @@ public class Menu : MonoBehaviour
     }
     public void ButtonLvl(int lvl)
     {
-        Settings.instance.Lvl = lvl;
+        Settings.instance.Level = lvl;
         _panels[2].SetActive(true);
     }
     public void ButtonComplexsity(int value)

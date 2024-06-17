@@ -3,11 +3,11 @@ using UnityEngine;
 public class Settings : MonoBehaviour
 {
     public static Settings instance;
-    public int Lvl { get { return _lvl; }  set { _lvl = value; } }
-    private int _lvl;
+    public int Level { get { return _level; }  set { _level = value; } }
+    private int _level;
     private void Awake()
     {
-        Lvl = 1;
+        Level = 1;
         if (instance == null)
         {
             instance = this;

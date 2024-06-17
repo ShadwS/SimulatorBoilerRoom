@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Pause : MonoBehaviour
 {
     public static event Action<float> ChangeOfSenses;
+    public static event Action<bool> OnPause;
 
     [SerializeField] private GameObject _paysPanel;
     [SerializeField] private Text _valueSensa;
@@ -23,6 +24,7 @@ public class Pause : MonoBehaviour
     {
         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Escape));
         _paysPanel.SetActive(true);
+        OnPause?.Invoke(false);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         Time.timeScale = 0;
@@ -34,6 +36,7 @@ public class Pause : MonoBehaviour
         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Escape));
         Time.timeScale = 1;
         _paysPanel.SetActive(false);
+        OnPause?.Invoke(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         yield return new WaitUntil(() => Input.GetKeyUp(KeyCode.Escape));

@@ -18,7 +18,7 @@ public class LoadingScene : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Loading Game")
         {
-            _operation = SceneManager.LoadSceneAsync($"Level {Settings.instance.Lvl}");
+            _operation = SceneManager.LoadSceneAsync($"Level {Settings.instance.Level}");
         }
         else
         {
