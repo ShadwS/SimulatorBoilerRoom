@@ -242,8 +242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3351f171cb397140907e0455ba53c15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingImage: {fileID: 260984852}
-  loadingText: {fileID: 260984851}
+  _loadingImage: {fileID: 260984852}
+  _loadingText: {fileID: 260984851}
 --- !u!114 &260984851 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 87924018318523617, guid: b8f96bcb04239144ea6c0f10bf82422a, type: 3}

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [RequireComponent (typeof(CharacterController))]
@@ -30,9 +31,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetButton("Vertical") || Input.GetButton("Horizontal"))
         {
-             animator.SetBool("Walking", true);
+            animator.SetBool("Walking", true);
         }
-        else animator.SetBool("Walking", false);
+        else 
+        {
+            animator.SetBool("Walking", false);
+        }
         animator.SetFloat("y", Input.GetAxis("Vertical"));
         animator.SetFloat("x", Input.GetAxis("Horizontal"));  
     }

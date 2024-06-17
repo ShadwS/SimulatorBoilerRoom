@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 87924017554467740}
   - component: {fileID: 87924017554467743}
   - component: {fileID: 87924017554467742}
-  - component: {fileID: 87924017554467738}
   m_Layer: 5
   m_Name: LoadinSceneCanvas
   m_TagString: Untagged
@@ -102,21 +101,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &87924017554467738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87924017554467713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50261cd5d2286254b9c3b82c775371b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameScene: Menu
-  loadingImage: {fileID: 87924017607814549}
-  loadingText: {fileID: 87924018318523617}
 --- !u!1 &87924017607814551
 GameObject:
   m_ObjectHideFlags: 0

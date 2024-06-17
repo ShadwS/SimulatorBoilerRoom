@@ -1,65 +1,81 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
-    [SerializeField] GameObject panelMenu;
-    [SerializeField] GameObject panelLevels;
-    [SerializeField] GameObject panelComplexsity;
-    [SerializeField] GameObject panelResult;
-    [SerializeField] GameObject panelOptions;
-    [SerializeField] GameObject panelQuit;
-    [SerializeField] GameObject[] panels;
-    int complexsity;
-    public static int selectedLevel;
+    [SerializeField] private Button[] _buttons;
+    [SerializeField] private GameObject[] _panels;
+    //0StartPanel
+    //1LevelsPanel
+    //2PanelComplexsity
+    //3ResultPanel
+    //4OptionsPanel
+    //5QuitPanel
 
     private void Start()
     {
-        foreach (GameObject panel in panels)
+        for(int i = 0; i < _buttons.Length; i++)
         {
-            panel.SetActive(false);
+            if(i < Settings.instance.Lvl)
+            {
+                _buttons[i].interactable = true;
+            }
+            else
+            {
+                _buttons[i].interactable = false;
+            }
         }
-        panelMenu.SetActive(true);
+        for (int i = 0; i < _panels.Length; i++)
+        {
+            _panels[i].SetActive(false);
+            if (i == 0)
+            {
+                _panels[i].SetActive(true);
+            }
+        }  
     }
     public void ButtonLevels()
     {
-        panelMenu.SetActive(false);
-        panelLevels.SetActive(true);
+        _panels[0].SetActive(false);
+        _panels[1].SetActive(true);
     }
     public void ButtonResult()
     {
-        panelResult.SetActive(true);
+        _panels[3].SetActive(true);
     }
     public void ButtonOptions()
     {
-        panelOptions.SetActive(true);
+        _panels[4].SetActive(true);
     }
     public void ButtonLvl(int lvl)
     {
-        selectedLevel = lvl;
-        panelComplexsity.SetActive(true);
+        Settings.instance.Lvl = lvl;
+        _panels[2].SetActive(true);
     }
     public void ButtonComplexsity(int value)
     {
-        complexsity = value;
         SceneManager.LoadScene("Loading Game");
+        _panels[0].SetActive(false);
     }
     public void BeakLevels() 
     {
-        panelComplexsity.SetActive(false);
+        _panels[2].SetActive(false);
     }
     public void ButtonBeakMenu()
     {
-        foreach (GameObject panel in panels)
+        for (int i = 0; i < _panels.Length; i++)
         {
-            panel.SetActive(false);
+            _panels[i].SetActive(false);
+            if (i == 0)
+            {
+                _panels[i].SetActive(true);
+            }
         }
-        panelMenu.SetActive(true);
     }
     public void ButtonQuit()
     {
-        panelQuit.SetActive(true);
+        _panels[5].SetActive(true);
     }
     public void ButtonYes()
     {
