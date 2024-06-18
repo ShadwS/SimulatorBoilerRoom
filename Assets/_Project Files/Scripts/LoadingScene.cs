@@ -16,15 +16,9 @@ public class LoadingScene : MonoBehaviour
 
     private IEnumerator AsyncLoad()
     {
-        if (SceneManager.GetActiveScene().name == "Loading Game")
-        {
-            _operation = SceneManager.LoadSceneAsync($"Level {Settings.Instance.Level}");
-        }
-        else
-        {
-            _operation = SceneManager.LoadSceneAsync("Menu");
-        }
-        
+        string nameScene = SceneManager.GetActiveScene().name == "Loading Game" ? $"Level {Settings.Instance.Level}" : "Menu";
+        _operation = SceneManager.LoadSceneAsync(nameScene);
+
         while (!_operation.isDone)
         {
             float progress = _operation.progress / 0.9f;

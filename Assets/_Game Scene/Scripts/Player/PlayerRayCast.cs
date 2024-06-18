@@ -3,25 +3,24 @@ using UnityEngine;
 
 public class PlayerRayCast : MonoBehaviour
 {
-    public static event Action<string> OnNameObject;
-    public static event Action OfNameObject;
+    public static event Action<string, bool> OnNameObject;
 
     [SerializeField] private Camera _camera;
     [SerializeField] private RaycastHit _hitTarget;
     [SerializeField] private Ray _ray;
 
-    private void LateUpdate()
+    private void FixedUpdate()
     {
         _ray = _camera.ScreenPointToRay(Input.mousePosition);
         if(Physics.Raycast(_ray, out _hitTarget))
         {
             if (_hitTarget.transform.GetComponent<NameObject>() == null)
             {
-                OfNameObject?.Invoke();
+                OnNameObject?.Invoke("", false);
             }
             else 
             {
-                OnNameObject?.Invoke(_hitTarget.transform.GetComponent<NameObject>().GetNameObject());
+                OnNameObject?.Invoke(_hitTarget.transform.GetComponent<NameObject>().GetNameObject(),true);
             } 
         }
     }

@@ -1,9 +1,12 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
+    public static event Action<string> OnComplexity;
+
     [SerializeField] private Button[] _buttons;
     [SerializeField] private GameObject[] _panels;
     //0-StartPanel
@@ -13,26 +16,21 @@ public class Menu : MonoBehaviour
     //4-OptionsPanel
     //5-QuitPanel
 
+    private void Awake()
+    {
+        
+    }
+
     private void Start()
     {
-        for(int i = 0; i < _buttons.Length; i++)
+        for (int i = 1; i < _buttons.Length; i++)
         {
-            if(i < Settings.Instance.Level)
-            {
-                _buttons[i].interactable = true;
-            }
-            else
-            {
-                _buttons[i].interactable = false;
-            }
+            _buttons[i].interactable = i < Settings.Instance.Level ? true : false;
         }
-        for (int i = 0; i < _panels.Length; i++)
+        _panels[0].SetActive(true);
+        for (int i = 1; i < _panels.Length; i++)
         {
             _panels[i].SetActive(false);
-            if (i == 0)
-            {
-                _panels[i].SetActive(true);
-            }
         }  
     }
 
@@ -48,8 +46,9 @@ public class Menu : MonoBehaviour
         _panels[2].SetActive(true);
     }
 
-    public void ButtonComplexsity(int value)
+    public void ButtonComplexsity(string value)
     {
+        OnComplexity?.Invoke(value);
         SceneManager.LoadScene("Loading Game");
         _panels[0].SetActive(false);
     }
