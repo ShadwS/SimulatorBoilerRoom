@@ -2,17 +2,18 @@ using UnityEngine;
 
 public class Settings : MonoBehaviour
 {
-    public static Settings instance;
-    public int Level { get { return _level; }  set { _level = value; } }
+    public static Settings Instance;
+    public int Level { get => _level; set => _level = value; }
     private int _level;
+
     private void Awake()
     {
         Level = 1;
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
         }
-        else if(instance == this)
+        else if(Instance == this)
         {
             Destroy(gameObject);
         }
