@@ -5,10 +5,13 @@ public class PlayerRayCast : MonoBehaviour
 {
     public static event Action<string, bool> OnNameObject;
 
-    [SerializeField] private Camera _camera;
     [SerializeField] private RaycastHit _hitTarget;
     [SerializeField] private Ray _ray;
-
+    private Camera _camera;
+    private void Start()
+    {
+        _camera = GameObject.FindObjectOfType<Camera>();
+    }
     private void FixedUpdate()
     {
         _ray = _camera.ScreenPointToRay(Input.mousePosition);

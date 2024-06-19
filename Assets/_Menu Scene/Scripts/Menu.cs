@@ -1,12 +1,9 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
-    public static event Action<string> OnComplexity;
-
     [SerializeField] private Button[] _buttons;
     [SerializeField] private GameObject[] _panels;
     //0-StartPanel
@@ -15,11 +12,6 @@ public class Menu : MonoBehaviour
     //3-ResultPanel
     //4-OptionsPanel
     //5-QuitPanel
-
-    private void Awake()
-    {
-        
-    }
 
     private void Start()
     {
@@ -47,8 +39,8 @@ public class Menu : MonoBehaviour
     }
 
     public void ButtonComplexsity(string value)
-    {
-        OnComplexity?.Invoke(value);
+    { 
+        Settings.Instance.Complexity = value;
         SceneManager.LoadScene("Loading Game");
         _panels[0].SetActive(false);
     }

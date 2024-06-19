@@ -1,28 +1,39 @@
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GameCanvas : MonoBehaviour
 {
     [SerializeField] private GameObject _panelTextObject;
-    [SerializeField] private Text _objectText;
-    private string _complexity;
+    [SerializeField] private GameObject _panelPlayerInterface;
+    [SerializeField] private GameObject _player;
+    [SerializeField] private Complexity[] _scriptableObject; 
+    [SerializeField] private TextMeshProUGUI _objectText;
+    private Complexity _selectedDifficulty;
 
     private void Awake()
     {
-
+        for(int i = 0; i < _scriptableObject.Length; i++)
+        {
+            if (Settings.Instance.Complexity == _scriptableObject[i].name)
+            {
+                _selectedDifficulty = _scriptableObject[i];
+            }
+        }
     }
 
     private void Start()
     {
-        Menu.OnComplexity += UpdateComplexity;
+        _panelTextObject.SetActive(false);
+        if (_selectedDifficulty.name != "Difficult")
+        {
+            _player.AddComponent<PlayerRayCast>();
+        }
         PlayerRayCast.OnNameObject += TextUpdateOn;
         Pause.OnPause += OnCanvas;
     }
 
     private void OnDestroy()
     {
-        Menu.OnComplexity -= UpdateComplexity;
         PlayerRayCast.OnNameObject -= TextUpdateOn;
         Pause.OnPause -= OnCanvas;
     }
@@ -41,10 +52,6 @@ public class GameCanvas : MonoBehaviour
     }
     private void OnCanvas(bool value)
     {
-        gameObject.SetActive(value);
-    }
-    private void UpdateComplexity(string value)
-    {
-        _complexity = value;
+        _panelPlayerInterface.SetActive(value);
     }
 }
