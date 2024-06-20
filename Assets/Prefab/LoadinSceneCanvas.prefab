@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 87924017554467740}
   - component: {fileID: 87924017554467743}
   - component: {fileID: 87924017554467742}
+  - component: {fileID: 260984850}
   m_Layer: 5
   m_Name: LoadinSceneCanvas
   m_TagString: Untagged
@@ -101,6 +102,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &260984850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87924017554467713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3351f171cb397140907e0455ba53c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _loadingImage: {fileID: 87924017607814549}
+  _loadingText: {fileID: 87924018318523617}
 --- !u!1 &87924017607814551
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,8 +417,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 67cd5d2258f4cf04f833f0050ab56c89, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
