@@ -32,8 +32,5 @@ public class GameCanvas : MonoBehaviour
             _panelTextObject.SetActive(true);
         }
     }
-    private void OnCanvas(bool value)
-    {
-        _panelPlayerInterface.SetActive(value);
-    }
+    private void OnCanvas(bool value) => _panelPlayerInterface.SetActive(value);
 }

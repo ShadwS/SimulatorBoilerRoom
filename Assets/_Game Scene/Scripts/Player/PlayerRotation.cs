@@ -12,15 +12,9 @@ public class PlayerRotation : MonoBehaviour
         Cursor.visible = false;
     }
 
-    private void Start()
-    {
-        Pause.ChangeOfSenses += SensetivityUpdate;
-    }
+    private void Start() => Pause.ChangeOfSenses += SensetivityUpdate;
 
-    private void OnDestroy()
-    {
-        Pause.ChangeOfSenses -= SensetivityUpdate;
-    }
+    private void OnDestroy() => Pause.ChangeOfSenses -= SensetivityUpdate;
 
     private void Update()
     {
@@ -44,8 +38,5 @@ public class PlayerRotation : MonoBehaviour
             _player.gameObject.transform.rotation.eulerAngles.y,
             gameObject.transform.rotation.eulerAngles.z);
     }
-    public void SensetivityUpdate(float value) 
-    {
-        _sensetivity = value;
-    } 
+    public void SensetivityUpdate(float value) => _sensetivity = value;
 }

@@ -8,10 +8,9 @@ public class PlayerRayCast : MonoBehaviour
     [SerializeField] private RaycastHit _hitTarget;
     [SerializeField] private Ray _ray;
     private Camera _camera;
-    private void Start()
-    {
-        _camera = GameObject.FindObjectOfType<Camera>();
-    }
+
+    private void Start() => _camera = GameObject.FindObjectOfType<Camera>();
+
     private void FixedUpdate()
     {
         _ray = _camera.ScreenPointToRay(Input.mousePosition);
