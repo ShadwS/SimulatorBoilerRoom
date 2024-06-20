@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e80f555fc33c1334d9aa27d0e3831838, type: 3}
   m_Name: Mediun
   m_EditorClassIdentifier: 
-  ComplexityGame: 1
+  _complexityGame: 1
   _displayingObjects: 1
