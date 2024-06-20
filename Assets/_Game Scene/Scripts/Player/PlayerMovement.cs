@@ -3,6 +3,7 @@ using UnityEngine;
 [RequireComponent (typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private Player _player;
     [SerializeField] private int _speed;
     [SerializeField] private Animator _animator;
 
@@ -11,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private float _gravityForce = 0;
     private float _gravity = -9.8f;
 
-    private void Awake() => _controller = GetComponent<CharacterController>();
+    private void Awake() => _controller = _player.gameObject.GetComponent<CharacterController>();
 
     private void LateUpdate() => Animations();
 
@@ -21,8 +22,8 @@ public class PlayerMovement : MonoBehaviour
     {
         Gravity();
 
-        Vector3 move = gameObject.transform.forward * Input.GetAxis("Vertical") +
-            gameObject.transform.right * Input.GetAxis("Horizontal");
+        Vector3 move = _player.gameObject.transform.forward * Input.GetAxis("Vertical") +
+            _player.gameObject.transform.right * Input.GetAxis("Horizontal");
         move = move.normalized * _speed;
         _controller.Move(move * Time.deltaTime);
     }

@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class PlayerRotation : MonoBehaviour
 {
-
+    [SerializeField] private Player _player;
     [SerializeField] private float _sensetivity;
-    [SerializeField] private Transform _camera;
 
     private void Awake()
     {
@@ -25,11 +24,11 @@ public class PlayerRotation : MonoBehaviour
 
     private void Update()
     {
-        float angleY = gameObject.transform.rotation.eulerAngles.y;
+        float angleY = _player.gameObject.transform.rotation.eulerAngles.y;
         angleY += _sensetivity * Input.GetAxis("Mouse X") * Time.deltaTime;
-        gameObject.transform.rotation = Quaternion.Euler(0, angleY, 0);
+        _player.gameObject.transform.rotation = Quaternion.Euler(0, angleY, 0);
 
-        float angleX = _camera.rotation.eulerAngles.x;
+        float angleX = gameObject.transform.rotation.eulerAngles.x;
         angleX -= _sensetivity * Input.GetAxis("Mouse Y") * Time.deltaTime;
         //0-90 вниз
         //360-270 верх
@@ -41,9 +40,9 @@ public class PlayerRotation : MonoBehaviour
         {
             angleX = Mathf.Clamp(angleX, 270, 360);
         }
-        _camera.rotation = Quaternion.Euler(angleX,
-            gameObject.transform.rotation.eulerAngles.y,
-            _camera.rotation.eulerAngles.z);
+        gameObject.transform.rotation = Quaternion.Euler(angleX,
+            _player.gameObject.transform.rotation.eulerAngles.y,
+            gameObject.transform.rotation.eulerAngles.z);
     }
     public void SensetivityUpdate(float value) 
     {
