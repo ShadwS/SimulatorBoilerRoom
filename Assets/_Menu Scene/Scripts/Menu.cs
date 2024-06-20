@@ -38,9 +38,9 @@ public class Menu : MonoBehaviour
         _panels[2].SetActive(true);
     }
 
-    public void ButtonComplexsity(string value)
+    public void ButtonComplexsity(int value)
     { 
-        Settings.Instance.Complexity = value;
+        Settings.Instance.Complexity = (ComplexityGame)value;
         SceneManager.LoadScene("Loading Game");
         _panels[0].SetActive(false);
     }

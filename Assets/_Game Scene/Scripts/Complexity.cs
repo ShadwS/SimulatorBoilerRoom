@@ -1,6 +1,6 @@
 using UnityEngine;
 
-enum ComplexityGame {Easy, Medium, Difficult}
+public enum ComplexityGame {Easy, Medium, Difficult}
 [CreateAssetMenu(fileName = "ScriptableObject", menuName = "Complexity", order = 1)]
 public class Complexity : ScriptableObject
 {

@@ -1,6 +1,5 @@
 using UnityEngine;
 
-[RequireComponent (typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private Player _player;

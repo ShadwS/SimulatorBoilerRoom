@@ -210,11 +210,11 @@ MonoBehaviour:
       - m_Target: {fileID: 176286975}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: ButtonComplexsity
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Easy
           m_BoolArgument: 0
@@ -657,7 +657,6 @@ MonoBehaviour:
   - {fileID: 1494333714}
   - {fileID: 507334793}
   - {fileID: 2078424442}
-  complexities: []
 --- !u!1 &216477320
 GameObject:
   m_ObjectHideFlags: 0
@@ -2854,11 +2853,11 @@ MonoBehaviour:
       - m_Target: {fileID: 176286975}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: ButtonComplexsity
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: Mediun
           m_BoolArgument: 0
@@ -4494,6 +4493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fd719ca548845c41a34b032b80e87a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _currentComplexity: 0
 --- !u!1 &1267754464
 GameObject:
   m_ObjectHideFlags: 0
@@ -5678,13 +5678,13 @@ MonoBehaviour:
       - m_Target: {fileID: 176286975}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: ButtonComplexsity
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
           m_FloatArgument: 0
-          m_StringArgument: Difficult
+          m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1381125263

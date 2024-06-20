@@ -3,11 +3,13 @@ using UnityEngine;
 public class Settings : MonoBehaviour
 {
     public static Settings Instance;
+
     public int Level { get => _level; set => _level = value; }
-    public string Complexity { get => _complexity; set => _complexity = value; }
+    public ComplexityGame Complexity { get => _currentComplexity; set => _currentComplexity = value; }
+
+    [SerializeField] private ComplexityGame _currentComplexity;
 
     private int _level;
-    private string _complexity;
 
     private void Awake()
     {
