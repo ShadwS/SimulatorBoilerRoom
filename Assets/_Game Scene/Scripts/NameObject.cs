@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Outline))]
 public class NameObject : MonoBehaviour
 {
     [SerializeField] private string _nameObject;
