@@ -19,13 +19,13 @@ public class PlayerRayCast : MonoBehaviour
         _ray = _camera.ScreenPointToRay(Input.mousePosition);
         if(Physics.Raycast(_ray, out _hitTarget))
         {
-            if (_hitTarget.transform.GetComponent<NameObject>() == null)
-            {
-                OnNameObject?.Invoke("", false);
+            if (_hitTarget.transform.TryGetComponent(out NameObject nameObject))
+            { 
+                OnNameObject?.Invoke(nameObject.GetNameObject(), true);
             }
             else 
             {
-                OnNameObject?.Invoke(_hitTarget.transform.GetComponent<NameObject>().GetNameObject(), true);
+                OnNameObject?.Invoke("", false);
             } 
         }
     }
