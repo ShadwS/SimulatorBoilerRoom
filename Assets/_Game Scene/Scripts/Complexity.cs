@@ -6,4 +6,5 @@ public class Complexity : ScriptableObject
 {
     [SerializeField] private ComplexityGame _complexityGame;
     [SerializeField] private bool _displayingObjects;
+    [SerializeField] private float _timerGame;
 }
