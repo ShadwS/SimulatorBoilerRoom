@@ -1,4 +1,5 @@
 using System;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerRayCast : MonoBehaviour
@@ -9,7 +10,7 @@ public class PlayerRayCast : MonoBehaviour
     [SerializeField] private Ray _ray;
     private Camera _camera;
     private NameObject _nameObject;
-    private bool OnRayCast = true;
+    private bool OnRayCast = false;
 
     private void Start()
     {
@@ -23,19 +24,18 @@ public class PlayerRayCast : MonoBehaviour
         {
             if (_hitTarget.transform.TryGetComponent(out NameObject nameObject))
             {
-                if (!OnRayCast) return;
+                OnRayCast = true;
                 _nameObject = nameObject;
                 OnNameObject?.Invoke(_nameObject.GetNameObject(), true);
-                _nameObject.OutlineOn(true);
-                OnRayCast = false;
+                _nameObject.OutlineOn(OnRayCast);
             }
-            else 
+            else
             {
-                if (OnRayCast) return;
+                if (!OnRayCast) return;
                 _nameObject.OutlineOn(false);
                 OnNameObject?.Invoke("", false);
                 _nameObject = null;
-                OnRayCast = true;
+                OnRayCast = false;
             }
         }
     }
