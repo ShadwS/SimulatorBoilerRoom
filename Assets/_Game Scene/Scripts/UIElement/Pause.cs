@@ -9,21 +9,30 @@ public class Pause : MonoBehaviour
     public static event Action<float> ChangeOfSenses;
     public static event Action<bool> OnPause;
 
-    [SerializeField] private GameObject _paysPanel;
+    [SerializeField] private GameObject[] _panels;
+    //0-Pause
+    //1-Options
+    //2-Quit?
     [SerializeField] private Text _valueSensa;
     [SerializeField] private Slider _sliderSensetivity;
+    private bool _ofPays = false;
+
     private void Start()
     {
         _sliderSensetivity.value = 500;
         _sliderSensetivity.maxValue = 500;
         _sliderSensetivity.minValue = 500 / 10;
-        _paysPanel.SetActive(false);
+        for (int i = 0; i < _panels.Length; i++)
+        {
+            _panels[i].SetActive(false);
+        }
         StartCoroutine(StartPause());
     }
+
     private IEnumerator StartPause()
     {
         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Escape));
-        _paysPanel.SetActive(true);
+        _panels[0].SetActive(true);
         OnPause?.Invoke(false);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -33,13 +42,14 @@ public class Pause : MonoBehaviour
     }
     private IEnumerator Continue()
     {
-        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Escape));
+        yield return new WaitUntil(() => _ofPays);
         Time.timeScale = 1;
-        _paysPanel.SetActive(false);
+        _panels[0].SetActive(false);
         OnPause?.Invoke(true);
+        yield return new WaitUntil(() => _ofPays);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        yield return new WaitUntil(() => Input.GetKeyUp(KeyCode.Escape));
+        _ofPays = false;
         StartCoroutine(StartPause());
     }
     public void SliderSensetivity(float value)
@@ -55,5 +65,21 @@ public class Pause : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("Loading Menu");
-    }     
+    }
+    public void ButtonContinue(bool value)
+    {
+        _ofPays = value;
+    }
+    public void ButtonsOptions(bool value)
+    {
+        _panels[1].SetActive(value);
+    }
+    public void ButtonsYesOrNot(bool value)
+    {
+        _panels[2].SetActive(value);
+    }
+    public void ButtonQuit()
+    {
+        Application.Quit();
+    }
 }
