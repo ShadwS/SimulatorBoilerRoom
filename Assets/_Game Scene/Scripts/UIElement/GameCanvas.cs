@@ -5,7 +5,7 @@ public class GameCanvas : MonoBehaviour
 {
     [SerializeField] private GameObject _panelTextObject;
     [SerializeField] private GameObject _panelPlayerInterface;
-    [SerializeField] private TextMeshProUGUI _objectText;
+    [SerializeField] private TMP_Text _objectText;
 
     private void Start()
     {
@@ -23,14 +23,7 @@ public class GameCanvas : MonoBehaviour
     private void TextUpdateOn(string text,bool value)
     {
         _objectText.text = text;
-        if (!value)
-        {
-            _panelTextObject.SetActive(false);
-        }
-        else
-        { 
-            _panelTextObject.SetActive(true);
-        }
+        _panelTextObject.SetActive(value);
     }
     private void OnCanvas(bool value) => _panelPlayerInterface.SetActive(value);
 }

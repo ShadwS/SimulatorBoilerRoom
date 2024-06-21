@@ -9,7 +9,10 @@ public class PlayerRayCast : MonoBehaviour
     [SerializeField] private Ray _ray;
     private Camera _camera;
 
-    private void Start() => _camera = GameObject.FindObjectOfType<Camera>();
+    private void Start()
+    {
+        _camera = gameObject.GetComponent<Camera>();
+    }
 
     private void FixedUpdate()
     {
@@ -22,8 +25,9 @@ public class PlayerRayCast : MonoBehaviour
             }
             else 
             {
-                OnNameObject?.Invoke(_hitTarget.transform.GetComponent<NameObject>().GetNameObject(),true);
+                OnNameObject?.Invoke(_hitTarget.transform.GetComponent<NameObject>().GetNameObject(), true);
             } 
         }
     }
+
 }

@@ -51,5 +51,9 @@ public class Pause : MonoBehaviour
     {
         _valueSensa.text = String.Format("{0:0}", value / 50f);
     }
-    public void ButtonBeakMenu() => SceneManager.LoadScene("Loading Menu");
+    public void ButtonBeakMenu() 
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Loading Menu");
+    }     
 }
