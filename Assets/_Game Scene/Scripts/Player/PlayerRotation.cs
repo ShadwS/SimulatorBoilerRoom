@@ -3,18 +3,21 @@ using UnityEngine;
 public class PlayerRotation : MonoBehaviour
 {
     [SerializeField] private Player _player;
-    [SerializeField] private float _sensetivity;
+    private float _sensetivity;
 
     private void Awake()
     {
-        _sensetivity *= 100;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
-    private void Start() => Pause.ChangeOfSenses += SensetivityUpdate;
+    private void Start()
+    {
+        _sensetivity = Settings.Instance.Sensitivity;
+        Settings.UpdateSensitivity += SensetivityUpdate;
+    }
 
-    private void OnDestroy() => Pause.ChangeOfSenses -= SensetivityUpdate;
+    private void OnDestroy() => Settings.UpdateSensitivity -= SensetivityUpdate;
 
     private void Update()
     {
@@ -38,5 +41,5 @@ public class PlayerRotation : MonoBehaviour
             _player.gameObject.transform.rotation.eulerAngles.y,
             gameObject.transform.rotation.eulerAngles.z);
     }
-    public void SensetivityUpdate(float value) => _sensetivity = value;
+    public void SensetivityUpdate(float value) => _sensetivity = Settings.Instance.Sensitivity;
 }

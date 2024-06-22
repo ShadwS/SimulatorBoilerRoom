@@ -1,5 +1,4 @@
 using System;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerRayCast : MonoBehaviour
@@ -22,12 +21,16 @@ public class PlayerRayCast : MonoBehaviour
         _ray = _camera.ScreenPointToRay(Input.mousePosition);
         if(Physics.Raycast(_ray, out _hitTarget))
         {
+            if (OnRayCast)
+            {
+                _nameObject.OutlineOn(false);
+            }
             if (_hitTarget.transform.TryGetComponent(out NameObject nameObject))
             {
-                OnRayCast = true;
                 _nameObject = nameObject;
                 OnNameObject?.Invoke(_nameObject.GetNameObject(), true);
-                _nameObject.OutlineOn(OnRayCast);
+                _nameObject.OutlineOn(true);
+                OnRayCast = true;
             }
             else
             {

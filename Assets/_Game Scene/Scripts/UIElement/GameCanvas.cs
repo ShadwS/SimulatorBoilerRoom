@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -5,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class GameCanvas : MonoBehaviour
 {
+    public static event Action SynchronizationSens;
+
     [SerializeField] private GameObject[] _panels;
     //0-PlayerInterface
     //1-TextObject
@@ -17,7 +20,7 @@ public class GameCanvas : MonoBehaviour
     private void Start()
     {
         _panels[0].SetActive(true);
-        for(int i = 1; i < _panels.Length; i++)
+        for (int i = 1; i < _panels.Length; i++)
         {
             _panels[i].SetActive(false);
         }
@@ -37,7 +40,6 @@ public class GameCanvas : MonoBehaviour
         }
         OnTimer();
     }
-
     private void OnDestroy()
     {
         PlayerRayCast.OnNameObject -= TextUpdateOn;
@@ -58,6 +60,7 @@ public class GameCanvas : MonoBehaviour
         }
         _panels[0].SetActive(false);
         _panels[2].SetActive(true);
+        SynchronizationSens?.Invoke();
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         Time.timeScale = 0;
