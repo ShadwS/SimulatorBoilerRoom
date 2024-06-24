@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _complexityGame: 2
   _displayingObjects: 0
-  _timerGame: 120
+  _time: 60

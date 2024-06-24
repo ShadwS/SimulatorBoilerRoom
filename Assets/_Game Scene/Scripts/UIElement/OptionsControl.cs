@@ -9,14 +9,14 @@ public class OptionsControl : MonoBehaviour
 
     private void Start()
     {
-        GameCanvas.SynchronizationSens += Synchronization;
+        GameCanvas.SynchronizationOptions += Synchronization;
         _sliderSensetivity.value = Settings.Instance.Sensitivity;
         _sliderSensetivity.maxValue = 500;
         _sliderSensetivity.minValue = 500 / 10;
         TextSensUpdate(_sliderSensetivity.value);
     }
 
-    private void OnDestroy() => GameCanvas.SynchronizationSens -= Synchronization;
+    private void OnDestroy() => GameCanvas.SynchronizationOptions -= Synchronization;
 
     public void SliderSensetivity(float value)
     {

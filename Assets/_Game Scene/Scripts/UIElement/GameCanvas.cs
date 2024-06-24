@@ -1,19 +1,20 @@
 using System;
 using System.Collections;
 using TMPro;
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameCanvas : MonoBehaviour
 {
-    public static event Action SynchronizationSens;
+    public static event Action SynchronizationOptions;
 
     [SerializeField] private GameObject[] _panels;
+    [SerializeField] private Complexity[] _currentDifficulty;
     //0-PlayerInterface
     //1-TextObject
     //2-Loos
     //3-Options
+    //4-Task
     [SerializeField] private TMP_Text _objectText;
     [SerializeField] private TMP_Text _timerText;
     private float _timer;
@@ -27,17 +28,13 @@ public class GameCanvas : MonoBehaviour
         }
         PlayerRayCast.OnNameObject += TextUpdateOn;
         Pause.OnPause += OnCanvas;
-        switch (Settings.Instance.Complexity)
+        foreach (var difficulty in _currentDifficulty)
         {
-            case ComplexityGame.Easy:
-                _timer = 300;
-                break;
-            case ComplexityGame.Medium:
-                _timer = 180;
-                break;
-            case ComplexityGame.Difficult:
-                _timer = 120;
-                break;
+            if (difficulty.ComplexityGame == Settings.Instance.Complexity)
+            {
+                _timer = difficulty.Time;
+                _panels[4].SetActive(difficulty.DisplayingObject);
+            }
         }
         OnTimer();
     }
@@ -72,7 +69,7 @@ public class GameCanvas : MonoBehaviour
         }
         _panels[0].SetActive(false);
         _panels[2].SetActive(true);
-        SynchronizationSens?.Invoke();
+        SynchronizationOptions?.Invoke();
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         Time.timeScale = 0;

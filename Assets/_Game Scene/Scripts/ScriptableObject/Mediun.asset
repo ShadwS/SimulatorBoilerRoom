@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Mediun
   m_EditorClassIdentifier: 
   _complexityGame: 1
-  _displayingObjects: 1
-  _timerGame: 180
+  _displayingObjects: 0
+  _time: 120
