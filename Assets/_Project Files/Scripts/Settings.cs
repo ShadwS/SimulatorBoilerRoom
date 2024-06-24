@@ -8,7 +8,7 @@ public class Settings : MonoBehaviour
 
     public int Level { get => _level; set => _level = value; }
     public ComplexityGame Complexity { get => _currentComplexity; set => _currentComplexity = value;}
-    public float Sensitivity { get => _sensitivity; set{ UpdateSensitivity?.Invoke(value); _sensitivity = value; print(_sensitivity); } }
+    public float Sensitivity { get => _sensitivity; set{ UpdateSensitivity?.Invoke(value); _sensitivity = value; } }
 
     [SerializeField] private ComplexityGame _currentComplexity;
 

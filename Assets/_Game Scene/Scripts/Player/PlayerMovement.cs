@@ -1,10 +1,10 @@
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private Player _player;
     [SerializeField] private int _speed;
-    [SerializeField] private Animator _animator;
 
     private CharacterController _controller;
 
@@ -12,8 +12,6 @@ public class PlayerMovement : MonoBehaviour
     private float _gravity = -9.8f;
 
     private void Awake() => _controller = _player.gameObject.GetComponent<CharacterController>();
-
-    private void LateUpdate() => Animations();
 
     private void Update() => Move();
 
@@ -25,19 +23,6 @@ public class PlayerMovement : MonoBehaviour
             _player.gameObject.transform.right * Input.GetAxis("Horizontal");
         move = move.normalized * _speed;
         _controller.Move(move * Time.deltaTime);
-    }
-    private void Animations()
-    {
-        if (Input.GetButton("Vertical") || Input.GetButton("Horizontal"))
-        {
-            _animator.SetBool("Walking", true);
-        }
-        else 
-        {
-            _animator.SetBool("Walking", false);
-        }
-        _animator.SetFloat("y", Input.GetAxis("Vertical"));
-        _animator.SetFloat("x", Input.GetAxis("Horizontal"));  
     }
 
     private void Gravity()

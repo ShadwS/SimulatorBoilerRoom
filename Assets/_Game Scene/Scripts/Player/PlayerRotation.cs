@@ -27,19 +27,10 @@ public class PlayerRotation : MonoBehaviour
 
         float angleX = gameObject.transform.rotation.eulerAngles.x;
         angleX -= _sensetivity * Input.GetAxis("Mouse Y") * Time.deltaTime;
-        //0-90 вниз
-        //360-270 верх
-        if (angleX < 180)
-        {
-            angleX = Mathf.Clamp(angleX, -1, 90);
-        }
-        else
-        {
-            angleX = Mathf.Clamp(angleX, 270, 360);
-        }
+        angleX = angleX < 180? Mathf.Clamp(angleX, -1, 90) : Mathf.Clamp(angleX, 270, 360);
         gameObject.transform.rotation = Quaternion.Euler(angleX,
             _player.gameObject.transform.rotation.eulerAngles.y,
             gameObject.transform.rotation.eulerAngles.z);
     }
-    public void SensetivityUpdate(float value) => _sensetivity = Settings.Instance.Sensitivity;
+    private void SensetivityUpdate(float value) => _sensetivity = Settings.Instance.Sensitivity;
 }

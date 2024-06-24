@@ -9,19 +9,16 @@ public class PlayerRayCast : MonoBehaviour
     [SerializeField] private Ray _ray;
     private Camera _camera;
     private NameObject _nameObject;
-    private bool OnRayCast = false;
+    private bool _onRayCast = false;
 
-    private void Start()
-    {
-        _camera = gameObject.GetComponent<Camera>();
-    }
+    private void Start() => _camera = gameObject.GetComponent<Camera>();
 
     private void FixedUpdate()
     {
         _ray = _camera.ScreenPointToRay(Input.mousePosition);
         if(Physics.Raycast(_ray, out _hitTarget))
         {
-            if (OnRayCast)
+            if (_onRayCast)
             {
                 _nameObject.OutlineOn(false);
             }
@@ -30,15 +27,18 @@ public class PlayerRayCast : MonoBehaviour
                 _nameObject = nameObject;
                 OnNameObject?.Invoke(_nameObject.GetNameObject(), true);
                 _nameObject.OutlineOn(true);
-                OnRayCast = true;
+                _onRayCast = true;
             }
             else
             {
-                if (!OnRayCast) return;
+                if (!_onRayCast)
+                {
+                    return;
+                }
                 _nameObject.OutlineOn(false);
                 OnNameObject?.Invoke("", false);
                 _nameObject = null;
-                OnRayCast = false;
+                _onRayCast = false;
             }
         }
     }

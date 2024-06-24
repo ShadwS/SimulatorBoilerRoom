@@ -47,13 +47,10 @@ public class Menu : MonoBehaviour
 
     public void ButtonBeakMenu()
     {
-        for (int i = 0; i < _panels.Length; i++)
+        _panels[0].SetActive(true);
+        for (int i = 1; i < _panels.Length; i++)
         {
             _panels[i].SetActive(false);
-            if (i == 0)
-            {
-                _panels[i].SetActive(true);
-            }
         }
     }
 

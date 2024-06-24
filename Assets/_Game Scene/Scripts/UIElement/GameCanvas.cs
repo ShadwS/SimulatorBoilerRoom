@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using TMPro;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -29,7 +30,7 @@ public class GameCanvas : MonoBehaviour
         switch (Settings.Instance.Complexity)
         {
             case ComplexityGame.Easy:
-                _timer = 10;
+                _timer = 300;
                 break;
             case ComplexityGame.Medium:
                 _timer = 180;
@@ -40,19 +41,30 @@ public class GameCanvas : MonoBehaviour
         }
         OnTimer();
     }
+
     private void OnDestroy()
     {
         PlayerRayCast.OnNameObject -= TextUpdateOn;
         Pause.OnPause -= OnCanvas;
     }
 
-    private void OnTimer()
+    public void ButtonANew()
     {
-        StartCoroutine(TimerGame());
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void ButtonBackMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Loading Menu");
+    }
+
+    public void ButttonOptions(bool value) => _panels[3].SetActive(value);
+
     private IEnumerator TimerGame()
     {
-        while(_timer > 0)
+        while (_timer > 0)
         {
             yield return new WaitForSeconds(0.1f);
             _timer -= 0.1f;
@@ -65,24 +77,14 @@ public class GameCanvas : MonoBehaviour
         Cursor.visible = true;
         Time.timeScale = 0;
     }
-    private void TextUpdateOn(string text,bool value)
+
+    private void TextUpdateOn(string text, bool value)
     {
         _objectText.text = text;
         _panels[1].SetActive(value);
     }
-    public void ButtonANew()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-    public void ButtonBackMenu()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene("Loading Menu");
-    }
-    public void ButttonOptions(bool value)
-    {
-        _panels[3].SetActive(value);
-    }
+
     private void OnCanvas(bool value) => _panels[0].SetActive(value);
+
+    private void OnTimer() => StartCoroutine(TimerGame());
 }

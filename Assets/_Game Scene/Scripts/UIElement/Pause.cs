@@ -11,16 +11,29 @@ public class Pause : MonoBehaviour
     //0-Pause
     //1-Options
     //2-Quit?
-    private bool _ofPays = false;
 
     private void Start()
     {
-        for (int i = 0; i < _panels.Length; i++)
+        foreach (var panel in _panels)
         {
-            _panels[i].SetActive(false);
+            panel.SetActive(false); 
         }
         StartCoroutine(StartPause());
     }
+
+    public void ButtonBackMenu() 
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Loading Menu");
+    }
+
+    public void ButtonContinue() => Continue();
+
+    public void ButtonsOptions(bool value) => _panels[1].SetActive(value);
+
+    public void ButtonsYesOrNot(bool value) => _panels[2].SetActive(value);
+
+    public void ButtonQuit() => Application.Quit();
 
     private IEnumerator StartPause()
     {
@@ -31,39 +44,15 @@ public class Pause : MonoBehaviour
         Cursor.visible = true;
         Time.timeScale = 0;
         yield return new WaitUntil(() => Input.GetKeyUp(KeyCode.Escape));
-        StartCoroutine(Continue());
     }
-    private IEnumerator Continue()
+
+    private void Continue()
     {
-        yield return new WaitUntil(() => _ofPays);
         Time.timeScale = 1;
         _panels[0].SetActive(false);
         OnPause?.Invoke(true);
-        yield return new WaitUntil(() => _ofPays);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        _ofPays = false;
         StartCoroutine(StartPause());
-    }
-    public void ButtonBeakMenu() 
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene("Loading Menu");
-    }
-    public void ButtonContinue(bool value)
-    {
-        _ofPays = value;
-    }
-    public void ButtonsOptions(bool value)
-    {
-        _panels[1].SetActive(value);
-    }
-    public void ButtonsYesOrNot(bool value)
-    {
-        _panels[2].SetActive(value);
-    }
-    public void ButtonQuit()
-    {
-        Application.Quit();
     }
 }

@@ -15,21 +15,16 @@ public class OptionsControl : MonoBehaviour
         _sliderSensetivity.minValue = 500 / 10;
         TextSensUpdate(_sliderSensetivity.value);
     }
-    private void OnDestroy()
-    {
-        GameCanvas.SynchronizationSens -= Synchronization;
-    }
+
+    private void OnDestroy() => GameCanvas.SynchronizationSens -= Synchronization;
+
     public void SliderSensetivity(float value)
     {
         Settings.Instance.Sensitivity = value;
         TextSensUpdate(value);
     }
-    public void TextSensUpdate(float value)
-    {
-        _valueSensa.text = String.Format("{0:0}", value / 50f);
-    }
-    public void Synchronization()
-    {
-        _sliderSensetivity.value = Settings.Instance.Sensitivity;
-    }
+
+    private void TextSensUpdate(float value) => _valueSensa.text = String.Format("{0:0}", value / 50f);
+
+    private void Synchronization() => _sliderSensetivity.value = Settings.Instance.Sensitivity;
 }
