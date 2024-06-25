@@ -36,7 +36,7 @@ public class Door : MonoBehaviour
     {
         yield return new WaitUntil(() => Vector3.Distance(gameObject.transform.position,
             _player.position) > _distance);
-        while (_pivot.rotation.eulerAngles.y > 0 && !NextLap(_pivot.rotation.eulerAngles.y))
+        while (_pivot.rotation.eulerAngles.y > 0 && NextLap(_pivot.rotation.eulerAngles.y) == false)
         {
             float y = _pivot.rotation.eulerAngles.y;
             y -= _speedOpenClose * Time.deltaTime;
@@ -47,8 +47,5 @@ public class Door : MonoBehaviour
         StartCoroutine(DistanceLow());
     }
 
-    private bool NextLap(float y)
-    {
-        return y < 365 && y > 300;
-    }
+    private bool NextLap(float y) => y < 365 && y > 300;
 }
