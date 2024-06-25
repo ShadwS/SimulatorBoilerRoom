@@ -1,85 +1,48 @@
 using System;
-using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerRayCast : MonoBehaviour
 {
-    public static event Action<string, bool> OnNameObject;
+    public static event Action<string,string, Image> OnInteractionObject;
+    public static event Action<bool> OnPanel;
 
     [SerializeField] private RaycastHit _hitTarget;
     [SerializeField] private Ray _ray;
-    private Camera _camera;
-    private NameObject _nameObjectOld;
-    private bool _onRayCast = false;
-
-    private void Start() 
+    protected Camera _camera;
+    protected NameObject _nameObject;
+    protected bool _onRayCast = false;
+    private void Start()
     {
-        _camera = gameObject.GetComponent<Camera>();
-        //StartCoroutine(RayCast());
+        _camera = GetComponent<Camera>();
     }
-    private void FixedUpdate()
+    public virtual void FixedUpdate()
+    {
+        _nameObject = RayCast();
+        if (_nameObject != null)
+        {
+            OnPanel?.Invoke(true);
+            if (Input.GetKey(KeyCode.F))
+            {
+                OnInteractionObject?.Invoke(_nameObject.GetNameObject(), _nameObject.GetDescription(), _nameObject.GetImage());
+            }
+        }
+        else
+        {
+            OnPanel?.Invoke(false);
+        }
+    }
+    private NameObject RayCast()
     {
         _ray = _camera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(_ray, out _hitTarget))
         {
-            if (_onRayCast)
-            {
-                _nameObjectOld.OutlineOn(false);
-            }
             if (_hitTarget.transform.TryGetComponent(out NameObject nameObject))
             {
-                _nameObjectOld = nameObject;
-                OnNameObject?.Invoke(_nameObjectOld.GetNameObject(), true);
-                _nameObjectOld.OutlineOn(true);
-                _onRayCast = true;
-            }
-            else
-            {
-                if (!_onRayCast)
-                {
-                    return;
-                }
-                _nameObjectOld.OutlineOn(false);
-                OnNameObject?.Invoke("", false);
-                _nameObjectOld = null;
-                _onRayCast = false;
+               return nameObject;
             }
         }
+        return null;
     }
-    //private IEnumerator RayCast()
-    //{
-    //    while (true)
-    //    {
-    //        _ray = _camera.ScreenPointToRay(Input.mousePosition);
-    //        if (Physics.Raycast(_ray, out _hitTarget))
-    //        {
-    //            if (_hitTarget.transform.TryGetComponent(out NameObject nameObject))
-    //            {
-    //                if (nameObject != _nameObjectOld)
-    //                {
-    //                    OnNameAndOutline(nameObject,true);
-    //                    if (_onRayCast)
-    //                    {
-    //                        OnNameAndOutline(_nameObjectOld, false);
-    //                    }
-    //                    _onRayCast = true;
-    //                    _nameObjectOld = nameObject;
-
-    //                }
-    //                else
-    //                {
-    //                    OnNameAndOutline(_nameObjectOld, false);
-    //                }
-    //            }
-    //        }
-    //        yield return new WaitForSeconds(0.5f);
-    //    }
-    //}
-    //private void OnNameAndOutline(NameObject Object, bool value)
-    //{
-    //    OnNameObject?.Invoke(Object.GetNameObject(), value);
-    //    Object.OutlineOn(value);
-    //}
-
 
 }

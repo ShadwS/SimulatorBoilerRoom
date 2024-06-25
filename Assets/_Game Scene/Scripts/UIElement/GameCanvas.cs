@@ -3,20 +3,27 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameCanvas : MonoBehaviour
 {
     public static event Action SynchronizationOptions;
 
     [SerializeField] private GameObject[] _panels;
-    [SerializeField] private Complexity[] _currentDifficulty;
+    [SerializeField] private Complexity[] _difficultys;
     //0-PlayerInterface
     //1-TextObject
     //2-Loos
     //3-Options
     //4-Task
+    //5-Interaction
+    //6-FClick
+    //7-Aim
     [SerializeField] private TMP_Text _objectText;
     [SerializeField] private TMP_Text _timerText;
+    [SerializeField] private TMP_Text _objectNameText;
+    [SerializeField] private TMP_Text _descriptionText;
+    [SerializeField] private Image _imageObject;
     private float _timer;
 
     private void Start()
@@ -26,9 +33,12 @@ public class GameCanvas : MonoBehaviour
         {
             _panels[i].SetActive(false);
         }
-        PlayerRayCast.OnNameObject += TextUpdateOn;
+        _panels[7].SetActive(true);
+        DisplayObject.OnNameObject += TextUpdateOn;
+        PlayerRayCast.OnInteractionObject += InteractionObject;
+        PlayerRayCast.OnPanel += OnPanelF;
         Pause.OnPause += OnCanvas;
-        foreach (var difficulty in _currentDifficulty)
+        foreach (var difficulty in _difficultys)
         {
             if (difficulty.ComplexityGame == Settings.Instance.Complexity)
             {
@@ -41,7 +51,9 @@ public class GameCanvas : MonoBehaviour
 
     private void OnDestroy()
     {
-        PlayerRayCast.OnNameObject -= TextUpdateOn;
+        DisplayObject.OnNameObject -= TextUpdateOn;
+        PlayerRayCast.OnInteractionObject -= InteractionObject;
+        PlayerRayCast.OnPanel -= OnPanelF;
         Pause.OnPause -= OnCanvas;
     }
 
@@ -55,6 +67,14 @@ public class GameCanvas : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("Loading Menu");
+    }
+
+    public void ButtonBackGame()
+    {
+        _panels[5].SetActive(false);
+        _panels[7].SetActive(true);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void ButttonOptions(bool value) => _panels[3].SetActive(value);
@@ -80,6 +100,19 @@ public class GameCanvas : MonoBehaviour
         _objectText.text = text;
         _panels[1].SetActive(value);
     }
+
+    private void InteractionObject(string name, string description, Image imageObject)
+    {
+        _panels[7].SetActive(false);
+        _panels[5].SetActive(true);
+        Cursor.lockState = CursorLockMode.None; 
+        Cursor.visible = true;
+        _objectNameText.text = name;
+        _descriptionText.text = description;
+        _imageObject = imageObject;
+    }
+
+    private void OnPanelF(bool value) => _panels[6].SetActive(value);
 
     private void OnCanvas(bool value) => _panels[0].SetActive(value);
 

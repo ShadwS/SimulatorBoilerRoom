@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     {
         if (Settings.Instance.Complexity != ComplexityGame.Difficult)
         {
-            _camera.gameObject.AddComponent<PlayerRayCast>();
+            _camera.gameObject.AddComponent<DisplayObject>();
         }
     }
 }
