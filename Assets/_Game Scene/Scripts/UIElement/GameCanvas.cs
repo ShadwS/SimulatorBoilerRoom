@@ -36,14 +36,14 @@ public class GameCanvas : MonoBehaviour
         _panels[7].SetActive(true);
         DisplayObject.OnNameObject += TextUpdateOn;
         PlayerRayCast.OnInteractionObject += InteractionObject;
-        PlayerRayCast.OnPanel += OnPanelF;
+        PlayerRayCast.OnPanel += OnPanelClickF;
         Pause.OnPause += OnCanvas;
         foreach (var difficulty in _difficultys)
         {
             if (difficulty.ComplexityGame == Settings.Instance.Complexity)
             {
                 _timer = difficulty.Time;
-                _panels[4].SetActive(difficulty.DisplayingObject);
+                _panels[4].SetActive(difficulty.DisplayingTask);
             }
         }
         OnTimer();
@@ -53,7 +53,7 @@ public class GameCanvas : MonoBehaviour
     {
         DisplayObject.OnNameObject -= TextUpdateOn;
         PlayerRayCast.OnInteractionObject -= InteractionObject;
-        PlayerRayCast.OnPanel -= OnPanelF;
+        PlayerRayCast.OnPanel -= OnPanelClickF;
         Pause.OnPause -= OnCanvas;
     }
 
@@ -71,8 +71,10 @@ public class GameCanvas : MonoBehaviour
 
     public void ButtonBackGame()
     {
+        Time.timeScale = 1;
         _panels[5].SetActive(false);
         _panels[7].SetActive(true);
+        if(_panels[4].activeSelf) _panels[1].SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -98,21 +100,24 @@ public class GameCanvas : MonoBehaviour
     private void TextUpdateOn(string text, bool value)
     {
         _objectText.text = text;
+        if (Time.timeScale == 0) return;
         _panels[1].SetActive(value);
     }
 
     private void InteractionObject(string name, string description, Image imageObject)
     {
         _panels[7].SetActive(false);
+        _panels[1].SetActive(false);
         _panels[5].SetActive(true);
         Cursor.lockState = CursorLockMode.None; 
         Cursor.visible = true;
         _objectNameText.text = name;
         _descriptionText.text = description;
         _imageObject = imageObject;
+        Time.timeScale = 0;
     }
 
-    private void OnPanelF(bool value) => _panels[6].SetActive(value);
+    private void OnPanelClickF(bool value) => _panels[6].SetActive(value);
 
     private void OnCanvas(bool value) => _panels[0].SetActive(value);
 

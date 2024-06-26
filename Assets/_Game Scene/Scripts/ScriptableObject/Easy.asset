@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Easy
   m_EditorClassIdentifier: 
   _complexityGame: 0
-  _displayingObjects: 1
+  _displayingTask: 1
   _time: 180

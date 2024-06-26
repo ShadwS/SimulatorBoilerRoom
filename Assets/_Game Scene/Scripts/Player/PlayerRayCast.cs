@@ -11,12 +11,12 @@ public class PlayerRayCast : MonoBehaviour
     [SerializeField] private Ray _ray;
     protected Camera _camera;
     protected NameObject _nameObject;
-    protected bool _onRayCast = false;
+
     private void Start()
     {
         _camera = GetComponent<Camera>();
     }
-    public virtual void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
         _nameObject = RayCast();
         if (_nameObject != null)

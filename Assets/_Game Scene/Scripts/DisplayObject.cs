@@ -5,7 +5,9 @@ public class DisplayObject : PlayerRayCast
     public static event Action<string, bool> OnNameObject;
 
     private NameObject _nameObjectOld;
-    public override void FixedUpdate()
+    private bool _onRayCast = false;
+
+    protected override void FixedUpdate()
     {
         base.FixedUpdate();
         if (_onRayCast)
