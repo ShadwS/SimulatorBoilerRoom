@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class GameCanvas : MonoBehaviour
 {
     public static event Action SynchronizationOptions;
+    public static event Action<bool> OnRotation;
 
     [SerializeField] private GameObject[] _panels;
     [SerializeField] private Complexity[] _difficultys;
@@ -71,10 +72,10 @@ public class GameCanvas : MonoBehaviour
 
     public void ButtonBackGame()
     {
-        Time.timeScale = 1;
         _panels[5].SetActive(false);
         _panels[7].SetActive(true);
-        if(_panels[4].activeSelf) _panels[1].SetActive(true);
+        if (_panels[4].activeSelf) _panels[1].SetActive(true);
+        OnRotation?.Invoke(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -106,15 +107,15 @@ public class GameCanvas : MonoBehaviour
 
     private void InteractionObject(string name, string description, Image imageObject)
     {
-        _panels[7].SetActive(false);
+        OnRotation?.Invoke(false);
         _panels[1].SetActive(false);
+        _panels[7].SetActive(false);
         _panels[5].SetActive(true);
         Cursor.lockState = CursorLockMode.None; 
         Cursor.visible = true;
         _objectNameText.text = name;
         _descriptionText.text = description;
         _imageObject = imageObject;
-        Time.timeScale = 0;
     }
 
     private void OnPanelClickF(bool value) => _panels[6].SetActive(value);

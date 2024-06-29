@@ -4,6 +4,7 @@ public class PlayerRotation : MonoBehaviour
 {
     [SerializeField] private Player _player;
     private float _sensetivity;
+    private bool _rotation = true;
 
     private void Awake()
     {
@@ -15,12 +16,18 @@ public class PlayerRotation : MonoBehaviour
     {
         _sensetivity = Settings.Instance.Sensitivity;
         Settings.UpdateSensitivity += SensetivityUpdate;
+        GameCanvas.OnRotation += CameraRotationProhibition;
     }
 
-    private void OnDestroy() => Settings.UpdateSensitivity -= SensetivityUpdate;
-
+    private void OnDestroy() 
+    {
+        GameCanvas.OnRotation += CameraRotationProhibition;
+        Settings.UpdateSensitivity -= SensetivityUpdate;
+    }
+    
     private void Update()
     {
+        if(!_rotation) return;
         float angleY = _player.gameObject.transform.rotation.eulerAngles.y;
         angleY += _sensetivity * Input.GetAxis("Mouse X") * Time.deltaTime;
         _player.gameObject.transform.rotation = Quaternion.Euler(0, angleY, 0);
@@ -33,6 +40,8 @@ public class PlayerRotation : MonoBehaviour
             _player.gameObject.transform.rotation.eulerAngles.y,
             gameObject.transform.rotation.eulerAngles.z);
     }
+
+    private void CameraRotationProhibition(bool value) => _rotation = value;
 
     private void SensetivityUpdate(float value) => _sensetivity = Settings.Instance.Sensitivity;
 }

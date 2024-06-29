@@ -9,15 +9,22 @@ public class PlayerRayCast : MonoBehaviour
 
     [SerializeField] private RaycastHit _hitTarget;
     [SerializeField] private Ray _ray;
+    protected bool _raycasting = true;
     protected Camera _camera;
     protected NameObject _nameObject;
 
     private void Start()
     {
         _camera = GetComponent<Camera>();
+        GameCanvas.OnRotation += RayCastProhibition;
+    }
+    private void OnDestroy()
+    {
+        GameCanvas.OnRotation -= RayCastProhibition;
     }
     protected virtual void FixedUpdate()
     {
+        if(!_raycasting) return;
         _nameObject = RayCast();
         if (_nameObject != null)
         {
@@ -45,4 +52,5 @@ public class PlayerRayCast : MonoBehaviour
         return null;
     }
 
+    private void RayCastProhibition(bool value) => _raycasting = value;
 }

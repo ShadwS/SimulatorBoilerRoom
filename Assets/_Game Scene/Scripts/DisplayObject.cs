@@ -10,6 +10,7 @@ public class DisplayObject : PlayerRayCast
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
+        if (!_raycasting) return;
         if (_onRayCast)
         {
             _nameObjectOld.OutlineOn(false);

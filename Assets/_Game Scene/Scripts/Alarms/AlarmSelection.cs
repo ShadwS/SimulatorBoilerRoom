@@ -2,12 +2,10 @@ using UnityEngine;
 
 public class AlarmSelection : MonoBehaviour
 {
-    public string AlarmNameSelection { get { return _alarmNameSelection; } }
-
-    [SerializeField] private string[] _alarmsName;
+    [SerializeField] private GameObject[] _alarmsName;
     //0-LowPressureGVS
     //1-HightTemperatureBoiler
-    private string _alarmNameSelection;
+    private GameObject _alarmSelection;
     private int _selectedLevel;
     private void Awake()
     {
@@ -15,9 +13,9 @@ public class AlarmSelection : MonoBehaviour
         switch (_selectedLevel) 
         {
             case 1:
-                int indexAlarmSelection = Random.Range(_selectedLevel - 1, _selectedLevel);
-                _alarmNameSelection = _alarmsName[indexAlarmSelection];
-                print(_alarmNameSelection);
+                int indexAlarmSelection = Random.Range(0, 100) > 50 ? 1 : 0;
+                _alarmSelection = Instantiate(_alarmsName[indexAlarmSelection]);
+                print(_alarmSelection);
                 break;
             case 2:
                 print(2);
@@ -33,5 +31,5 @@ public class AlarmSelection : MonoBehaviour
                 break;
         }
     }
-    public string GetAlarmName() => _alarmNameSelection;
+    public GameObject GetAlarm() => _alarmSelection;
 }

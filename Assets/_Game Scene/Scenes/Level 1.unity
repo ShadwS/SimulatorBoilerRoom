@@ -2367,8 +2367,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _alarmsName:
-  - LowPressureGVS
-  - HightTemperatureBoiler
+  - {fileID: 6057732719083932652, guid: 6fe137007eed0f340b25ea983395b381, type: 3}
+  - {fileID: 6442603087374311366, guid: 450e0dbaf3227e948820e46829fce04e, type: 3}
 --- !u!114 &697239344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2382,8 +2382,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _alarmSelection: {fileID: 697239343}
-  _alarm: {fileID: 0}
   _alarmText: {fileID: 1118909299}
+  _alarmTask: {fileID: 1621487805}
 --- !u!4 &704256946 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8021001004253913084, guid: c554a0de6a4b1dc44baec26c77ad5e58, type: 3}
@@ -4149,8 +4149,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4279243007
+  m_fontColor: {r: 1, g: 0.06132078, b: 0.06132078, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
