@@ -7,5 +7,9 @@ public class LowPressureGVS : Alarm
     //Проверить на утечку, систему отопления
     //Проверить показания датчика давления
 
-    private string _namealarm = "Низкий давление в GVS";
+    private void Awake()
+    {
+        _alarm = gameObject.GetComponent<LowPressureGVS>();
+        _nameAlarm = "Низкий давление в GVS";
+    }
 }

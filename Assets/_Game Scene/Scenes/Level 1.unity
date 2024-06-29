@@ -2231,6 +2231,8 @@ GameObject:
   - component: {fileID: 697239339}
   - component: {fileID: 697239338}
   - component: {fileID: 697239342}
+  - component: {fileID: 697239343}
+  - component: {fileID: 697239344}
   m_Layer: 5
   m_Name: GameCanvas
   m_TagString: Untagged
@@ -2351,9 +2353,37 @@ MonoBehaviour:
   _timerText: {fileID: 509178291}
   _objectNameText: {fileID: 1715725542}
   _descriptionText: {fileID: 190336633}
-  _alarmText: {fileID: 0}
   _imageObject: {fileID: 2112305788}
-  _selectedAlarm: {fileID: 0}
+--- !u!114 &697239343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697239336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74d6592e1b1a702438a1fd2cf689c031, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _alarmsName:
+  - LowPressureGVS
+  - HightTemperatureBoiler
+--- !u!114 &697239344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697239336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81e86edba51d194a86f167036125442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _alarmSelection: {fileID: 697239343}
+  _alarm: {fileID: 0}
+  _alarmText: {fileID: 1118909299}
 --- !u!4 &704256946 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8021001004253913084, guid: c554a0de6a4b1dc44baec26c77ad5e58, type: 3}
@@ -4110,7 +4140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0410\u0432\u0430\u0440\u0438\u044F"
+  m_text: "\u0430\u0432\u0430\u0440\u0438\u044F"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

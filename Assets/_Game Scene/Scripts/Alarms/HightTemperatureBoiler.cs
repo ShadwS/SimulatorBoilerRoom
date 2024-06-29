@@ -1,4 +1,3 @@
-
 public class HightTemperatureBoiler : Alarm
 {
     //проверить работоспособность циркуляционного насоса
@@ -7,5 +6,9 @@ public class HightTemperatureBoiler : Alarm
     //проверить датчики температуры котла и котлового контура
     //проверить аварийный термостат котла на работоспособность и соответсвие уставок
 
-    private string _namealarm = "Высокая температура бойлера";
+    private void Awake()
+    {
+        _alarm = gameObject.GetComponent<HightTemperatureBoiler>();
+        _nameAlarm = "Высокая температура бойлера";
+    }
 }
