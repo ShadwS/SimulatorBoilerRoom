@@ -14,7 +14,7 @@ public class AlarmSelection : Alarm
         {
             case 1:
                 _indexAlarmSelection = Random.Range(_selectedLevel - 1, _selectedLevel);
-                _alarm = _alarms[_indexAlarmSelection];
+                _nameAlarm = _alarms[_indexAlarmSelection].name;
                 break;
             case 2:
                 print(2);

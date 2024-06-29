@@ -2351,7 +2351,9 @@ MonoBehaviour:
   _timerText: {fileID: 509178291}
   _objectNameText: {fileID: 1715725542}
   _descriptionText: {fileID: 190336633}
+  _alarmText: {fileID: 0}
   _imageObject: {fileID: 2112305788}
+  _selectedAlarm: {fileID: 0}
 --- !u!4 &704256946 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8021001004253913084, guid: c554a0de6a4b1dc44baec26c77ad5e58, type: 3}
@@ -4108,7 +4110,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 120
+  m_text: "\u0410\u0432\u0430\u0440\u0438\u044F"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

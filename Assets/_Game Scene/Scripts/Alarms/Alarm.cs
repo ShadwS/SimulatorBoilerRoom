@@ -2,7 +2,7 @@ using UnityEngine;
 
 public abstract class Alarm : MonoBehaviour
 {
-    public Alarm NameAlarm { get { return _alarm; } }
+    public string NameAlarm { get { return _nameAlarm; } }
 
-    [SerializeField] protected Alarm _alarm;
+    [SerializeField] protected string _nameAlarm;
 }
