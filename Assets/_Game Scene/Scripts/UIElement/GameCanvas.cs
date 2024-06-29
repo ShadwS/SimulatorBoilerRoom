@@ -23,8 +23,10 @@ public class GameCanvas : MonoBehaviour
     [SerializeField] private TMP_Text _timerText;
     [SerializeField] private TMP_Text _objectNameText;
     [SerializeField] private TMP_Text _descriptionText;
+    [SerializeField] private TMP_Text _alarmText;
     [SerializeField] private Image _imageObject;
     private float _timer;
+    [SerializeField] private Alarm _selectedAlarm;
 
     private void Start()
     {
