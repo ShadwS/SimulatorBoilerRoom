@@ -41,7 +41,6 @@ public class AlarmController : MonoBehaviour
                     alpha = 1;
                     yield return new WaitForSeconds(0.3f);
                 }
-
             }
             else
             {

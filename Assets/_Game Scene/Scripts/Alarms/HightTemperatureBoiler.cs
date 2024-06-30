@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class HightTemperatureBoiler : Alarm
 {
     //проверить работоспособность циркуляционного насоса
@@ -6,15 +8,13 @@ public class HightTemperatureBoiler : Alarm
     //проверить датчики температуры котла и котлового контура
     //проверить аварийный термостат котла на работоспособность и соответсвие уставок
     //private string _nameAlarm = "Высокая температура бойлера";
+    [SerializeField] private string _name;
+    [SerializeField] private string _task;
+
     private void Awake()
     {
         _alarm = gameObject.GetComponent<HightTemperatureBoiler>();
-        _nameAlarm = "Высокая температура бойлера";
-        _taskAlarm = "1:проверить работоспособность циркуляционного насоса" +
-                     "2:проверить наличие перепада давления на насосе" +
-                     "3:проверить циркуляцию котла и котлового контура" +
-                     "4:проверить датчики температуры котла и котлового контура" +
-                     "5:проверить аварийный термостат котла на работоспособность и соответсвие уставок";
+        _nameAlarm = _name;
+        _taskAlarm = _task;
     }
-    //public string GetNameAlarm() => _nameAlarm;
 }

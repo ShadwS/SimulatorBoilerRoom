@@ -1,4 +1,6 @@
 
+using UnityEngine;
+
 public class LowPressureGVS : Alarm
 {
     //Проверить уровень воды в баке запаса воды
@@ -7,15 +9,12 @@ public class LowPressureGVS : Alarm
     //Проверить на утечку, систему отопления
     //Проверить показания датчика давления
     //private string _nameAlarm = "Низкий давление в GVS";
+    [SerializeField] private string _name;
+    [SerializeField] private string _task;
     private void Awake()
     {
         _alarm = gameObject.GetComponent<LowPressureGVS>();
-        _nameAlarm = "Низкий давление в GVS";
-        _taskAlarm = "1:Проверить уровень воды в баке запаса воды" +
-                     "2:Проверить работоспособность насосов подпитки" +
-                     "3:Проверить(при необходимости прокачать) расширительный бак" +
-                     "4:Проверить на утечку, систему отопления" +
-                     "5:Проверить показания датчика давления";
+        _nameAlarm = _name;
+        _taskAlarm = _task;
     }
-    //public string GetNameAlarm() => _nameAlarm;
 }
