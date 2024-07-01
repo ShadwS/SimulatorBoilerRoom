@@ -5,8 +5,7 @@ public class Door : MonoBehaviour
 {
     [SerializeField] private Transform _pivot;
     private int _maxAngle = 65;
-    private int _speedOpenClose = 60;
-    private bool _onStreet = false;
+    private int _speedOpenClose = 50;
 
     private void Awake() => _pivot.rotation = Quaternion.identity;
 
@@ -20,10 +19,9 @@ public class Door : MonoBehaviour
             yield return new WaitForSeconds(Time.deltaTime);
         }
         _pivot.rotation = Quaternion.Euler(0, _maxAngle, 0);
-
+        StartCoroutine(CloseDoor());
     }
-
-    protected IEnumerator ClosetDoor()
+    protected IEnumerator CloseDoor()
     {
         while (_pivot.rotation.eulerAngles.y > 0 && NextLap(_pivot.rotation.eulerAngles.y) == false)
         {

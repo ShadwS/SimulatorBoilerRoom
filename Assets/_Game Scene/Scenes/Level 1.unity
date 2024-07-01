@@ -4908,6 +4908,18 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1536932432012286635, guid: bd6d94f695c4ac44db9acd72efe56e59, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.983
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618916803796317492, guid: bd6d94f695c4ac44db9acd72efe56e59, type: 3}
+      propertyPath: m_Size.z
+      value: 2.414887
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618916803796317492, guid: bd6d94f695c4ac44db9acd72efe56e59, type: 3}
+      propertyPath: m_Center.z
+      value: 0.13506457
+      objectReference: {fileID: 0}
     - target: {fileID: 6898360566210712767, guid: bd6d94f695c4ac44db9acd72efe56e59, type: 3}
       propertyPath: _pivot
       value: 

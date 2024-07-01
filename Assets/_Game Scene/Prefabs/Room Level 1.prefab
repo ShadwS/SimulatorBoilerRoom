@@ -258,68 +258,9 @@ Transform:
   m_Children:
   - {fileID: 8910275172471813658}
   - {fileID: 1536932432012286635}
-  - {fileID: 1762096675327435676}
   m_Father: {fileID: 8910275172502916957}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4734651028866463221
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1762096675327435676}
-  - component: {fileID: 9221780424382521400}
-  - component: {fileID: 6898360566210712767}
-  m_Layer: 0
-  m_Name: ColiderRoom
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1762096675327435676
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4734651028866463221}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.493, y: 0.2775, z: -4.559}
-  m_LocalScale: {x: 1.4799696, y: 0.4451, z: 0.7979612}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1275347572389311436}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &9221780424382521400
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4734651028866463221}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6898360566210712767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4734651028866463221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec377358ac66f374f9a690edb9ce39b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5072620614070016510
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,8 +402,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.9999999, y: 0.9999997, z: 2.7787924}
+  m_Center: {x: 0, y: 0, z: -0.5396699}
 --- !u!114 &8629367646915509837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -475,6 +416,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec377358ac66f374f9a690edb9ce39b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _pivot: {fileID: 0}
+  _roomOrStreet: 1
 --- !u!1 &8910275172471813659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1957,8 +1900,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca599cc1861146449ca4f487ad0770a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _collisionStreet: {fileID: 8629367646915509837}
-  _collisionRoom: {fileID: 6898360566210712767}
   _pivot: {fileID: 8910275172471813658}
 --- !u!1 &8910275174341685056
 GameObject:
