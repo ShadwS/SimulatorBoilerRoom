@@ -14,7 +14,7 @@ public class Settings : MonoBehaviour
 
     private int _level;
 
-    [SerializeField] private float _sensitivity;
+    [SerializeField, Range(1, 500)] private float _sensitivity;
 
     private void Awake()
     {
