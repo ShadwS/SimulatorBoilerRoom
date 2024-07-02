@@ -2,8 +2,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Outline))]
-public class NameObject : MonoBehaviour
+public class DescriptionObject : MonoBehaviour
 {
+    [SerializeField] private InteractionInformation _interactionInfoSelection;
     [SerializeField] private string _nameObject;
     [SerializeField] private string _descriptionObject;
     [SerializeField] private Image _imageObject;
@@ -22,6 +23,8 @@ public class NameObject : MonoBehaviour
     public string GetDescription() => _descriptionObject;
 
     public Image GetImage() => _imageObject;
+
+    public InteractionInformation GetInteractionInfoSelection() => _interactionInfoSelection;
 
     public void OutlineOn(bool value) => _outline.enabled = value;
 }

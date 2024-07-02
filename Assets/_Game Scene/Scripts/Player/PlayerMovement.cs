@@ -10,12 +10,19 @@ public class PlayerMovement : MonoBehaviour
     private float _gravityForce = 0;
     private float _gravity = -9.8f;
 
+    private bool _movement = true;
+
     private void Awake() => _controller = _player.gameObject.GetComponent<CharacterController>();
+
+    private void Start() => GameCanvas.OnÑontrol += MovementProhibition;
+
+    private void OnDestroy() => GameCanvas.OnÑontrol -= MovementProhibition;
 
     private void Update() => Move();
 
     private void Move()
     {
+        if (!_movement) return;
         Gravity();
 
         Vector3 move = _player.gameObject.transform.forward * Input.GetAxis("Vertical") +
@@ -29,4 +36,6 @@ public class PlayerMovement : MonoBehaviour
         _gravityForce = _controller.isGrounded ? -2 : _gravityForce + _gravity * Time.deltaTime;
         _controller.Move(Vector3.up * _gravityForce * Time.deltaTime);
     }
+
+    private void MovementProhibition(bool value) => _movement = value;
 }

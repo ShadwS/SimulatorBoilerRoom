@@ -8,7 +8,9 @@ using UnityEngine.UI;
 public class GameCanvas : MonoBehaviour
 {
     public static event Action SynchronizationOptions;
-    public static event Action<bool> OnRotation;
+    public static event Action<bool> On—ontrol;
+    public event Action<InteractionInformation> UpdateInteractionInformation;
+    public event Action BackGame;
 
     [SerializeField] private GameObject[] _panels;
     [SerializeField] private Complexity[] _difficultys;
@@ -75,9 +77,10 @@ public class GameCanvas : MonoBehaviour
         _panels[5].SetActive(false);
         _panels[7].SetActive(true);
         if (_panels[4].activeSelf) _panels[1].SetActive(true);
-        OnRotation?.Invoke(true);
+        On—ontrol?.Invoke(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        BackGame?.Invoke();
     }
 
     public void ButttonOptions(bool value) => _panels[3].SetActive(value);
@@ -105,9 +108,10 @@ public class GameCanvas : MonoBehaviour
         _panels[1].SetActive(value);
     }
 
-    private void InteractionObject(string name, string description, Image imageObject)
+    private void InteractionObject(string name, string description, Image imageObject, InteractionInformation interactionInfoSelection)
     {
-        OnRotation?.Invoke(false);
+        UpdateInteractionInformation?.Invoke(interactionInfoSelection);
+        On—ontrol?.Invoke(false);
         _panels[1].SetActive(false);
         _panels[7].SetActive(false);
         _panels[5].SetActive(true);

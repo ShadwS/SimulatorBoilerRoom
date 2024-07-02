@@ -4,7 +4,7 @@ public class DisplayObject : PlayerRayCast
 {
     public static event Action<string, bool> OnNameObject;
 
-    private NameObject _nameObjectOld;
+    private DescriptionObject _nameObjectOld;
     private bool _onRayCast = false;
 
     protected override void FixedUpdate()
@@ -15,9 +15,9 @@ public class DisplayObject : PlayerRayCast
         {
             _nameObjectOld.OutlineOn(false);
         }
-        if (_nameObject != null)
+        if (_descriptionObject != null)
         {
-            _nameObjectOld = _nameObject;
+            _nameObjectOld = _descriptionObject;
             OnNameObject?.Invoke(_nameObjectOld.GetNameObject(),true);
             _nameObjectOld.OutlineOn(true);
             _onRayCast = true;

@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public enum ComplexityGame {Easy, Medium, Difficult}
-[CreateAssetMenu(fileName = "ScriptableObject", menuName = "Complexity", order = 1)]
+[CreateAssetMenu(fileName = "Complexity", menuName = "Complexity", order = 1)]
 public class Complexity : ScriptableObject
 {
     public float Time { get { return _time; } }
