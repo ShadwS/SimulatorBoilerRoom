@@ -1,7 +1,6 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Animations.Rigging;
 using UnityEngine.UI;
 
 public class AlarmController : MonoBehaviour
@@ -35,6 +34,8 @@ public class AlarmController : MonoBehaviour
             _alarmTask.text = $"{index}. {task}\n";
             index++;
         }
+        _objectAction.gameObject.SetActive(false);
+        _objectState.gameObject.SetActive(false);
         StartCoroutine(FlashingText());
     }
 
@@ -46,11 +47,13 @@ public class AlarmController : MonoBehaviour
 
     public void ButtonChecksTheAnswer(int nomer)
     {
+        _objectState.gameObject.SetActive(true);
         if (nomer == _interactionInfoSelect.CorrectButtonNumber)
         {
             _objectState.text = _interactionInfoSelect.ObjectState;
             if(_interactionInfoSelect.ActionObject != "")
             {
+                _objectAction.gameObject.SetActive(true);
                 _objectAction.text = _interactionInfoSelect.ActionObject;
             }
             _executionOrder[_executionOrderIndex] = true;
@@ -58,14 +61,16 @@ public class AlarmController : MonoBehaviour
         }
         else
         {
-            print("Поражение");
+            _gameCanvas.OnPanelLoos();
         }
         _buttons[nomer - 1].interactable = false;
     }
 
     private void VictoryCheck()
     {
-        if(!_conditionsForTheSequenceOfActions)
+        _objectState.gameObject.SetActive(false);
+        _objectState.text = "";
+        if (!_conditionsForTheSequenceOfActions)
         {
             return;
         }
@@ -79,12 +84,13 @@ public class AlarmController : MonoBehaviour
         }
         if (rightAnswers == _executionOrder.Length)
         {
-            print("WINNNNNNN!!!!!");
+            _gameCanvas.OnPanelWin();
         }
     }
 
     private void UpdateButtons(InteractionInformation interactionInfo)
     {
+        
         if (_alarm.Sequencing[_sequenceElements].name == interactionInfo.name)
         {
             _sequenceElements++;

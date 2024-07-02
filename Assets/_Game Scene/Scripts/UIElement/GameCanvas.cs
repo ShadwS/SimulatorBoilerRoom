@@ -22,12 +22,15 @@ public class GameCanvas : MonoBehaviour
     //5-Interaction
     //6-FClick
     //7-Aim
+    //8-Win
     [SerializeField] private TMP_Text _objectText;
     [SerializeField] private TMP_Text _timerText;
     [SerializeField] private TMP_Text _objectNameText;
     [SerializeField] private TMP_Text _descriptionText;
+    [SerializeField] private TMP_Text _timeText;
     [SerializeField] private Image _imageObject;
     private float _timer;
+    private Complexity _complexitySelect;
 
     private void Start()
     {
@@ -45,10 +48,11 @@ public class GameCanvas : MonoBehaviour
         {
             if (difficulty.ComplexityGame == Settings.Instance.Complexity)
             {
-                _timer = difficulty.Time;
-                _panels[4].SetActive(difficulty.DisplayingTask);
+                _complexitySelect = difficulty;
             }
         }
+        _timer = _complexitySelect.Time;
+        _panels[4].SetActive(_complexitySelect.DisplayingTask);
         OnTimer();
     }
 
@@ -83,6 +87,27 @@ public class GameCanvas : MonoBehaviour
         BackGame?.Invoke();
     }
 
+    public void OnPanelLoos()
+    {
+        _panels[0].SetActive(false);
+        _panels[2].SetActive(true);
+        SynchronizationOptions?.Invoke();
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        Time.timeScale = 0;
+    }
+
+    public void OnPanelWin()
+    {
+        _panels[0].SetActive(false);
+        _panels[8].SetActive(true);
+        SynchronizationOptions?.Invoke();
+        _timeText.text = string.Format("Ваше время прохождения - " + "{0:0}" + "с", _complexitySelect.Time - _timer);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        Time.timeScale = 0;
+    }
+
     public void ButttonOptions(bool value) => _panels[3].SetActive(value);
 
     private IEnumerator TimerGame()
@@ -93,12 +118,7 @@ public class GameCanvas : MonoBehaviour
             _timer -= 0.1f;
             _timerText.text = string.Format("{0:0}", _timer);
         }
-        _panels[0].SetActive(false);
-        _panels[2].SetActive(true);
-        SynchronizationOptions?.Invoke();
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        Time.timeScale = 0;
+        OnPanelLoos();
     }
 
     private void TextUpdateOn(string text, bool value)
