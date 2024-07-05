@@ -6,4 +6,39 @@ public class HightTemperatureBoiler : Alarm
     //Проверить датчики температуры котла и котлового контура
     //Проверить аварийный термостат котла на работоспособность и соответсвие уставок
     //private string _nameAlarm = "Высокая температура бойлера";
+
+    protected override void Start()
+    {
+        base.Start();
+    }
+
+    protected override void OnDestroy()
+    {
+        base.OnDestroy();
+    }
+
+    protected override void UpdateInteractionSelect(InteractionInformation interactionSelect)
+    {
+        base.UpdateInteractionSelect(interactionSelect);
+    }
+
+    protected override void CorrectObject()
+    {
+        base.CorrectObject();
+    }
+
+    protected override void ButtonClick(int nomerButton)
+    {
+        base.ButtonClick(nomerButton);
+    }
+
+    protected override void ViktoryChek()
+    {
+        base.ViktoryChek();
+    }
+
+    protected override void ButtonActionClick()
+    {
+        base.ButtonActionClick();
+    }
 }
