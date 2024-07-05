@@ -9,8 +9,8 @@ public class GameCanvas : MonoBehaviour
 {
     public static event Action SynchronizationOptions;
     public static event Action<bool> OnÑontrol;
-    public event Action<InteractionInformation> UpdateInteractionInformation;
-    public event Action BackGame;
+    public static event Action<InteractionInformation> UpdateInteractionInformation;
+    public static event Action BackGame;
 
     [SerializeField] private GameObject[] _panels;
     [SerializeField] private Complexity[] _difficultys;
@@ -28,6 +28,7 @@ public class GameCanvas : MonoBehaviour
     [SerializeField] private TMP_Text _objectNameText;
     [SerializeField] private TMP_Text _descriptionText;
     [SerializeField] private TMP_Text _timeText;
+    [SerializeField] private TMP_Text _explanationText;
     [SerializeField] private Image _imageObject;
     private float _timer;
     private Complexity _complexitySelect;
@@ -87,10 +88,11 @@ public class GameCanvas : MonoBehaviour
         BackGame?.Invoke();
     }
 
-    public void OnPanelLoos()
+    public void OnPanelLoos(string textExplanation)
     {
         _panels[0].SetActive(false);
         _panels[2].SetActive(true);
+        _explanationText.text = textExplanation;
         SynchronizationOptions?.Invoke();
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -118,7 +120,7 @@ public class GameCanvas : MonoBehaviour
             _timer -= 0.1f;
             _timerText.text = string.Format("{0:0}", _timer);
         }
-        OnPanelLoos();
+        OnPanelLoos("Âðåìÿ âûøëî");
     }
 
     private void TextUpdateOn(string text, bool value)

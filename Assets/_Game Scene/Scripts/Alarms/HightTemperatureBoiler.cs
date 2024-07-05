@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class HightTemperatureBoiler : Alarm
 {
     //Проверить работоспособность циркуляционного насоса
