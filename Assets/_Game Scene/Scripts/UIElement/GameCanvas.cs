@@ -23,6 +23,7 @@ public class GameCanvas : MonoBehaviour
     //6-FClick
     //7-Aim
     //8-Win
+    //9-Timer
     [SerializeField] private TMP_Text _objectText;
     [SerializeField] private TMP_Text _timerText;
     [SerializeField] private TMP_Text _objectNameText;
@@ -40,6 +41,7 @@ public class GameCanvas : MonoBehaviour
         {
             _panels[i].SetActive(false);
         }
+        _panels[9].SetActive(true);
         _panels[7].SetActive(true);
         DisplayObject.OnNameObject += TextUpdateOn;
         PlayerRayCast.OnInteractionObject += InteractionObject;
@@ -52,9 +54,16 @@ public class GameCanvas : MonoBehaviour
                 _complexitySelect = difficulty;
             }
         }
-        _timer = _complexitySelect.Time;
+        if (_complexitySelect.Time != 0) 
+        {
+            _timer = _complexitySelect.Time;
+            OnTimer();
+        }
+        else
+        {
+            _panels[9].SetActive(false);
+        }
         _panels[4].SetActive(_complexitySelect.DisplayingTask);
-        OnTimer();
     }
 
     private void OnDestroy()
@@ -104,7 +113,14 @@ public class GameCanvas : MonoBehaviour
         _panels[0].SetActive(false);
         _panels[8].SetActive(true);
         SynchronizationOptions?.Invoke();
-        _timeText.text = string.Format("Ваше время прохождения - " + "{0:0}" + "с", _complexitySelect.Time - _timer);
+        if (_panels[9].activeSelf ==  false)
+        {
+            _timeText.gameObject.SetActive(false);
+        }
+        else
+        {
+            _timeText.text = string.Format("Ваше время прохождения - " + "{0:0}" + "с", _complexitySelect.Time - _timer);
+        } 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         Time.timeScale = 0;

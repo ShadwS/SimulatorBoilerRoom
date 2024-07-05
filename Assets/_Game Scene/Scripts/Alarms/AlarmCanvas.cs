@@ -40,14 +40,8 @@ public class AlarmCanvas : MonoBehaviour
 
     public void Defeat(int numberOfIncorrectAnswers)
     {
-        if(numberOfIncorrectAnswers != 0)
-        {
-            _gameCanvas.OnPanelLoos($"Вы не правильно ответили на {numberOfIncorrectAnswers} вопросов");
-        }
-        else
-        {
-            _gameCanvas.OnPanelLoos($"Вы сбились с последовательности");
-        }
+        _gameCanvas.OnPanelLoos(numberOfIncorrectAnswers != 0 ? $"Вы не правильно ответили на {numberOfIncorrectAnswers} вопросов" : 
+            $"Вы сбились с последовательности");
     }
 
     private void UpdateButtons(InteractionInformation interactionInfo)

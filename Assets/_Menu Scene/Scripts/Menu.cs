@@ -1,29 +1,50 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
-    [SerializeField] private Button[] _buttons;
+    [SerializeField] private Button[] _buttonsLevel;
+    [SerializeField] private Button[] _buttonsAlarm;
     [SerializeField] private GameObject[] _panels;
+    [SerializeField] private GameObject[] _alarms;
     //0-StartPanel
     //1-LevelsPanel
     //2-PanelComplexsity
     //3-ResultPanel
     //4-OptionsPanel
     //5-QuitPanel
+    //6-AlarmPanel 
 
     private void Start()
     {
-        for (int i = 1; i < _buttons.Length; i++)
+        for (int i = 1; i < _buttonsLevel.Length; i++)
         {
-            _buttons[i].interactable = i < Settings.Instance.Level ? true : false;
+            _buttonsLevel[i].interactable = i < Settings.Instance.Level ? true : false;
+        }
+        for (int i = 0;  i < _buttonsAlarm.Length; i++)
+        {
+            if (i < _alarms.Length)
+            {
+                _buttonsAlarm[i].GetComponentInChildren<TMP_Text>().text = _alarms[i].name;
+            }
+            else
+            {
+                _buttonsAlarm[i].gameObject.SetActive(false);
+            }
         }
         _panels[0].SetActive(true);
         for (int i = 1; i < _panels.Length; i++)
         {
             _panels[i].SetActive(false);
         }  
+    }
+
+    public void ButtonAlarm(int index)
+    {
+        Settings.Instance.AlarmSelected = _alarms[index];
+        StartGame();
     }
 
     public void ButtonLevels()
@@ -41,8 +62,16 @@ public class Menu : MonoBehaviour
     public void ButtonComplexsity(int value)
     { 
         Settings.Instance.Complexity = (ComplexityGame)value;
-        SceneManager.LoadScene("Loading Game");
-        _panels[0].SetActive(false);
+        if (value == ((int)ComplexityGame.Difficult))
+        {
+            Settings.Instance.AlarmSelected = null;
+            StartGame();
+        }
+        else
+        {
+            _panels[6].SetActive(true);
+        }
+        
     }
 
     public void ButtonBeakMenu()
@@ -63,4 +92,10 @@ public class Menu : MonoBehaviour
     public void ButtonQuit() => _panels[5].SetActive(true);
 
     public void ButtonYes() => Application.Quit();
+
+    private void StartGame()
+    {
+        SceneManager.LoadScene("Loading Game");
+        _panels[0].SetActive(false);
+    }
 }

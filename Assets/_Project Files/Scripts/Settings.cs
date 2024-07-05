@@ -9,12 +9,16 @@ public class Settings : MonoBehaviour
     public int Level { get => _level; set => _level = value; }
     public ComplexityGame Complexity { get => _currentComplexity; set => _currentComplexity = value;}
     public float Sensitivity { get => _sensitivity; set{ UpdateSensitivity?.Invoke(value); _sensitivity = value; } }
+    public GameObject AlarmSelected { get => _alarmSelected; set => _alarmSelected = value; }
+
 
     [SerializeField] private ComplexityGame _currentComplexity;
 
     private int _level;
 
     [SerializeField, Range(1, 500)] private float _sensitivity;
+    
+    private GameObject _alarmSelected;
 
     private void Awake()
     {

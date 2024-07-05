@@ -45,17 +45,7 @@ public abstract class Alarm : MonoBehaviour
         CorrectObject();
     }
 
-    protected virtual void CorrectObject()
-    {
-        if (_interactionInfoSelect.name == _sequencing[_subsequenceInteraction].name)
-        {
-            _correctObject = true;
-        }
-        else
-        {
-            _correctObject = false;
-        }
-    }
+    protected virtual void CorrectObject() => _correctObject = _interactionInfoSelect.name == _sequencing[_subsequenceInteraction].name ? true : false;
 
     protected virtual void ButtonClick(int nomerButton)
     {
