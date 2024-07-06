@@ -2647,7 +2647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 0}
+  _interactionInfoSelection: {fileID: 11400000, guid: 9cd34748c7ebdd241872afc2b256d210, type: 2}
   _nameObject: "\u0441\u0447\u0435\u0442\u0447\u0438\u043A \u0433\u0430\u0437\u0430"
   _descriptionObject: 
   _imageObject: {fileID: 0}
@@ -6573,7 +6573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 0}
+  _interactionInfoSelection: {fileID: 11400000, guid: 8911365d6ab4cc24b8a2ff2ce6a1f99a, type: 2}
   _nameObject: "\u0433\u0430\u0437\u043E\u0432\u0430\u044F \u0442\u0440\u0443\u0431\u0430"
   _descriptionObject: 
   _imageObject: {fileID: 0}

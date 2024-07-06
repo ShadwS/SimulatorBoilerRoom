@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: debc2fb26aa2f1f40a0136950f28986d, type: 3}
-  m_Name: "\u0446\u0438\u0440\u043A\u0443\u043B\u044F\u0440\u043D\u044B\u0439 \u043D\u0430\u0441\u043E\u0441"
+  m_Name: "\u0413\u0420\u041F\u0429"
   m_EditorClassIdentifier: 
-  _nameButtons: []
+  _nameButtons:
+  - "\u041E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C "
   _correctButtonNumber: 0
-  _objectState: []
+  _objectState:
+  - "\u0412\u0441\u0435 \u0432 \u043D\u043E\u0440\u043C\u0435"
   _actionObject: 
   _changestate: 
+  _objectNotInfluencing: 1

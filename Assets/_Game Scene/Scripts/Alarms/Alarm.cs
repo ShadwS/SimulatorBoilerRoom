@@ -57,6 +57,7 @@ public abstract class Alarm : MonoBehaviour
                 CehekingCorrectButton(nomerButton);
                 break;
             case false:
+                if (_interactionInfoSelect.ObjectNotInfluencing) { return; }
                 _alarmCanvas.Defeat(0);
                 break;
 
