@@ -1,7 +1,10 @@
+using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public event Action<bool> OnWalking;
+
     [SerializeField] private Player _player;
     [SerializeField] private int _speed;
 
@@ -22,13 +25,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        if (!_movement) return;
+        if (!_movement) { return; };
         Gravity();
-
+     
         Vector3 move = _player.gameObject.transform.forward * Input.GetAxis("Vertical") +
             _player.gameObject.transform.right * Input.GetAxis("Horizontal");
         move = move.normalized * _speed;
         _controller.Move(move * Time.deltaTime);
+        OnWalking?.Invoke(Input.GetButton("Vertical") || Input.GetButton("Horizontal") ? true : false);
     }
 
     private void Gravity()

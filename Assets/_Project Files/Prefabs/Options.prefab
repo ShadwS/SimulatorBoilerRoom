@@ -227,7 +227,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sliderSensetivity: {fileID: 6660809489523157794}
+  _sliderSounds: {fileID: 6660809490000303518}
   _valueSensa: {fileID: 6660809489749695888}
+  _valueVolume: {fileID: 6660809490695939313}
 --- !u!1 &6660809488946954044
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,12 +901,24 @@ MonoBehaviour:
   m_HandleRect: {fileID: 6660809489184350232}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6660809488795418257}
+        m_TargetAssemblyTypeName: OptionsControl, Assembly-CSharp
+        m_MethodName: SliderSounds
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6660809490087594678
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,7 +931,7 @@ GameObject:
   - component: {fileID: 6660809490087594675}
   - component: {fileID: 6660809490087594672}
   m_Layer: 5
-  m_Name: Pays
+  m_Name: Options
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1377,7 +1391,7 @@ GameObject:
   - component: {fileID: 6660809490253878022}
   - component: {fileID: 6660809490253878023}
   m_Layer: 5
-  m_Name: PanelSliders
+  m_Name: PanelSlidersButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1759,9 +1773,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: ButtonBeakMenu
-        m_Mode: 1
+        m_TargetAssemblyTypeName: GameCanvas, Assembly-CSharp
+        m_MethodName: ButttonOptions
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1962,4 +1976,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 500
+  m_Text: 10

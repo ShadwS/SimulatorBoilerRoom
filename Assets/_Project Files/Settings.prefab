@@ -46,3 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentComplexity: 0
   _sensitivity: 250
+  _volumeSounds: 50

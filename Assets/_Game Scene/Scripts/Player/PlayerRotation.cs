@@ -15,14 +15,14 @@ public class PlayerRotation : MonoBehaviour
     private void Start()
     {
         _sensetivity = Settings.Instance.Sensitivity;
-        Settings.UpdateSensitivity += SensetivityUpdate;
+        Settings.Instance.UpdateSensitivity += SensetivityUpdate;
         GameCanvas.OnÑontrol += CameraRotationProhibition;
     }
 
     private void OnDestroy() 
     {
         GameCanvas.OnÑontrol += CameraRotationProhibition;
-        Settings.UpdateSensitivity -= SensetivityUpdate;
+        Settings.Instance.UpdateSensitivity -= SensetivityUpdate;
     }
     
     private void Update()
@@ -43,5 +43,5 @@ public class PlayerRotation : MonoBehaviour
 
     private void CameraRotationProhibition(bool value) => _rotation = value;
 
-    private void SensetivityUpdate(float value) => _sensetivity = Settings.Instance.Sensitivity;
+    private void SensetivityUpdate(float value) => _sensetivity = value;
 }
