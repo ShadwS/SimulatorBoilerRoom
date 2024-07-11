@@ -2,6 +2,8 @@ using UnityEngine;
 
 public abstract class Alarm : MonoBehaviour
 {
+    public string Name { get => _name; }
+
     [SerializeField] private string _name;
     [SerializeField] private string[] _tasks;
     [SerializeField] private InteractionInformation[] _sequencing;

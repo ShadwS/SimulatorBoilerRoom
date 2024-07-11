@@ -27,7 +27,7 @@ public class Menu : MonoBehaviour
         {
             if (i < _alarms.Length)
             {
-                _buttonsAlarm[i].GetComponentInChildren<TMP_Text>().text = _alarms[i].name;
+                _buttonsAlarm[i].GetComponentInChildren<TMP_Text>().text = _alarms[i].GetComponent<Alarm>().Name;
             }
             else
             {
