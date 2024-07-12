@@ -16,13 +16,13 @@ public class Settings : MonoBehaviour
 
     [SerializeField] private ComplexityGame _currentComplexity;
 
-    private int _level;
-
     [SerializeField, Range(1, 500)] private float _sensitivity;
 
     [SerializeField, Range(10, 100)] private float _volumeSounds;
     
     private GameObject _alarmSelected;
+
+    private int _level;
 
     private void Awake()
     {
