@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Settings : MonoBehaviour
@@ -12,7 +13,9 @@ public class Settings : MonoBehaviour
     public float Sensitivity { get => _sensitivity; set { UpdateSensitivity?.Invoke(value); _sensitivity = value; } }
     public float VolumeSounds { get => _volumeSounds; set { UpdateVolume?.Invoke(value); _volumeSounds = value; } }
     public GameObject AlarmSelected { get => _alarmSelected; set => _alarmSelected = value; }
+    public List<Result> Results { get {  return _results; } }
 
+    private List<Result> _results = new List<Result>();
 
     [SerializeField] private ComplexityGame _currentComplexity;
 
@@ -37,4 +40,15 @@ public class Settings : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
     }
+
+    //private void SavedGame()
+    //{
+    //    if(_results == null) { return; }
+    //    int index = _level - 1;
+    //    PlayerPrefs.SetInt("Level", _results[index].Level);
+    //    PlayerPrefs.SetInt("Point", _results[index].Point);
+    //    PlayerPrefs.SetInt("Complexity", (int)_results[index].Complexity);
+    //    PlayerPrefs.SetString("NameAlarm", _results[index].AlarmName);
+    //    PlayerPrefs.SetFloat("TimePassage", _results[index].PassageTime);
+    //}
 }

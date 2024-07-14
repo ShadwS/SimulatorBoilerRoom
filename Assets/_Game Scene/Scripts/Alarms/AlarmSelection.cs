@@ -10,7 +10,9 @@ public class AlarmSelection : MonoBehaviour
     {
         if(Settings.Instance.AlarmSelected == null)
         {
-            Instantiate(_alarms[Random.Range(0, _alarms.Length)]);
+            //int random = Random.Range(0, _alarms.Length);
+            Settings.Instance.AlarmSelected = _alarms[/*random*/0];
+            Instantiate(_alarms[/*random*/0]);
         }
         else
         {

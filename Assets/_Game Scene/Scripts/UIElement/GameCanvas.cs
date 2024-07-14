@@ -11,7 +11,7 @@ public class GameCanvas : MonoBehaviour
     public static event Action<bool> OnСontrol;
     public static event Action<InteractionInformation> UpdateInteractionInformation;
     public static event Action BackGame;
-    public static event Action<float, float, int, ComplexityGame> OnWin;
+    public event Action<float, int, ComplexityGame, string> OnWin;
 
     [SerializeField] private GameObject[] _panels;
     [SerializeField] private Complexity[] _difficultys;
@@ -114,16 +114,15 @@ public class GameCanvas : MonoBehaviour
         _panels[0].SetActive(false);
         _panels[8].SetActive(true);
         SynchronizationOptions?.Invoke();
+        float time = _complexitySelect.Time - _timer;
+        OnWin?.Invoke(time, 10, _complexitySelect.ComplexityGame,Settings.Instance.AlarmSelected.name);
         if (_panels[9].activeSelf ==  false)
         {
             _timeText.gameObject.SetActive(false);
-            OnWin?.Invoke(0,0,Settings.Instance.Level,_complexitySelect.ComplexityGame);
         }
         else
         {
-            float time = _complexitySelect.Time - _timer;
             _timeText.text = string.Format("Ваше время прохождения - " + "{0:0}" + "с", time);
-            OnWin?.Invoke(time,0,Settings.Instance.Level,_complexitySelect.ComplexityGame);
         }
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
