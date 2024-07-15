@@ -2700,7 +2700,6 @@ GameObject:
   - component: {fileID: 697239343}
   - component: {fileID: 697239344}
   - component: {fileID: 697239345}
-  - component: {fileID: 697239346}
   m_Layer: 5
   m_Name: GameCanvas
   m_TagString: Untagged
@@ -2885,18 +2884,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameCanvas: {fileID: 697239342}
---- !u!114 &697239346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697239336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a31286453f538da49bbc45a150ed55d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &704256946 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8021001004253913084, guid: c554a0de6a4b1dc44baec26c77ad5e58, type: 3}
@@ -6784,7 +6771,7 @@ PrefabInstance:
     - target: {fileID: 869631475, guid: bd6d94f695c4ac44db9acd72efe56e59, type: 3}
       propertyPath: _interactionInfoSelection
       value: 
-      objectReference: {fileID: 11400000, guid: a0e52514ed5337f4ab7fb38ce7d70409, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 870847480, guid: bd6d94f695c4ac44db9acd72efe56e59, type: 3}
       propertyPath: _interactionInfoSelection
       value: 

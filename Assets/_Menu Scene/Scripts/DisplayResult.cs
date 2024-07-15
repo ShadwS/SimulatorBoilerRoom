@@ -1,33 +1,41 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class DisplayResult : MonoBehaviour
 {
-    public float Time { get => _time; }
-    public int point { get => _point; }
     public int LevelResult {  get => _levelResult; }
+    public List<TextResult> PanelComplexity { get => _panelComplexity; }
 
     [SerializeField] private ResultControl _control;
+
+    [Header("Левел панели")]
     [SerializeField] private int _levelResult;
+
+    [Header("тексты")]
     [SerializeField] private string[] _text;
-    [SerializeField] private TMP_Text[] _textsChangResult;
-    //0- TimeText
-    //1- PointText
-    //2- ComplexityText
-    private int _complexityTextIndex = 0;
-    private float _time = 120;
-    private int _point = 0;
+    [SerializeField] private TMP_Text _complexityText;
 
-    private void Start() => UpdateTextComplexity();
+    [Header("Список панелей сложности")]
+    [SerializeField] private List<TextResult> _panelComplexity;
 
-    public void UpdateText(float time, int points)
+    private int _complexityIndex = 0;
+
+    public void UpdateText(float time, int point, ComplexityGame complexity)
     {
-        _time = time;
-        _point = points;
-        if (_time == 0) { _textsChangResult[0].text = "-"; }
-        else{ _textsChangResult[0].text = string.Format("{0:0}" + ".сек", _time); }
-        if(_point == 0) { _textsChangResult[1].text = "-"; }
-        else { _textsChangResult[1].text = $"{_point} / 100%"; }     
+        int index = (int)complexity;
+        _panelComplexity[index].TimeResult = time;
+        _panelComplexity[index].PointResult = point;
+        if (complexity != ComplexityGame.Easy)
+        {
+            _panelComplexity[index].Time.text = string.Format("{0:0}" + ".сек", time);
+            _panelComplexity[index].Point.text = $"{point}/100";
+        }
+        else if(complexity == ComplexityGame.Easy)
+        {
+            _panelComplexity[index].Time.text = "-";
+            _panelComplexity[index].Point.text = $"{point}/100";
+        }
     }
 
     public void ButtonLeftOrRight(string Direction)
@@ -36,22 +44,24 @@ public class DisplayResult : MonoBehaviour
         switch (Direction)
         {
             case "Right":
-                _complexityTextIndex++;
-                _control.UpdateResultComplexity((ComplexityGame)_complexityTextIndex, _levelResult);
-                UpdateTextComplexity();
+                _complexityIndex++;
+                UpdateComplexity();
                 break;
             case "Left":
-                _complexityTextIndex--;
-                _control.UpdateResultComplexity((ComplexityGame)_complexityTextIndex, _levelResult);
-                UpdateTextComplexity();
+                _complexityIndex--;               
+                UpdateComplexity();
                 break;
         }  
     }
 
-    private void UpdateTextComplexity()
+    private void UpdateComplexity()
     {
-        if (_complexityTextIndex >= _text.Length - 1) { _complexityTextIndex = _text.Length - 1; }
-        else if (_complexityTextIndex <= 0) {  _complexityTextIndex = 0; }
-        _textsChangResult[2].text = _text[_complexityTextIndex];
+        if (_complexityIndex >= _text.Length) { _complexityIndex = _text.Length - 1; }
+        else if (_complexityIndex <= 0) {  _complexityIndex = 0; }
+        _complexityText.text = _text[_complexityIndex];
+        for (int i = 0; i < _panelComplexity.Count; i++)
+        {
+            _panelComplexity[i].gameObject.SetActive(_complexityIndex == i? true : false);
+        }
     }
 }

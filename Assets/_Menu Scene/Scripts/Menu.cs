@@ -7,6 +7,7 @@ public class Menu : MonoBehaviour
 {
     [SerializeField] private Button[] _buttonsLevel;
     [SerializeField] private Button[] _buttonsAlarm;
+    [SerializeField] private Button[] _buttonsComplexity;
     [SerializeField] private GameObject[] _panels;
     [SerializeField] private GameObject[] _alarms;
     //0-StartPanel
@@ -82,6 +83,8 @@ public class Menu : MonoBehaviour
             _panels[i].SetActive(false);
         }
     }
+
+    public void BeakAlarms() => _panels[6].SetActive(false);
 
     public void ButtonOptions() => _panels[4].SetActive(true);
 

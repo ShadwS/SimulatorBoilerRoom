@@ -8,16 +8,14 @@ public class ResultUpdate : MonoBehaviour
 
     private void OnDestroy() => _gameCanvas.OnWin -= UpdateResult;
 
-    private void UpdateResult(float time, int point, ComplexityGame complexity, string alarmName)
+    private void UpdateResult(float time, int point, ComplexityGame complexity)
     {
         Settings.Instance.Results.Add(new Result 
         {
-            AlarmName = alarmName, 
             Complexity = complexity, 
             PassageTime = time,
             Point = point, 
             Level = Settings.Instance.Level, 
-            Paseed = true 
         });
     }
 }

@@ -26,13 +26,13 @@ public class PlayerRayCast : MonoBehaviour
     {
         if(!_raycasting) return;
         _descriptionObject = RayCast();
-        if (_descriptionObject != null)
-        {
+        if (_descriptionObject != null && Vector3.Distance(gameObject.transform.position, _descriptionObject.transform.position) < _distanceObjectDescription)
+        {       
             OnPanel?.Invoke(true);
-            if (Input.GetKey(KeyCode.F) && Vector3.Distance(gameObject.transform.position,_descriptionObject.transform.position) < _distanceObjectDescription)
+            if (Input.GetKey(KeyCode.F))
             {
                 OnInteractionObject?.Invoke(_descriptionObject.GetNameObject(), _descriptionObject.GetDescription(),
-                    _descriptionObject.GetImage(), _descriptionObject.GetInteractionInfoSelection());
+                        _descriptionObject.GetImage(), _descriptionObject.GetInteractionInfoSelection());
             }
         }
         else
