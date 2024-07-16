@@ -32,6 +32,11 @@ public class HightTemperatureBoiler : Alarm
         base.ButtonClick(nomerButton);
     }
 
+    protected override void InteractionInfoTextColorUpdate(bool value)
+    {
+        base.InteractionInfoTextColorUpdate(value);
+    }
+
     protected override void ViktoryChek()
     {
         base.ViktoryChek();

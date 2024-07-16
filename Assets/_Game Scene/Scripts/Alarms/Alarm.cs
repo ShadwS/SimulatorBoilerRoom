@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public abstract class Alarm : MonoBehaviour
@@ -13,6 +14,7 @@ public abstract class Alarm : MonoBehaviour
     private bool _correctObject = false;
     private bool _buttonActionOn = false;
     private int _checkClicks = 0;
+    private int _badButtons = 0;
     private AlarmCanvas _alarmCanvas;
 
     protected virtual void Start()
@@ -66,6 +68,8 @@ public abstract class Alarm : MonoBehaviour
         }
     }
 
+    protected virtual void InteractionInfoTextColorUpdate(bool value) => _alarmCanvas.Text[2].GetComponent<TMP_Text>().color = value ? Color.green : Color.red;
+
     protected virtual void ButtonActionClick()
     {
         _buttonActionOn = true;
@@ -80,25 +84,20 @@ public abstract class Alarm : MonoBehaviour
         _alarmCanvas.Text[2].gameObject.SetActive(false);
         if (_subsequenceInteraction != _rightAnswers.Length) { return; }
         int numberOfCorrectAnswers = 0;
-        int numberOfIncorrectAnswers = 0;
         for (int i = 0; i < _rightAnswers.Length; i++)
         {
             if (_rightAnswers[i])
             {
                 numberOfCorrectAnswers++;
             }
-            else
-            {
-                numberOfIncorrectAnswers++;
-            }
         }
-        if (numberOfCorrectAnswers == _rightAnswers.Length && _buttonActionOn) 
+        if (numberOfCorrectAnswers == _rightAnswers.Length && _buttonActionOn && _badButtons == 0) 
         {
             _alarmCanvas.Victori();
         }
         else
         {
-            _alarmCanvas.Defeat(numberOfIncorrectAnswers);
+            _alarmCanvas.Defeat(_badButtons);
         }
     }
 
@@ -111,6 +110,7 @@ public abstract class Alarm : MonoBehaviour
                 _alarmCanvas.Text[3].gameObject.SetActive(true);
                 _alarmCanvas.Text[3].text = _interactionInfoSelect.ActionObject;
             }
+            InteractionInfoTextColorUpdate(true);
             _checkClicks++;
             _alarmCanvas.Text[2].text = _interactionInfoSelect.ObjectState[nomerButton];
             if (_checkClicks == 1)
@@ -122,6 +122,8 @@ public abstract class Alarm : MonoBehaviour
         else
         {
             _checkClicks++;
+            _badButtons++;
+            InteractionInfoTextColorUpdate(false);
             if (_checkClicks == 1)
             {
                 _rightAnswers[_subsequenceInteraction] = false;

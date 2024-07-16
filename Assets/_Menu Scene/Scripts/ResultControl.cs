@@ -55,8 +55,8 @@ public class ResultControl : MonoBehaviour
 
     private void CheckingValuesResult(int i)
     {
-        if (_settings.Results[i].PassageTime <= _displayResults[_indexResult].PanelComplexity[(int)_settings.Results[i].Complexity].TimeResult
-            || _settings.Results[i].Point >= _displayResults[_indexResult].PanelComplexity[(int)_settings.Results[i].Complexity].PointResult)
+        if (_settings.Results[i].PassageTime < _displayResults[_indexResult].PanelComplexity[(int)_settings.Results[i].Complexity].TimeResult
+            || _settings.Results[i].Point > _displayResults[_indexResult].PanelComplexity[(int)_settings.Results[i].Complexity].PointResult)
         {
             _displayResults[_indexResult].UpdateText(_settings.Results[i].PassageTime, _settings.Results[i].Point, _settings.Results[i].Complexity);
         }
