@@ -24,15 +24,15 @@ public abstract class Alarm : MonoBehaviour
         GameCanvas.BackGame += ViktoryChek;
         _alarmCanvas.OnButtonClick += ButtonClick;
         _alarmCanvas.OnButtonClickActionObject += ButtonActionClick;
-        _alarmCanvas.Text[0].text = _name;
+        _alarmCanvas.Texts[0].text = _name;
         Task();
         _rightAnswers = new bool[_tasks.Length];
         for (int i = 0; i < _rightAnswers.Length; i++)
         {
             _rightAnswers[i] = false;
         }
-        _alarmCanvas.Text[3].gameObject.SetActive(false);
-        _alarmCanvas.Text[2].gameObject.SetActive(false);
+        _alarmCanvas.Texts[2].gameObject.SetActive(false);
+        _alarmCanvas.Texts[1].gameObject.SetActive(false);
     }
 
     protected virtual void OnDestroy()
@@ -53,8 +53,8 @@ public abstract class Alarm : MonoBehaviour
 
     protected virtual void ButtonClick(int nomerButton)
     {
-        _alarmCanvas.Text[2].gameObject.SetActive(true);
-        _alarmCanvas.Text[2].text = _interactionInfoSelect.ObjectState[nomerButton];
+        _alarmCanvas.Texts[1].gameObject.SetActive(true);
+        _alarmCanvas.Texts[1].text = _interactionInfoSelect.ObjectState[nomerButton];
         switch (_correctObject)
         {
             case true:
@@ -68,20 +68,20 @@ public abstract class Alarm : MonoBehaviour
         }
     }
 
-    protected virtual void InteractionInfoTextColorUpdate(bool value) => _alarmCanvas.Text[2].GetComponent<TMP_Text>().color = value ? Color.green : Color.red;
+    protected virtual void InteractionInfoTextColorUpdate(bool value) => _alarmCanvas.Texts[1].GetComponent<TMP_Text>().color = value ? Color.green : Color.red;
 
     protected virtual void ButtonActionClick()
     {
         _buttonActionOn = true;
-        _alarmCanvas.Text[3].gameObject.SetActive(false);
-        _alarmCanvas.Text[2].text = _interactionInfoSelect.Changestate;
+        _alarmCanvas.Texts[2].gameObject.SetActive(false);
+        _alarmCanvas.Texts[1].text = _interactionInfoSelect.Changestate;
     }
 
     protected virtual void ViktoryChek()
     {
         _checkClicks = 0;
-        _alarmCanvas.Text[3].gameObject.SetActive(false);
-        _alarmCanvas.Text[2].gameObject.SetActive(false);
+        _alarmCanvas.Texts[2].gameObject.SetActive(false);
+        _alarmCanvas.Texts[1].gameObject.SetActive(false);
         if (_subsequenceInteraction != _rightAnswers.Length) { return; }
         int numberOfCorrectAnswers = 0;
         for (int i = 0; i < _rightAnswers.Length; i++)
@@ -101,22 +101,28 @@ public abstract class Alarm : MonoBehaviour
         }
     }
 
-    private void CehekingCorrectButton(int nomerButton)
+    protected virtual void TaskTextColorUpdate(int subsequenceInteraction, bool interactionSelect)
+    {
+        _alarmCanvas.TextsTask[subsequenceInteraction - 1].GetComponent<TMP_Text>().color = interactionSelect ? Color.green : Color.red;
+    }
+
+    protected virtual void CehekingCorrectButton(int nomerButton)
     {
         if (nomerButton == _interactionInfoSelect.CorrectButtonNumber)
         {
             if (_interactionInfoSelect.ActionObject != null)
             {
-                _alarmCanvas.Text[3].gameObject.SetActive(true);
-                _alarmCanvas.Text[3].text = _interactionInfoSelect.ActionObject;
+                _alarmCanvas.Texts[2].gameObject.SetActive(true);
+                _alarmCanvas.Texts[2].text = _interactionInfoSelect.ActionObject;
             }
             InteractionInfoTextColorUpdate(true);
             _checkClicks++;
-            _alarmCanvas.Text[2].text = _interactionInfoSelect.ObjectState[nomerButton];
+            _alarmCanvas.Texts[1].text = _interactionInfoSelect.ObjectState[nomerButton];
             if (_checkClicks == 1)
             {
                 _rightAnswers[_subsequenceInteraction] = true;
                 _subsequenceInteraction++;
+                TaskTextColorUpdate(_subsequenceInteraction, true);
             }
         }
         else
@@ -128,6 +134,7 @@ public abstract class Alarm : MonoBehaviour
             {
                 _rightAnswers[_subsequenceInteraction] = false;
                 _subsequenceInteraction++;
+                TaskTextColorUpdate(_subsequenceInteraction, false);
             }
         }
     }
@@ -135,9 +142,24 @@ public abstract class Alarm : MonoBehaviour
     private void Task()
     {
         int index = 1;
-        foreach (var task in _tasks)
+        if(_alarmCanvas.TextsTask.Count != _tasks.Length)
         {
-            _alarmCanvas.Text[1].text += $"{index}. {task}\n";
+            int max = Mathf.Max(_alarmCanvas.TextsTask.Count, _tasks.Length);
+            if(max > _tasks.Length)
+            {
+                for(int i = _tasks.Length + 1; i < _alarmCanvas.TextsTask.Count; i++)
+                {
+                    _alarmCanvas.TextsTask[i].gameObject.SetActive(false);
+                }
+            }
+            else
+            {
+                Debug.LogWarning($"Масив действий превышает масив текстов, и в списке действий не будут отоброжены действия с {_alarmCanvas.TextsTask.Count}");
+            }
+        }
+        for (int i = 0; i < _tasks.Length; i++)
+        {
+            _alarmCanvas.TextsTask[i].text += $"{index}. {_tasks[i]}\n";
             index++;
         }
     }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,11 +14,11 @@ public class AlarmCanvas : MonoBehaviour
     [SerializeField] private AlarmSelection _alarmSelection;
     [SerializeField] private Button[] _buttons;
     [SerializeField] private TMP_Text[] _textsButtons;
-    [SerializeField] public TMP_Text[] Text;
+    [SerializeField] public TMP_Text[] Texts;
     //0- alarmText
-    //1- alarmTask
-    //2- objectState
-    //3- objectAction
+    //1- objectState
+    //2- objectAction
+    [SerializeField] public List<TMP_Text> TextsTask;
     private InteractionInformation _interactionInfoSelect;
     private GameCanvas _gameCanvas;
 
@@ -66,19 +67,19 @@ public class AlarmCanvas : MonoBehaviour
 
     private IEnumerator FlashingText()
     {
-        while (Text[0].alpha > 0)
+        while (Texts[0].alpha > 0)
         {
-            Text[0].alpha -= 0.1f;
+            Texts[0].alpha -= 0.1f;
             yield return new WaitForSeconds(0.1f);
         }
-        Text[0].alpha = 0;
-        while (Text[0].alpha < 1)
+        Texts[0].alpha = 0;
+        while (Texts[0].alpha < 1)
         {
-            Text[0].alpha += 0.1f;
+            Texts[0].alpha += 0.1f;
             yield return new WaitForSeconds(0.1f);
 
         }
-        Text[0].alpha = 1;
+        Texts[0].alpha = 1;
         yield return new WaitForSeconds(1);
         StartCoroutine(FlashingText());
     }

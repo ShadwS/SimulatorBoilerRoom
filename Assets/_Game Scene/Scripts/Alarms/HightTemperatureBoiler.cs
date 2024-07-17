@@ -37,6 +37,16 @@ public class HightTemperatureBoiler : Alarm
         base.InteractionInfoTextColorUpdate(value);
     }
 
+    protected override void TaskTextColorUpdate(int subsequenceInteraction, bool interactionSelect)
+    {
+        base.TaskTextColorUpdate(subsequenceInteraction, interactionSelect);
+    }
+
+    protected override void CehekingCorrectButton(int nomerButton)
+    {
+        base.CehekingCorrectButton(nomerButton);
+    }
+
     protected override void ViktoryChek()
     {
         base.ViktoryChek();

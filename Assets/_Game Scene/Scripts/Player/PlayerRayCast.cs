@@ -12,7 +12,7 @@ public class PlayerRayCast : MonoBehaviour
     protected bool _raycasting = true;
     protected Camera _camera;
     protected DescriptionObject _descriptionObject;
-    private readonly int _distanceObjectDescription = 2;
+    private readonly float _distanceObjectDescription = 1.5f;
 
     private void Start()
     {
@@ -26,7 +26,7 @@ public class PlayerRayCast : MonoBehaviour
     {
         if(!_raycasting) return;
         _descriptionObject = RayCast();
-        if (_descriptionObject != null && Vector3.Distance(gameObject.transform.position, _descriptionObject.transform.position) < _distanceObjectDescription)
+        if (_descriptionObject != null && _hitTarget.distance < _distanceObjectDescription)
         {       
             OnPanel?.Invoke(true);
             if (Input.GetKey(KeyCode.F))
