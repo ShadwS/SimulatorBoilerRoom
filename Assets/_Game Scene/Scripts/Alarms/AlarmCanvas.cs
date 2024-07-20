@@ -37,13 +37,9 @@ public class AlarmCanvas : MonoBehaviour
 
     public void ActionButtonClick() => OnButtonClickActionObject?.Invoke();
 
-    public void Victori() => _gameCanvas.OnPanelWin();
+    public void Victori(float pointAttitude) => _gameCanvas.OnPanelWin(pointAttitude);
 
-    public void Defeat(int numberOfIncorrectAnswers)
-    {
-        _gameCanvas.OnPanelLoos(numberOfIncorrectAnswers != 0 ? $"Вы не правильно ответили на {numberOfIncorrectAnswers} вопросов" : 
-            $"Вы сбились с последовательности");
-    }
+    public void Defeat(string conclusion) => _gameCanvas.OnPanelLoos(conclusion);
 
     private void UpdateButtons(InteractionInformation interactionInfo)
     {

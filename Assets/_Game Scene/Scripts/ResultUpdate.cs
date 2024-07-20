@@ -8,7 +8,7 @@ public class ResultUpdate : MonoBehaviour
 
     private void OnDestroy() => _gameCanvas.OnWin -= UpdateResult;
 
-    private void UpdateResult(float time, int point, ComplexityGame complexity)
+    private void UpdateResult(float time, float point, ComplexityGame complexity)
     {
         Settings.Instance.Results.Add(new Result 
         {

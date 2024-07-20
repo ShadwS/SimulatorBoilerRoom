@@ -1,3 +1,4 @@
+using Newtonsoft.Json.Linq;
 using TMPro;
 using UnityEngine;
 
@@ -62,7 +63,7 @@ public abstract class Alarm : MonoBehaviour
                 break;
             case false:
                 if (_interactionInfoSelect.ObjectNotInfluencing) { return; }
-                _alarmCanvas.Defeat(0);
+                _alarmCanvas.Defeat("¬ы сбились с последовательности");
                 break;
 
         }
@@ -82,8 +83,9 @@ public abstract class Alarm : MonoBehaviour
         _checkClicks = 0;
         _alarmCanvas.Texts[2].gameObject.SetActive(false);
         _alarmCanvas.Texts[1].gameObject.SetActive(false);
+        _alarmCanvas.Texts[1].GetComponent<TMP_Text>().color = Color.white;
         if (_subsequenceInteraction != _rightAnswers.Length) { return; }
-        int numberOfCorrectAnswers = 0;
+        float numberOfCorrectAnswers = 0;
         for (int i = 0; i < _rightAnswers.Length; i++)
         {
             if (_rightAnswers[i])
@@ -91,13 +93,14 @@ public abstract class Alarm : MonoBehaviour
                 numberOfCorrectAnswers++;
             }
         }
-        if (numberOfCorrectAnswers == _rightAnswers.Length && _buttonActionOn && _badButtons == 0) 
+        numberOfCorrectAnswers -= _buttonActionOn ?  0 : 1; 
+        if (_badButtons < _rightAnswers.Length) 
         {
-            _alarmCanvas.Victori();
+            _alarmCanvas.Victori(numberOfCorrectAnswers / _rightAnswers.Length * 100);
         }
-        else
+        else if(_badButtons >= _rightAnswers.Length)
         {
-            _alarmCanvas.Defeat(_badButtons);
+            _alarmCanvas.Defeat("¬ы не ответили не на один вопрос");
         }
     }
 
@@ -151,10 +154,6 @@ public abstract class Alarm : MonoBehaviour
                 {
                     _alarmCanvas.TextsTask[i].gameObject.SetActive(false);
                 }
-            }
-            else
-            {
-                Debug.LogWarning($"ћасив действий превышает масив текстов, и в списке действий не будут отоброжены действи€ с {_alarmCanvas.TextsTask.Count}");
             }
         }
         for (int i = 0; i < _tasks.Length; i++)

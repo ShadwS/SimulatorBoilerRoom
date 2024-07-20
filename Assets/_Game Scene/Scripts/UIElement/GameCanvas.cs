@@ -11,7 +11,7 @@ public class GameCanvas : MonoBehaviour
     public static event Action<bool> OnСontrol;
     public static event Action<InteractionInformation> UpdateInteractionInformation;
     public static event Action BackGame;
-    public event Action<float, int, ComplexityGame> OnWin;
+    public event Action<float, float, ComplexityGame> OnWin;
 
     [SerializeField] private GameObject[] _panels;
     [SerializeField] private Complexity[] _difficultys;
@@ -30,9 +30,11 @@ public class GameCanvas : MonoBehaviour
     [SerializeField] private TMP_Text _objectNameText;
     [SerializeField] private TMP_Text _descriptionText;
     [SerializeField] private TMP_Text _timeText;
+    [SerializeField] private TMP_Text _pointText;
     [SerializeField] private TMP_Text _explanationText;
     [SerializeField] private Image _imageObject;
     private float _timer;
+    private float _corectPoint;
     private Complexity _complexitySelect;
 
     private void Start()
@@ -90,6 +92,7 @@ public class GameCanvas : MonoBehaviour
     public void ButtonBackGame()
     {
         _panels[5].SetActive(false);
+        _panels[4].SetActive(true);
         _panels[7].SetActive(true);
         if (_panels[4].activeSelf) _panels[1].SetActive(true);
         OnСontrol?.Invoke(true);
@@ -109,20 +112,23 @@ public class GameCanvas : MonoBehaviour
         Time.timeScale = 0;
     }
 
-    public void OnPanelWin()
+    public void OnPanelWin(float pointAttitude)
     {
         _panels[0].SetActive(false);
         _panels[8].SetActive(true);
         SynchronizationOptions?.Invoke();
         float time = _complexitySelect.Time - _timer;
-        OnWin?.Invoke(time, 15, _complexitySelect.ComplexityGame);
+        _corectPoint = MathF.Round(pointAttitude);
+        OnWin?.Invoke(time, _corectPoint, _complexitySelect.ComplexityGame);
         if (_panels[9].activeSelf ==  false)
         {
             _timeText.gameObject.SetActive(false);
+            _pointText.text = string.Format("Ваши очки -" + "{0:0}" + "/100", _corectPoint);
         }
         else
         {
             _timeText.text = string.Format("Ваше время прохождения - " + "{0:0}" + "с", time);
+            _pointText.text = string.Format("Ваши очки -" + "{0:0}" + "/100", _corectPoint);
         }
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -155,6 +161,7 @@ public class GameCanvas : MonoBehaviour
         OnСontrol?.Invoke(false);
         _panels[1].SetActive(false);
         _panels[7].SetActive(false);
+        _panels[4].SetActive(false);
         _panels[5].SetActive(true);
         Cursor.lockState = CursorLockMode.None; 
         Cursor.visible = true;

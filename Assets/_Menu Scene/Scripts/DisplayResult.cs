@@ -21,7 +21,7 @@ public class DisplayResult : MonoBehaviour
 
     private int _complexityIndex = 0;
 
-    public void UpdateText(float time, int point, ComplexityGame complexity)
+    public void UpdateText(float time, float point, ComplexityGame complexity)
     {
         int index = (int)complexity;
         _panelComplexity[index].TimeResult = time;

@@ -57,6 +57,7 @@ public class Menu : MonoBehaviour
     public void ButtonLvl(int lvl)
     {
         Settings.Instance.Level = lvl;
+        Complexitiesbuttons(lvl);
         _panels[2].SetActive(true);
     }
 
@@ -100,5 +101,36 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("Loading Game");
         _panels[0].SetActive(false);
+    }
+
+    private void Complexitiesbuttons(int correctLevel)
+    {
+        for (int i = 1; i < _buttonsComplexity.Length; i++)
+        {
+            TextButtonComplexity(i, false);
+        }
+        if (Settings.Instance.Results == null) { return; }
+        for(int i = 0; i < Settings.Instance.Results.Count; i++)
+        {
+            if (Settings.Instance.Results[i].Level == correctLevel)
+            {
+                if(Settings.Instance.Results[i].Complexity == ComplexityGame.Difficult){ break; }
+                TextButtonComplexity((int)Settings.Instance.Results[i].Complexity + 1, true);
+            }
+        }
+    }
+
+    private void TextButtonComplexity(int i,bool OnOf)
+    {
+        _buttonsComplexity[i].interactable = OnOf;
+        switch (OnOf)
+        {
+            case true:
+                _buttonsComplexity[i].GetComponentInChildren<TMP_Text>().alpha = 1f;
+                break;
+            case false:
+                _buttonsComplexity[i].GetComponentInChildren<TMP_Text>().alpha = 0.5f;
+                break;
+        }
     }
 }
