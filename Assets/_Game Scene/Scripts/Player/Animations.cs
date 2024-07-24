@@ -1,8 +1,10 @@
 using UnityEngine;
 
-public class Animations : MonoBehaviour
+public class Animations : Player
 {
-    [SerializeField] private Animator _animator;
+    private void Start() => AlarmCanvas.Instance.OnInteraction += InteractionAniamtion;
+
+    private void OnDestroy() => AlarmCanvas.Instance.OnInteraction -= InteractionAniamtion;
 
     private void LateUpdate() => Animation();
 
@@ -11,4 +13,6 @@ public class Animations : MonoBehaviour
         _animator.SetFloat("y", Input.GetAxis("Vertical"));
         _animator.SetFloat("x", Input.GetAxis("Horizontal"));
     }
+
+    private void InteractionAniamtion() => _animator.SetTrigger("Interaction");
 }

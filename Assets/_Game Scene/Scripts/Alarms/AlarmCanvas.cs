@@ -9,18 +9,22 @@ public class AlarmCanvas : MonoBehaviour
 {
     public static AlarmCanvas Instance;
     public event Action<int> OnButtonClick;
+    public event Action OnInteraction;
     public event Action OnButtonClickActionObject;
 
     [SerializeField] private AlarmSelection _alarmSelection;
     [SerializeField] private Button[] _buttons;
     [SerializeField] private TMP_Text[] _textsButtons;
     [SerializeField] public TMP_Text[] Texts;
+    [SerializeField] private GameObject _panelInterface;
     //0- alarmText
     //1- objectState
     //2- objectAction
+    //3- Interaction
     [SerializeField] public List<TMP_Text> TextsTask;
     private InteractionInformation _interactionInfoSelect;
     private GameCanvas _gameCanvas;
+    private float _timer = 5.2f;
 
     private void Awake() => Instance = this;
 
@@ -33,7 +37,14 @@ public class AlarmCanvas : MonoBehaviour
 
     private void OnDestroy() => GameCanvas.UpdateInteractionInformation -= UpdateButtons;
 
-    public void OnButton(int buttonNomer) => OnButtonClick?.Invoke(buttonNomer);
+    public void OnButton(int buttonNomer)
+    {
+        OnInteraction?.Invoke();
+        _panelInterface.SetActive(false);
+        Texts[3].gameObject.SetActive(true);
+        StartCoroutine(TextInteraction());
+        OnButtonClick?.Invoke(buttonNomer);
+    }
 
     public void ActionButtonClick() => OnButtonClickActionObject?.Invoke();
 
@@ -78,5 +89,29 @@ public class AlarmCanvas : MonoBehaviour
         Texts[0].alpha = 1;
         yield return new WaitForSeconds(1);
         StartCoroutine(FlashingText());
+    }
+
+    private IEnumerator TextInteraction()
+    {
+        string text = "...";
+        int index = 0;
+        while (_timer > 0)
+        {
+            if (index >= text.Length)
+            {
+                index = 0;
+                Texts[3].text = "Взаимодействие";
+            }
+            else
+            {
+                Texts[3].text += text[index];
+                yield return new WaitForSeconds(0.5f);
+                index++;
+            }
+            _timer -= 0.5f;
+        }
+        _timer = 5.2f;
+        _panelInterface.SetActive(true);
+        Texts[3].gameObject.SetActive(false);
     }
 }
