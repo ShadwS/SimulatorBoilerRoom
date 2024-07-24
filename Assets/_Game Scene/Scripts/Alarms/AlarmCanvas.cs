@@ -24,7 +24,7 @@ public class AlarmCanvas : MonoBehaviour
     [SerializeField] public List<TMP_Text> TextsTask;
     private InteractionInformation _interactionInfoSelect;
     private GameCanvas _gameCanvas;
-    private float _timer = 5.2f;
+    private float _timer;
 
     private void Awake() => Instance = this;
 
@@ -95,6 +95,7 @@ public class AlarmCanvas : MonoBehaviour
     {
         string text = "...";
         int index = 0;
+        TimerUpdate();
         while (_timer > 0)
         {
             if (index >= text.Length)
@@ -110,8 +111,18 @@ public class AlarmCanvas : MonoBehaviour
             }
             _timer -= 0.5f;
         }
-        _timer = 5.2f;
         _panelInterface.SetActive(true);
         Texts[3].gameObject.SetActive(false);
+    }
+
+    private void TimerUpdate()
+    {
+        foreach (AnimationClip clips in Player.Instance.Animator.runtimeAnimatorController.animationClips)
+        {
+            if (clips.name == "Interaction")
+            {
+                _timer = clips.length;
+            }
+        }
     }
 }
