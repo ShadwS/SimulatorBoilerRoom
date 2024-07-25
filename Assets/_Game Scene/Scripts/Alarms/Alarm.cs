@@ -53,6 +53,7 @@ public abstract class Alarm : MonoBehaviour
 
     protected virtual void ButtonClick(int nomerButton)
     {
+        _alarmCanvas.Texts[3].text = _interactionInfoSelect.NameButtons[nomerButton];
         _alarmCanvas.Texts[1].gameObject.SetActive(true);
         _alarmCanvas.Texts[1].text = _interactionInfoSelect.ObjectState[nomerButton];
         switch (_correctObject)

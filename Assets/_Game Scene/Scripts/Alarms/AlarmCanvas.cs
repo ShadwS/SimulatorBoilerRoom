@@ -12,10 +12,12 @@ public class AlarmCanvas : MonoBehaviour
     public event Action OnInteraction;
     public event Action OnButtonClickActionObject;
 
+    public TMP_Text[] Texts { get => _texts; set => _texts = value; }
+
     [SerializeField] private AlarmSelection _alarmSelection;
     [SerializeField] private Button[] _buttons;
     [SerializeField] private TMP_Text[] _textsButtons;
-    [SerializeField] public TMP_Text[] Texts;
+    [SerializeField] private TMP_Text[] _texts;
     [SerializeField] private GameObject _panelInterface;
     //0- alarmText
     //1- objectState
@@ -39,11 +41,11 @@ public class AlarmCanvas : MonoBehaviour
 
     public void OnButton(int buttonNomer)
     {
+        OnButtonClick?.Invoke(buttonNomer);
         OnInteraction?.Invoke();
         _panelInterface.SetActive(false);
         Texts[3].gameObject.SetActive(true);
         StartCoroutine(TextInteraction());
-        OnButtonClick?.Invoke(buttonNomer);
     }
 
     public void ActionButtonClick() => OnButtonClickActionObject?.Invoke();
@@ -74,19 +76,19 @@ public class AlarmCanvas : MonoBehaviour
 
     private IEnumerator FlashingText()
     {
-        while (Texts[0].alpha > 0)
+        while (_texts[0].alpha > 0)
         {
-            Texts[0].alpha -= 0.1f;
+            _texts[0].alpha -= 0.1f;
             yield return new WaitForSeconds(0.1f);
         }
-        Texts[0].alpha = 0;
-        while (Texts[0].alpha < 1)
+        _texts[0].alpha = 0;
+        while (_texts[0].alpha < 1)
         {
-            Texts[0].alpha += 0.1f;
+            _texts[0].alpha += 0.1f;
             yield return new WaitForSeconds(0.1f);
 
         }
-        Texts[0].alpha = 1;
+        _texts[0].alpha = 1;
         yield return new WaitForSeconds(1);
         StartCoroutine(FlashingText());
     }
@@ -94,6 +96,7 @@ public class AlarmCanvas : MonoBehaviour
     private IEnumerator TextInteraction()
     {
         string text = "...";
+        string textState = _texts[3].text;
         int index = 0;
         TimerUpdate();
         while (_timer > 0)
@@ -101,18 +104,18 @@ public class AlarmCanvas : MonoBehaviour
             if (index >= text.Length)
             {
                 index = 0;
-                Texts[3].text = "Взаимодействие";
+                _texts[3].text = textState;
             }
             else
             {
-                Texts[3].text += text[index];
+                _texts[3].text += text[index];
                 yield return new WaitForSeconds(0.5f);
                 index++;
             }
             _timer -= 0.5f;
         }
         _panelInterface.SetActive(true);
-        Texts[3].gameObject.SetActive(false);
+        _texts[3].gameObject.SetActive(false);
     }
 
     private void TimerUpdate()
