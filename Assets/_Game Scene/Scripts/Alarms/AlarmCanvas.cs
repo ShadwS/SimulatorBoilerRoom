@@ -41,8 +41,8 @@ public class AlarmCanvas : MonoBehaviour
 
     public void OnButton(int buttonNomer)
     {
-        OnButtonClick?.Invoke(buttonNomer);
         OnInteraction?.Invoke(true);
+        OnButtonClick?.Invoke(buttonNomer);
         _panelInterface.SetActive(false);
         Texts[3].gameObject.SetActive(true);
         StartCoroutine(TextInteraction());
@@ -52,7 +52,11 @@ public class AlarmCanvas : MonoBehaviour
 
     public void Victori(float pointAttitude) => _gameCanvas.OnPanelWin(pointAttitude);
 
-    public void Defeat(string conclusion) => _gameCanvas.OnPanelLoos(conclusion);
+    public void Defeat(string conclusion)
+    {
+        OnInteraction?.Invoke(false);
+        _gameCanvas.OnPanelLoos(conclusion);
+    }
 
     private void UpdateButtons(InteractionInformation interactionInfo)
     {
