@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
+    [SerializeField] private Toggle _music;
     [SerializeField] private Button[] _buttonsLevel;
     [SerializeField] private Button[] _buttonsAlarm;
     [SerializeField] private Button[] _buttonsComplexity;
     [SerializeField] private GameObject[] _panels;
     [SerializeField] private GameObject[] _alarms;
+    [SerializeField] private AudioSource[] _audioSourses;
     //0-StartPanel
     //1-LevelsPanel
     //2-PanelComplexsity
@@ -20,6 +22,7 @@ public class Menu : MonoBehaviour
 
     private void Start()
     {
+        Settings.Instance.UpdateVolume += SoundsVolumeUpdate;
         for (int i = 1; i < _buttonsLevel.Length; i++)
         {
             _buttonsLevel[i].interactable = i < Settings.Instance.Level ? true : false;
@@ -39,8 +42,12 @@ public class Menu : MonoBehaviour
         for (int i = 1; i < _panels.Length; i++)
         {
             _panels[i].SetActive(false);
-        }  
+        }
+        SoundsVolumeUpdate(Settings.Instance.VolumeSounds);
+        _music.isOn = Settings.Instance.MusicState;
     }
+
+    private void OnDestroy() => Settings.Instance.UpdateVolume -= SoundsVolumeUpdate;
 
     public void ButtonAlarm(int index)
     {
@@ -85,6 +92,8 @@ public class Menu : MonoBehaviour
         }
     }
 
+    public void OnOfMusic() => Settings.Instance.MusicState = _music.isOn;
+
     public void BeakAlarms() => _panels[6].SetActive(false);
 
     public void ButtonOptions() => _panels[4].SetActive(true);
@@ -96,6 +105,8 @@ public class Menu : MonoBehaviour
     public void ButtonQuit() => _panels[5].SetActive(true);
 
     public void ButtonYes() => Application.Quit();
+
+    public void ButtonSound() => _audioSourses[1].Play();
 
     private void StartGame()
     {
@@ -131,6 +142,14 @@ public class Menu : MonoBehaviour
             case false:
                 _buttonsComplexity[i].GetComponentInChildren<TMP_Text>().alpha = 0.5f;
                 break;
+        }
+    }
+
+    private void SoundsVolumeUpdate(float value)
+    {
+        foreach (var sound in _audioSourses)
+        {
+            sound.volume = value / 100;
         }
     }
 }

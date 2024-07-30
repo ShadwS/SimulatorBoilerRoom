@@ -33,6 +33,7 @@ public class GameCanvas : MonoBehaviour
     [SerializeField] private TMP_Text _pointText;
     [SerializeField] private TMP_Text _explanationText;
     [SerializeField] private Image _imageObject;
+    [SerializeField] private AudioSource _buttonClick;
     private float _timer;
     private float _corectPoint;
     private Complexity _complexitySelect;
@@ -50,6 +51,7 @@ public class GameCanvas : MonoBehaviour
         PlayerRayCast.OnInteractionObject += InteractionObject;
         PlayerRayCast.OnPanel += OnPanelClickF;
         Pause.OnPause += OnCanvas;
+        Settings.Instance.UpdateVolume += UpdateSoundButtonCLick;
         foreach (var difficulty in _difficultys)
         {
             if (difficulty.ComplexityGame == Settings.Instance.Complexity)
@@ -67,6 +69,7 @@ public class GameCanvas : MonoBehaviour
             _panels[9].SetActive(false);
         }
         _panels[4].SetActive(_complexitySelect.DisplayingTask);
+        UpdateSoundButtonCLick(Settings.Instance.VolumeSounds);
     }
 
     private void OnDestroy()
@@ -74,6 +77,7 @@ public class GameCanvas : MonoBehaviour
         DisplayObject.OnNameObject -= TextUpdateOn;
         PlayerRayCast.OnInteractionObject -= InteractionObject;
         PlayerRayCast.OnPanel -= OnPanelClickF;
+        Settings.Instance.UpdateVolume -= UpdateSoundButtonCLick;
         Pause.OnPause -= OnCanvas;
     }
 
@@ -88,7 +92,7 @@ public class GameCanvas : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("Loading Menu");
     }
-
+    
     public void ButtonBackGame()
     {
         _panels[5].SetActive(false);
@@ -135,6 +139,8 @@ public class GameCanvas : MonoBehaviour
         Time.timeScale = 0;
     }
 
+    public void ButtonClickSound() => _buttonClick.Play();
+
     public void ButttonOptions(bool value) => _panels[3].SetActive(value);
 
     private IEnumerator TimerGame()
@@ -169,6 +175,8 @@ public class GameCanvas : MonoBehaviour
         _descriptionText.text = description;
         _imageObject = imageObject;
     }
+
+    private void UpdateSoundButtonCLick(float value) => _buttonClick.volume = value / 100;
 
     private void OnPanelClickF(bool value) => _panels[6].SetActive(value);
 

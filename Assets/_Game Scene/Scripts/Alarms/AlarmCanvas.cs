@@ -9,7 +9,7 @@ public class AlarmCanvas : MonoBehaviour
 {
     public static AlarmCanvas Instance;
     public event Action<int> OnButtonClick;
-    public event Action OnInteraction;
+    public event Action<bool> OnInteraction;
     public event Action OnButtonClickActionObject;
 
     public TMP_Text[] Texts { get => _texts; set => _texts = value; }
@@ -42,7 +42,7 @@ public class AlarmCanvas : MonoBehaviour
     public void OnButton(int buttonNomer)
     {
         OnButtonClick?.Invoke(buttonNomer);
-        OnInteraction?.Invoke();
+        OnInteraction?.Invoke(true);
         _panelInterface.SetActive(false);
         Texts[3].gameObject.SetActive(true);
         StartCoroutine(TextInteraction());
@@ -116,6 +116,7 @@ public class AlarmCanvas : MonoBehaviour
         }
         _panelInterface.SetActive(true);
         _texts[3].gameObject.SetActive(false);
+        OnInteraction?.Invoke(false);
     }
 
     private void TimerUpdate()

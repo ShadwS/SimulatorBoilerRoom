@@ -12,6 +12,7 @@ public class Settings : MonoBehaviour
     public ComplexityGame Complexity { get => _currentComplexity; set => _currentComplexity = value;}
     public float Sensitivity { get => _sensitivity; set { UpdateSensitivity?.Invoke(value); _sensitivity = value; } }
     public float VolumeSounds { get => _volumeSounds; set { UpdateVolume?.Invoke(value); _volumeSounds = value; } }
+    public bool MusicState { get => _musicState; set => _musicState = value; }
     public GameObject AlarmSelected { get => _alarmSelected; set => _alarmSelected = value; }
     public List<Result> Results { get { return _results; } }
 
@@ -24,6 +25,8 @@ public class Settings : MonoBehaviour
     [SerializeField, Range(10, 100)] private float _volumeSounds;
     
     private GameObject _alarmSelected;
+
+    private bool _musicState = true; 
 
     private int _level;
 

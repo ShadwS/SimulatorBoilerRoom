@@ -14,5 +14,9 @@ public class Animations : Player
         _animator.SetFloat("x", Input.GetAxis("Horizontal"));
     }
 
-    private void InteractionAniamtion() => _animator.SetTrigger("Interaction");
+    private void InteractionAniamtion(bool value)
+    {
+        if (!value) { return; }
+        _animator.SetTrigger("Interaction");
+    }
 }
