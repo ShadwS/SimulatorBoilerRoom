@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: debc2fb26aa2f1f40a0136950f28986d, type: 3}
   m_Name: "\u0430\u0432\u0430\u0440\u0438\u043D\u043D\u044B\u0439 \u0442\u0435\u0440\u043C\u043E\u0441\u0442\u0430\u0442"
   m_EditorClassIdentifier: 
-  _nameButtons: []
+  _nameButtons:
+  - "\u043F\u0440\u043E\u0432\u0440\u0438\u0442\u044C"
   _correctButtonNumber: 0
-  _objectState: []
+  _objectState:
+  - "\u043E\u0442\u043B\u0438\u0447\u043D\u043E"
   _actionObject: 
   _changestate: 
+  _objectNotInfluencing: 0
