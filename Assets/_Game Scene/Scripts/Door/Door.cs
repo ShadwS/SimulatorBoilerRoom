@@ -1,9 +1,15 @@
 using UnityEngine;
 using System.Collections;
+using System.Runtime.CompilerServices;
 
 public class Door : MonoBehaviour
 {
     [SerializeField] private Transform _pivot;
+    [SerializeField] private Animator _handleAnimator;
+    [SerializeField] private AudioSource _doorAudio;
+    [SerializeField] private AudioClip[] _doorSounds;
+    //0-closed
+    //1-handle
     private Player _player;
     private readonly int _maxAngle = 65;
     private readonly int _speedOpenClose = 150;
@@ -14,11 +20,19 @@ public class Door : MonoBehaviour
     private void Start()
     {
         _player = Player.Instance;
+        Settings.Instance.UpdateVolume += DoorSoundUpdate;
+        _doorAudio.volume = Settings.Instance.VolumeSounds;
         StartCoroutine(DistanceForPlayer());
+    }
+
+    private void OnDestroy()
+    {
+        Settings.Instance.UpdateVolume -= DoorSoundUpdate;
     }
 
     private IEnumerator OpenDoorStreet()
     {
+        OnAnimationAndSoundHandle();
         while (_pivot.rotation.eulerAngles.y < _maxAngle)
         {
             _pivot.Rotate(Vector3.up * _speedOpenClose * Time.deltaTime);
@@ -31,6 +45,7 @@ public class Door : MonoBehaviour
 
     private IEnumerator OpenDoorRoom()
     {
+        OnAnimationAndSoundHandle();
         _pivot.rotation = Quaternion.Euler(0, 359, 0);
         while (_pivot.rotation.eulerAngles.y > 360 - _maxAngle)
         {
@@ -49,6 +64,7 @@ public class Door : MonoBehaviour
             _pivot.Rotate(Vector3.up * -_speedOpenClose * Time.deltaTime);
             yield return new WaitForSeconds(Time.deltaTime);
         }
+        OnSoundClosedDoor();
         _pivot.rotation = Quaternion.identity;
         yield return new WaitForSeconds(2);
         StartCoroutine(DistanceForPlayer());
@@ -62,6 +78,7 @@ public class Door : MonoBehaviour
             _pivot.Rotate(Vector3.up * _speedOpenClose * Time.deltaTime);
             yield return new WaitForSeconds(Time.deltaTime);
         }
+        OnSoundClosedDoor();
         _pivot.rotation = Quaternion.identity;
         yield return new WaitForSeconds(2);
         StartCoroutine(DistanceForPlayer());
@@ -82,4 +99,19 @@ public class Door : MonoBehaviour
             StartCoroutine(OpenDoorRoom());
         }
     }
+
+    private void OnAnimationAndSoundHandle()
+    {
+        _handleAnimator.SetTrigger("opening");
+        _doorAudio.clip = _doorSounds[1];
+        _doorAudio.Play();
+    }
+
+    private void OnSoundClosedDoor()
+    {
+        _doorAudio.clip = _doorSounds[0];
+        _doorAudio.Play();
+    }
+
+    private void DoorSoundUpdate(float volume) => _doorAudio.volume = volume / 100;
 }
