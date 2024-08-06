@@ -25417,8 +25417,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
-  _nameObject: "\u041A\u0440\u0430\u043D \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: bcd1e47a3ed94c64d8c1b08688ff07fb, type: 2}
+  _nameObject: "\u0442\u0435\u0440\u043C\u043E\u0441\u0442\u0430\u0442"
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &6195638103900557934
@@ -26570,6 +26570,8 @@ GameObject:
   - component: {fileID: 223391608871131088}
   - component: {fileID: 6593096818470695988}
   - component: {fileID: 6603785249931351195}
+  - component: {fileID: 6603785249931351197}
+  - component: {fileID: 6603785249931351196}
   m_Layer: 0
   m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.001"
   m_TagString: Untagged
@@ -26591,6 +26593,40 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -377084235069599955, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &6603785249931351196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6603785249931351194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionInfoSelection: {fileID: 11400000, guid: e23ea78756d3df04a8393a8d49a5dcb7, type: 2}
+  _nameObject: "\u043F\u0440\u043E\u0432\u043A\u0440\u0443\u0430 \u0446\u0438\u0440\u043A\u0443\u043B\u044F\u0446\u0438\u0438"
+  _descriptionObject: 
+  _imageObject: {fileID: 0}
+--- !u!114 &6603785249931351197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6603785249931351194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &6605147413339680554
 GameObject:
   m_ObjectHideFlags: 0
@@ -27613,7 +27649,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: c05e6250b9b7a56438194d276a53b6dd, type: 2}
-  _nameObject: "\u0421\u0435\u0442\u0435\u0432\u043E\u0439 \u043D\u0430\u0441\u043E\u0441"
+  _nameObject: "\u0426\u0438\u0440\u043A\u0443\u043B\u044F\u0440\u043D\u044B\u0439
+    \u043D\u0430\u0441\u043E\u0441"
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &7089192218441772984
@@ -27795,8 +27832,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
-  _nameObject: "\u041A\u0440\u0430\u043D \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: e23ea78756d3df04a8393a8d49a5dcb7, type: 2}
+  _nameObject: "\u043A\u043E\u0442\u0435\u043B"
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &7140245523484638410
@@ -34568,7 +34605,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: c05e6250b9b7a56438194d276a53b6dd, type: 2}
-  _nameObject: "\u0421\u0435\u0442\u0435\u0432\u043E\u0439 \u043D\u0430\u0441\u043E\u0441"
+  _nameObject: "\u0426\u0438\u0440\u043A\u0443\u043B\u044F\u0440\u043D\u044B\u0439
+    \u043D\u0430\u0441\u043E\u0441"
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &9091221334155714001

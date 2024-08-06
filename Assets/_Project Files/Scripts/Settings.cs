@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
+using System.Linq;
 
 public class Settings : MonoBehaviour
 {
@@ -17,18 +19,20 @@ public class Settings : MonoBehaviour
     public List<Result> Results { get { return _results; } }
 
     private List<Result> _results;
+    private GameObject _alarmSelected;
+    private bool _musicState = true;
+    private int _level;
+
+    [Header("Settings")]
 
     [SerializeField] private ComplexityGame _currentComplexity;
-
     [SerializeField, Range(1, 500)] private float _sensitivity;
-
     [SerializeField, Range(10, 100)] private float _volumeSounds;
-    
-    private GameObject _alarmSelected;
 
-    private bool _musicState = true; 
+    [Header("Save Config")]
 
-    private int _level;
+    [SerializeField] private string _savePath;
+    [SerializeField] private string _savedFileName = "Save.json";
 
     private void Awake()
     {
@@ -43,5 +47,60 @@ public class Settings : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
+#if UNITY_ANDROID && !UNITY_EDITOR
+        _savePath = Path.Combine(Application.persistentDataPath, _savedFileName);
+#else
+        _savePath = Path.Combine(Application.dataPath, _savedFileName);
+#endif
+        LoadFromFile();
+    }
+
+    private void OnApplicationQuit() => SaveToFile();
+
+    private void SaveToFile()
+    {
+        GameCoreStruct gameCore = new GameCoreStruct() 
+        {
+            Sensivity = _sensitivity,
+            Volume = _volumeSounds,
+            MysicState = _musicState,
+            Results = _results.ToArray()
+        };
+        
+        string json = JsonUtility.ToJson(gameCore, true);
+
+        try
+        {
+            File.WriteAllText(_savePath, json);
+        }
+        catch (Exception e)
+        {
+            Debug.Log("{GameLog} => [Settings] - (<color = red>Error</color>) - SaveToFile -> " + e.Message);
+        }
+    }
+
+    private void LoadFromFile()
+    {
+        if (!File.Exists(_savePath))
+        {
+            Debug.LogError("{GameLog} => [Settings] - LoadFromFile -> File Not Found!");
+            return;
+        }
+
+        try
+        {
+            string json = File.ReadAllText(_savePath);
+            GameCoreStruct gameCoreStructFromJson = JsonUtility.FromJson<GameCoreStruct>(json);
+
+            _musicState = gameCoreStructFromJson.MysicState;
+            _volumeSounds = gameCoreStructFromJson.Volume;
+            _sensitivity = gameCoreStructFromJson.Sensivity;
+            _results = gameCoreStructFromJson.Results.ToList<Result>();
+
+        }
+        catch (Exception e)
+        {
+            Debug.Log("{GameLog} => [Settings] - (<color = red>Error</color>) - SaveToFile -> " + e.Message);
+        }
     }
 }

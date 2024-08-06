@@ -64,7 +64,7 @@ MonoBehaviour:
     \u0438 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0432\u0438\u0435 \u0443\u0441\u0442\u0430\u0432\u043E\u043A"
   _sequencing:
   - {fileID: 11400000, guid: c05e6250b9b7a56438194d276a53b6dd, type: 2}
-  - {fileID: 11400000, guid: c05e6250b9b7a56438194d276a53b6dd, type: 2}
-  - {fileID: 11400000, guid: e23ea78756d3df04a8393a8d49a5dcb7, type: 2}
   - {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
+  - {fileID: 11400000, guid: e23ea78756d3df04a8393a8d49a5dcb7, type: 2}
+  - {fileID: 11400000, guid: 27a687c0e61679b4bb0d992bafd61664, type: 2}
   - {fileID: 11400000, guid: bcd1e47a3ed94c64d8c1b08688ff07fb, type: 2}
