@@ -13,6 +13,8 @@ public class GameCanvas : MonoBehaviour
     public static event Action BackGame;
     public event Action<float, float, ComplexityGame> OnWin;
 
+    public Complexity ComplexitySelect { get => _complexitySelect; }
+
     [SerializeField] private GameObject[] _panels;
     [SerializeField] private Complexity[] _difficultys;
     //0-PlayerInterface
@@ -96,7 +98,7 @@ public class GameCanvas : MonoBehaviour
     public void ButtonBackGame()
     {
         _panels[5].SetActive(false);
-        _panels[4].SetActive(true);
+        _panels[4].SetActive(_complexitySelect.DisplayingTask);
         _panels[7].SetActive(true);
         if (_panels[4].activeSelf) _panels[1].SetActive(true);
         On—ontrol?.Invoke(true);

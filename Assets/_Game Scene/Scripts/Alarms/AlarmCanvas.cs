@@ -13,6 +13,7 @@ public class AlarmCanvas : MonoBehaviour
     public event Action OnButtonClickActionObject;
 
     public TMP_Text[] Texts { get => _texts; set => _texts = value; }
+    public GameCanvas Gamecnavas { get => _gameCanvas; }
 
     [SerializeField] private AlarmSelection _alarmSelection;
     [SerializeField] private Button[] _buttons;

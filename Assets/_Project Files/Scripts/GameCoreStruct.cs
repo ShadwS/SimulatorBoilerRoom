@@ -1,7 +1,4 @@
-using System.Collections.Generic;
-using System;
-
-[Serializable]
+[System.Serializable]
 public struct GameCoreStruct 
 {
     public float Sensivity;

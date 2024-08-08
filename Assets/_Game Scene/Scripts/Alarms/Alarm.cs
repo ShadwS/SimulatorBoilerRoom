@@ -69,7 +69,11 @@ public abstract class Alarm : MonoBehaviour
         }
     }
 
-    protected virtual void InteractionInfoTextColorUpdate(bool value) => _alarmCanvas.Texts[1].GetComponent<TMP_Text>().color = value ? Color.green : Color.red;
+    protected virtual void InteractionInfoTextColorUpdate(bool value) 
+    {
+        if(_alarmCanvas.Gamecnavas.ComplexitySelect.ComplexityGame == ComplexityGame.Difficult) { return; }
+        _alarmCanvas.Texts[1].GetComponent<TMP_Text>().color = value ? Color.green : Color.red;
+    }
 
     protected virtual void ButtonActionClick()
     {

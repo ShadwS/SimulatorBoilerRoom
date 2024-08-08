@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class Settings : MonoBehaviour
 {
@@ -52,14 +53,17 @@ public class Settings : MonoBehaviour
 #else
         _savePath = Path.Combine(Application.dataPath, _savedFileName);
 #endif
-        LoadFromFile();
+        if(Time.realtimeSinceStartup < 10 && SceneManager.GetActiveScene().name == "Menu")
+        {
+            LoadFromFile();
+        }
     }
 
     private void OnApplicationQuit() => SaveToFile();
 
     private void SaveToFile()
     {
-        GameCoreStruct gameCore = new GameCoreStruct() 
+        GameCoreStruct gameCore = new GameCoreStruct()
         {
             Sensivity = _sensitivity,
             Volume = _volumeSounds,
@@ -95,7 +99,7 @@ public class Settings : MonoBehaviour
             _musicState = gameCoreStructFromJson.MysicState;
             _volumeSounds = gameCoreStructFromJson.Volume;
             _sensitivity = gameCoreStructFromJson.Sensivity;
-            _results = gameCoreStructFromJson.Results.ToList<Result>();
+            _results = gameCoreStructFromJson.Results.ToList();
 
         }
         catch (Exception e)
