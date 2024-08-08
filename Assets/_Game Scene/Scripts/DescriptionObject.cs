@@ -24,7 +24,17 @@ public class DescriptionObject : MonoBehaviour
 
     public Image GetImage() => _imageObject;
 
-    public InteractionInformation GetInteractionInfoSelection() => _interactionInfoSelection;
+    public InteractionInformation GetInteractionInfoSelection()
+    {
+        if( _interactionInfoSelection == null)
+        {
+            return null;
+        }
+        else
+        {
+            return _interactionInfoSelection;
+        }
+    } 
 
     public void OutlineOn(bool value) => _outline.enabled = value;
 }

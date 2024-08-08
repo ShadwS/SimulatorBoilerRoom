@@ -55,5 +55,4 @@ public class PlayerSounds : MonoBehaviour
         _walkingSound.volume = volume / 100; 
         _interactionSound.volume = volume / 100;
     }
-
 }

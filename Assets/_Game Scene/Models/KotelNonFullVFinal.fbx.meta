@@ -3,7 +3,37 @@ guid: 005c698fc90199146b461f7eaef3da5b
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: door_single_Normal
+    second: {fileID: 2800000, guid: 595d49a8abf64894380ea41366bb19fd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: door_single_Roughness
+    second: {fileID: 2800000, guid: de0cbd673060fee4fa2f68e7daba09fc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: frame_Normal
+    second: {fileID: 2800000, guid: 352631ab485db15449db124c0f5e5879, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: frame_Roughness
+    second: {fileID: 2800000, guid: add7b1df2e717bb4cb61fac8089f6d10, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: props_Normal
+    second: {fileID: 2800000, guid: 341fc3fee417a214c9ec1d9131811f31, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: props_Roughness
+    second: {fileID: 2800000, guid: 040bf6cc9eacbfd4bac781301c22b707, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -32,7 +62,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 0.1264
@@ -88,7 +118,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.001264
+    globalScale: 0.1264
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

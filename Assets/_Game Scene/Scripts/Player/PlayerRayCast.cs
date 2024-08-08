@@ -26,8 +26,8 @@ public class PlayerRayCast : MonoBehaviour
     {
         if(!_raycasting) return;
         _descriptionObject = RayCast();
-        if (_descriptionObject != null && _hitTarget.distance < _distanceObjectDescription)
-        {       
+        if (_descriptionObject != null && _hitTarget.distance < _distanceObjectDescription && _descriptionObject.GetInteractionInfoSelection() != null)
+        { 
             OnPanel?.Invoke(true);
             if (Input.GetKey(KeyCode.F))
             {
