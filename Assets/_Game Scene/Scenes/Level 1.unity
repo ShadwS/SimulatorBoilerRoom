@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14023,7 +14023,7 @@ GameObject:
   - component: {fileID: 8262634520591040598}
   - component: {fileID: 8262634520591040597}
   m_Layer: 0
-  m_Name: "\u0433\u043E\u043B\u0443\u0431\u0430\u044F \u0442\u0440\u0443\u0431\u0430.012"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u04403"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14088,7 +14088,7 @@ GameObject:
   - component: {fileID: 5718757035231828571}
   - component: {fileID: 5718757035231828570}
   m_Layer: 0
-  m_Name: "\u0434\u0432\u0430 \u0448\u0442\u0443\u043A\u0430"
+  m_Name: "\u0445\u0438\u043C. \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u04302"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14159,7 +14159,7 @@ GameObject:
   - component: {fileID: 4570448283314249168}
   - component: {fileID: 4570448283314249167}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.014"
+  m_Name: "\u0444\u0438\u043B\u044C\u0442\u04401"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14562,7 +14562,7 @@ GameObject:
   - component: {fileID: 6456510637467471356}
   - component: {fileID: 6456510637467471355}
   m_Layer: 0
-  m_Name: "\u0447\u0435\u0440\u043D\u044B\u0435 \u043A\u0440\u0443\u0433\u0438.015"
+  m_Name: "\u0437\u0430\u0434\u0432\u0438\u0436\u043A\u04305"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14896,7 +14896,7 @@ GameObject:
   - component: {fileID: 8322953983211792861}
   - component: {fileID: 8322953983211792860}
   m_Layer: 0
-  m_Name: "\u0433\u043E\u043B\u0443\u0431\u0430\u044F \u0442\u0440\u0443\u0431\u0430.013"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u04401"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14932,7 +14932,7 @@ GameObject:
   - component: {fileID: 2971707114055854054}
   - component: {fileID: 2971707114055854053}
   m_Layer: 0
-  m_Name: "\u0447\u0435\u0440\u043D\u044B\u0435 \u043A\u0440\u0443\u0433\u0438.020"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u04408"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15049,7 +15049,7 @@ GameObject:
   - component: {fileID: 7094961042822738895}
   - component: {fileID: 7094961042822738894}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.020"
+  m_Name: "\u043A\u043B\u0430\u043F\u0430\u043D \u043E\u0431\u0440\u0430\u0442\u043D\u044B\u0439"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15500,8 +15500,11 @@ GameObject:
   - component: {fileID: 3657757337264405058}
   - component: {fileID: 1783402184792796609}
   - component: {fileID: 8662343440960018645}
+  - component: {fileID: 8662343440960018647}
+  - component: {fileID: 8662343440960018646}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u0438\u044F \u0442\u0440\u0443\u0431\u0430 2.013"
+  m_Name: "\u0434\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F
+    \u0432\u043E\u0434\u044B"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15810,7 +15813,7 @@ GameObject:
   - component: {fileID: 8502589988979256314}
   - component: {fileID: 8502589988979256313}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.003"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u044013"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16044,7 +16047,7 @@ GameObject:
   - component: {fileID: 8615088818869064214}
   - component: {fileID: 8615088818869064213}
   m_Layer: 0
-  m_Name: "\u0447\u0435\u0440\u043D\u044B\u0435 \u043A\u0440\u0443\u0433\u0438.013"
+  m_Name: "\u0437\u0430\u0434\u0432\u0438\u0436\u043A\u04303"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16377,7 +16380,7 @@ GameObject:
   - component: {fileID: 5516263840199805914}
   - component: {fileID: 5516263840199805913}
   m_Layer: 0
-  m_Name: "\u041A\u0443\u0431.009"
+  m_Name: "\u043A\u043E\u0442\u0435\u043B 2"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16398,7 +16401,7 @@ GameObject:
   - component: {fileID: 6467580772173886377}
   - component: {fileID: 6467580772173886376}
   m_Layer: 0
-  m_Name: "\u0447\u0435\u0440\u043D\u044B\u0435 \u043A\u0440\u0443\u0433\u0438.016"
+  m_Name: "\u0437\u0430\u0434\u0432\u0438\u0436\u043A\u04306"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16419,7 +16422,7 @@ GameObject:
   - component: {fileID: 4641916711238693579}
   - component: {fileID: 4641916711238693578}
   m_Layer: 0
-  m_Name: "\u0433\u043E\u043B\u0443\u0431\u0430\u044F \u0442\u0440\u0443\u0431\u0430"
+  m_Name: "\u0442\u0440\u0443\u0431\u0430 \u0431\u0430\u043A\u0430 \u0437\u0430\u043F\u0430\u0441\u0430"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17407,8 +17410,10 @@ GameObject:
   - component: {fileID: 2508563894055584410}
   - component: {fileID: 2298463018419390738}
   - component: {fileID: 5362060761988895400}
+  - component: {fileID: 5362060761988895402}
+  - component: {fileID: 5362060761988895401}
   m_Layer: 0
-  m_Name: "\u0433\u043E\u043B\u0443\u0431\u0430\u044F \u0442\u0440\u0443\u0431\u0430.003"
+  m_Name: "\u0441\u0447\u0435\u0442\u0447\u0438\u043A"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17673,7 +17678,7 @@ GameObject:
   - component: {fileID: 7165737734538514608}
   - component: {fileID: 7165737734538514607}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.021"
+  m_Name: "\u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17830,7 +17835,7 @@ GameObject:
   - component: {fileID: 3433316105499411676}
   - component: {fileID: 3433316105499411675}
   m_Layer: 0
-  m_Name: "\u0447\u0435\u0440\u043D\u044B\u0435 \u043A\u0440\u0443\u0433\u0438.007"
+  m_Name: "\u0437\u0430\u0434\u0432\u0438\u0436\u043A\u04306"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18025,7 +18030,8 @@ GameObject:
   - component: {fileID: 7648139056384688060}
   - component: {fileID: 7648139056384688059}
   m_Layer: 0
-  m_Name: "\u0416\u0435\u043B\u0442\u0430\u044F \u0442\u0440\u0443\u0431\u0430.020"
+  m_Name: "\u041A\u043B\u0430\u043F\u0430\u043D \u0433\u0430\u0437\u043E\u0432\u044B\u0439
+    \u0448\u0430\u0440\u043E\u0432\u044B\u0439"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18269,9 +18275,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
-  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &2971707114055854054
 MonoBehaviour:
@@ -18599,7 +18606,7 @@ GameObject:
   - component: {fileID: 7060724476826217370}
   - component: {fileID: 7060724476826217369}
   m_Layer: 0
-  m_Name: "\u0433\u043E\u043B\u0443\u0431\u0430\u044F \u0442\u0440\u0443\u0431\u0430.016"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u04405"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18923,7 +18930,7 @@ GameObject:
   - component: {fileID: 7852869642083163543}
   - component: {fileID: 7852869642083163542}
   m_Layer: 0
-  m_Name: "\u0416\u0435\u043B\u0442\u0430\u044F \u0442\u0440\u0443\u0431\u0430.013"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u044017"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18971,8 +18978,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
-  _nameObject: "\u0417\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
-  _descriptionObject: 
+  _nameObject: "\u043A\u0440\u0430\u043D \u0448\u0430\u0440\u043E\u0432\u044B\u0439"
+  _descriptionObject: "\u0438\u043C \u043C\u043E\u0436\u043D\u043E \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
+    \u0432\u043E\u0434\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &3433316105499411676
 MonoBehaviour:
@@ -19290,7 +19298,8 @@ GameObject:
   - component: {fileID: 3553487523745806923}
   - component: {fileID: 3553487523745806922}
   m_Layer: 0
-  m_Name: "\u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u044B.001"
+  m_Name: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0432\u044B\u0441\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439
+    2"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19322,10 +19331,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 7a06688ab80cd7642a78555536d028dd, type: 2}
-  _nameObject: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0434\u043F\u0438\u0442\u043A\u0438
+  _interactionInfoSelection: {fileID: 11400000, guid: 1ad77d771b049b44180fe1e44673bc51, type: 2}
+  _nameObject: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0432\u044B\u0441\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439
     2"
-  _descriptionObject: 
+  _descriptionObject: "\u043D\u0430\u0441\u043E\u0441 \u043D\u0443\u0436\u0435\u043D
+    \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u0432\u044B\u0441\u0438\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &3553487523745806923
 MonoBehaviour:
@@ -19334,7 +19345,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3553487523745806920}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -19773,7 +19784,7 @@ GameObject:
   - component: {fileID: 8822848576273878158}
   - component: {fileID: 8822848576273878157}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u0438\u044F \u0442\u0440\u0443\u0431\u0430 2.003"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u044012"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20277,9 +20288,11 @@ GameObject:
   - component: {fileID: 3332175433675395775}
   - component: {fileID: 7553963922116481246}
   - component: {fileID: 7553963922116481247}
+  - component: {fileID: 7553963922116481249}
+  - component: {fileID: 7553963922116481248}
   m_Layer: 0
-  m_Name: "\u043A\u0440\u0430\u0441\u043D\u0430\u044F \u0442\u0440\u0443\u0431\u0430
-    2.001"
+  m_Name: "\u0434\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F
+    \u0432\u043E\u0434\u044B"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20601,9 +20614,10 @@ GameObject:
   - component: {fileID: 3127516561901767107}
   - component: {fileID: 8659481936833332091}
   - component: {fileID: 8659481936833332092}
+  - component: {fileID: 8659481936833332094}
+  - component: {fileID: 8659481936833332093}
   m_Layer: 0
-  m_Name: "\u043A\u0440\u0430\u0441\u043D\u0430\u044F \u0442\u0440\u0443\u0431\u0430
-    2.002"
+  m_Name: "\u0414\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20640,7 +20654,7 @@ GameObject:
   - component: {fileID: 8763269833046309395}
   - component: {fileID: 8763269833046309394}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.016"
+  m_Name: "\u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20917,7 +20931,7 @@ GameObject:
   - component: {fileID: 5205833708047135450}
   - component: {fileID: 5205833708047135449}
   m_Layer: 0
-  m_Name: "\u041A\u0443\u0431.001"
+  m_Name: "\u043A\u043E\u0442\u0435\u043B 1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20980,7 +20994,7 @@ GameObject:
   - component: {fileID: 5889915597244305242}
   - component: {fileID: 5889915597244305241}
   m_Layer: 0
-  m_Name: "\u0433\u043E\u043B\u0443\u0431\u0430\u044F \u0442\u0440\u0443\u0431\u0430.011"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u04402"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21035,7 +21049,7 @@ GameObject:
   - component: {fileID: 6238945286450501025}
   - component: {fileID: 6238945286450501024}
   m_Layer: 0
-  m_Name: "\u041A\u0440\u0430\u0441\u043D\u0430\u044F \u0442\u0440\u0443\u0431\u0430.006"
+  m_Name: "\u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21106,7 +21120,7 @@ GameObject:
   - component: {fileID: 8865849269486157781}
   - component: {fileID: 8865849269486157780}
   m_Layer: 0
-  m_Name: "\u0434\u0432\u0430 \u0448\u0442\u0443\u043A\u0430.001"
+  m_Name: "\u0445\u0438\u043C. \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u04301"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21148,7 +21162,7 @@ GameObject:
   - component: {fileID: 7109127138143687414}
   - component: {fileID: 7109127138143687413}
   m_Layer: 0
-  m_Name: "\u0433\u043E\u043B\u0443\u0431\u0430\u044F \u0442\u0440\u0443\u0431\u0430.014"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u04404"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21269,7 +21283,9 @@ MonoBehaviour:
   _interactionInfoSelection: {fileID: 11400000, guid: 9ebc542d0f8d4134babac149f6ac9a4f, type: 2}
   _nameObject: "\u0424\u0438\u043B\u044C\u0442\u0440 \u0433\u0440\u0443\u0431\u043E\u0439
     \u043E\u0447\u0438\u0441\u0442\u043A\u0438"
-  _descriptionObject: 
+  _descriptionObject: "\u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B
+    \u043E\u0447\u0438\u0449\u0430\u0442\u044C \u0432\u043E\u0434\u0443 \u043E\u0442
+    \u043C\u0443\u0441\u043E\u0440\u0430"
   _imageObject: {fileID: 0}
 --- !u!114 &4570448283314249168
 MonoBehaviour:
@@ -21496,7 +21512,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605992934302219642}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -22188,7 +22204,7 @@ GameObject:
   - component: {fileID: 6319129594483541538}
   - component: {fileID: 6319129594483541537}
   m_Layer: 0
-  m_Name: "\u041A\u0440\u0430\u0441\u043D\u0430\u044F \u0442\u0440\u0443\u0431\u0430.005"
+  m_Name: "\u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22251,7 +22267,7 @@ GameObject:
   - component: {fileID: 7876198290364293212}
   - component: {fileID: 7876198290364293211}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.023"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u044016"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22284,8 +22300,10 @@ GameObject:
   - component: {fileID: 6068538012568045232}
   - component: {fileID: 6450717277584883039}
   - component: {fileID: 8432938366847933595}
+  - component: {fileID: 8432938366847933597}
+  - component: {fileID: 8432938366847933596}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u0438\u044F \u0442\u0440\u0443\u0431\u0430 2.002"
+  m_Name: "\u0414\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23280,8 +23298,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: 5caf4d88edcc46e4ea85415549db2cfd, type: 2}
-  _nameObject: "\u0421\u0438\u0441\u0442\u0435\u043C\u0430 \u043E\u0442\u043E\u043F\u043B\u0435\u043D\u0438\u044F"
-  _descriptionObject: 
+  _nameObject: "\u043A\u043E\u0442\u0435\u043B 1"
+  _descriptionObject: "\u043A\u043E\u0442\u0435\u043B \u0434\u043B\u044F \u043D\u0430\u0433\u0440\u0435\u0432\u0430
+    \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &5205833708047135450
 MonoBehaviour:
@@ -23431,7 +23450,7 @@ GameObject:
   - component: {fileID: 5320098455684462419}
   - component: {fileID: 5320098455684462418}
   m_Layer: 0
-  m_Name: "\u0416\u0435\u043B\u0442\u0430\u044F \u0442\u0440\u0443\u0431\u0430.005"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u044018"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23622,6 +23641,42 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2249996212637487892, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &5362060761988895401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2358332786584093981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionInfoSelection: {fileID: 11400000, guid: ef33df0753e0c14409c3de507190d92f, type: 2}
+  _nameObject: "\u0441\u0447\u0435\u0442\u0447\u0438\u043A"
+  _descriptionObject: "\u043F\u043E \u043D\u0435\u043C\u0443 \u043C\u043E\u044D\u043D\u043E
+    \u0443\u0437\u043D\u0430\u0442\u044C \u0441\u043A\u043E\u043B\u044C\u043A\u043E
+    \u0432\u043E\u0434\u044B \u0443\u0442\u0435\u043A\u043B\u043E"
+  _imageObject: {fileID: 0}
+--- !u!114 &5362060761988895402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2358332786584093981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &5386599066048045929
 GameObject:
   m_ObjectHideFlags: 0
@@ -23812,8 +23867,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: 5caf4d88edcc46e4ea85415549db2cfd, type: 2}
-  _nameObject: "\u0421\u0438\u0441\u0442\u0435\u043C\u0430 \u043E\u0442\u043E\u043F\u043B\u0435\u043D\u0438\u044F"
-  _descriptionObject: 
+  _nameObject: "\u043A\u043E\u0442\u0435\u043B 2"
+  _descriptionObject: "\u043A\u043E\u0442\u0435\u043B \u0434\u043B\u044F \u043D\u0430\u0433\u0440\u0435\u0432\u0430
+    \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &5516263840199805914
 MonoBehaviour:
@@ -24114,7 +24170,7 @@ GameObject:
   - component: {fileID: 8533371437073387267}
   - component: {fileID: 8533371437073387266}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.024"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u044014"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24308,8 +24364,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: ead36504d4409a24b84fb58f26c74a31, type: 2}
-  _nameObject: "\u0412\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0430"
-  _descriptionObject: 
+  _nameObject: "\u0445\u0438\u043C. \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0430"
+  _descriptionObject: "\u043D\u0443\u0436\u043D\u0430 \u0447\u0442\u043E\u0431\u044B
+    \u0432\u043E\u0434\u0430 \u0431\u044B\u043B\u0430 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E\u0433\u043E"
   _imageObject: {fileID: 0}
 --- !u!114 &5718757035231828571
 MonoBehaviour:
@@ -24318,7 +24375,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142673572568257242}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -24385,9 +24442,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
-  _nameObject: "\u041A\u0440\u0430\u043D \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0438"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
+  _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
+    \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
+    \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
+    \u0432\u043E\u0434\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &5736879423179386686
 MonoBehaviour:
@@ -24422,7 +24482,7 @@ GameObject:
   - component: {fileID: 8514959223044499008}
   - component: {fileID: 8514959223044499007}
   m_Layer: 0
-  m_Name: "\u0447\u0435\u0440\u043D\u044B\u0435 \u043A\u0440\u0443\u0433\u0438.011"
+  m_Name: "\u041A\u0440\u0430\u043D \u0442\u0440\u0435\u0445 \u0445\u043E\u0434\u043E\u0432\u043E\u0439"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24440,8 +24500,10 @@ GameObject:
   - component: {fileID: 1888384272246302770}
   - component: {fileID: 5503686988464229245}
   - component: {fileID: 5749924617310128639}
+  - component: {fileID: 5749924617310128641}
+  - component: {fileID: 5749924617310128640}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.026"
+  m_Name: "\u0434\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24461,6 +24523,41 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1604902380051105206, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &5749924617310128640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5749924617310128638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 27a687c0e61679b4bb0d992bafd61664, type: 2}
+  _nameObject: "\u0434\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
+    \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0443 \u0432\u043E\u0434\u044B"
+  _imageObject: {fileID: 0}
+--- !u!114 &5749924617310128641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5749924617310128638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!23 &5751121102935707597
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24831,9 +24928,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
-  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &5889915597244305242
 MonoBehaviour:
@@ -25677,9 +25775,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
-  _nameObject: "\u0417\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
+  _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
+    \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
+    \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
+    \u0432\u043E\u0434\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &6238945286450501025
 MonoBehaviour:
@@ -25898,9 +25999,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
-  _nameObject: "\u0417\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
+  _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
+    \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
+    \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
+    \u0432\u043E\u0434\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &6319129594483541538
 MonoBehaviour:
@@ -26231,9 +26335,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
-  _nameObject: "\u0417\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
+  _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
+    \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
+    \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
+    \u0432\u043E\u0434\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &6456510637467471356
 MonoBehaviour:
@@ -26344,9 +26451,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
-  _nameObject: "\u0417\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
+  _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
+    \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
+    \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
+    \u0432\u043E\u0434\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &6467580772173886377
 MonoBehaviour:
@@ -26573,7 +26683,7 @@ GameObject:
   - component: {fileID: 6603785249931351197}
   - component: {fileID: 6603785249931351196}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.001"
+  m_Name: "\u0434\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26605,9 +26715,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: e23ea78756d3df04a8393a8d49a5dcb7, type: 2}
-  _nameObject: "\u043F\u0440\u043E\u0432\u043A\u0440\u0443\u0430 \u0446\u0438\u0440\u043A\u0443\u043B\u044F\u0446\u0438\u0438"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 27a687c0e61679b4bb0d992bafd61664, type: 2}
+  _nameObject: "\u0434\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
+    \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0443 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &6603785249931351197
 MonoBehaviour:
@@ -26640,7 +26751,7 @@ GameObject:
   - component: {fileID: 8469233820647380489}
   - component: {fileID: 8649839628598433810}
   m_Layer: 0
-  m_Name: "\u0433\u043E\u043B\u0443\u0431\u0430\u044F \u0442\u0440\u0443\u0431\u0430.004"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u04406"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26971,7 +27082,8 @@ GameObject:
   - component: {fileID: 7089192218441772984}
   - component: {fileID: 7089192218441772983}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.018"
+  m_Name: "\u0426\u0438\u0440\u043A\u0443\u043B\u044F\u0440\u043D\u044B\u0439 \u043D\u0430\u0441\u043E\u0441
+    \u0441 \u043C\u043E\u043A\u0440\u044B\u043C \u0440\u043E\u0442\u043E\u0440\u043E\u043C"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27049,7 +27161,7 @@ GameObject:
   - component: {fileID: 8169230870043735657}
   - component: {fileID: 8169230870043735656}
   m_Layer: 0
-  m_Name: "\u0433\u043E\u043B\u0443\u0431\u0430\u044F \u0442\u0440\u0443\u0431\u0430.015"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u04407"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27134,7 +27246,7 @@ GameObject:
   - component: {fileID: 8849376801075841507}
   - component: {fileID: 8849376801075841506}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.022"
+  m_Name: "\u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27272,8 +27384,10 @@ GameObject:
   - component: {fileID: 6886279008511408938}
   - component: {fileID: 8676480626538450251}
   - component: {fileID: 8676480626538450252}
+  - component: {fileID: 8676480626538450254}
+  - component: {fileID: 8676480626538450253}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.009"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u044019"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27309,7 +27423,7 @@ GameObject:
   - component: {fileID: 6964049290744049519}
   - component: {fileID: 6964049290744049518}
   m_Layer: 0
-  m_Name: "\u0447\u0435\u0440\u043D\u044B\u0435 \u043A\u0440\u0443\u0433\u0438.002"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u04409"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27341,9 +27455,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
-  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &6964049290744049519
 MonoBehaviour:
@@ -27456,7 +27571,7 @@ GameObject:
   - component: {fileID: 7044573493244992861}
   - component: {fileID: 7044573493244992860}
   m_Layer: 0
-  m_Name: "\u0447\u0435\u0440\u043D\u044B\u0435 \u043A\u0440\u0443\u0433\u0438.008"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u044011"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27488,9 +27603,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
-  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &7044573493244992861
 MonoBehaviour:
@@ -27559,9 +27675,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
-  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &7060724476826217370
 MonoBehaviour:
@@ -27650,8 +27767,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: c05e6250b9b7a56438194d276a53b6dd, type: 2}
   _nameObject: "\u0426\u0438\u0440\u043A\u0443\u043B\u044F\u0440\u043D\u044B\u0439
-    \u043D\u0430\u0441\u043E\u0441"
-  _descriptionObject: 
+    \u043D\u0430\u0441\u043E\u0441 \u0441 \u043C\u043E\u043A\u0440\u044B\u043C \u0440\u043E\u0442\u043E\u0440\u043E\u043C"
+  _descriptionObject: "\u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B
+    \u043A\u0430\u0447\u0430\u0442\u044C \u0432\u043E\u0434\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &7089192218441772984
 MonoBehaviour:
@@ -27706,7 +27824,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: 7c46a19023a1c754d9527a743c8033c9, type: 2}
-  _nameObject: "\u041C\u0443\u0444\u0442\u0430 \u043A\u043E\u043C\u043F\u0435\u0440\u0441\u0438\u0440\u0443\u0448\u0438\u044F"
+  _nameObject: "\u043A\u043B\u0430\u043F\u0430\u043D \u043E\u0431\u0440\u0430\u0442\u043D\u044B\u0439
+    \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0435\u0432\u044B\u0439"
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &7094961042822738895
@@ -27768,9 +27887,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
-  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &7109127138143687414
 MonoBehaviour:
@@ -27874,8 +27994,6 @@ GameObject:
   - component: {fileID: 7175782174131374896}
   - component: {fileID: 3565899758876651667}
   - component: {fileID: 7175782174131374897}
-  - component: {fileID: 7175782174131374899}
-  - component: {fileID: 7175782174131374898}
   m_Layer: 0
   m_Name: "\u0433\u043E\u043B\u0443\u0431\u0430\u044F \u0442\u0440\u0443\u0431\u0430.005"
   m_TagString: Untagged
@@ -27961,40 +28079,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7556457564533489002, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
---- !u!114 &7175782174131374898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7156236340249748779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
-  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
-  _descriptionObject: 
-  _imageObject: {fileID: 0}
---- !u!114 &7175782174131374899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7156236340249748779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!23 &7196921209838801073
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28211,7 +28295,8 @@ GameObject:
   - component: {fileID: 7371299963282268548}
   - component: {fileID: 7371299963282268547}
   m_Layer: 0
-  m_Name: "\u0447\u0435\u0440\u043D\u044B\u0435 \u043A\u0440\u0443\u0433\u0438"
+  m_Name: "\u0441\u0435\u0442\u0435\u0432\u044B\u0439\u0435 \u043D\u0430\u0441\u043E\u0441\u044B
+    \u0446\u0438\u0440\u043A\u0443\u043B\u044F\u0446\u0438\u043E\u043D\u043D\u044B\u0435"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28244,8 +28329,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: 482c9a288c896f0489e72b225dac3237, type: 2}
-  _nameObject: "\u0421\u0435\u0442\u0435\u0432\u044B\u0435 \u043D\u0430\u0441\u043E\u0441\u044B"
-  _descriptionObject: 
+  _nameObject: "\u0441\u0435\u0442\u0435\u0432\u044B\u0439\u0435 \u043D\u0430\u0441\u043E\u0441\u044B
+    \u0446\u0438\u0440\u043A\u0443\u043B\u044F\u0446\u0438\u043E\u043D\u043D\u044B\u0435"
+  _descriptionObject: "\u043D\u0430\u0441\u043E\u0441\u044B \u0446\u0438\u0440\u043A\u0443\u043B\u044F\u0446\u0438\u0438
+    \u043D\u0443\u0436\u043D\u044B \u0447\u0442\u043E\u0431\u044B \u0432\u043E\u0434\u0430
+    \u0446\u0438\u0440\u043A\u0443\u043B\u0438\u0440\u043E\u0432\u0430\u043B\u0430
+    \u043F\u043E \u043A\u043E\u043D\u0442\u0443\u0440\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &7371299963282268548
 MonoBehaviour:
@@ -28834,9 +28923,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 0}
-  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: fbb5ef0cff3dd7641ad1ad7a572ef1b9, type: 2}
+  _nameObject: "\u0434\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F
+    \u0433\u0430\u0437\u0430"
+  _descriptionObject: "\u043F\u043E \u044D\u0442\u043E\u043C\u0443 \u0434\u0430\u0442\u0447\u0438\u043A\u0443
+    \u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C \u0444\u0430\u043A\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0433\u0430\u0437\u0430"
   _imageObject: {fileID: 0}
 --- !u!114 &7550930365890981253
 MonoBehaviour:
@@ -28912,6 +29004,42 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3161291806732433961, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &7553963922116481248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4004911657336551039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 6ee0b1bd19c6ae9469b1c0e5b0264cc9, type: 2}
+  _nameObject: "\u0434\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F
+    \u0432\u043E\u0434\u044B"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
+  _imageObject: {fileID: 0}
+--- !u!114 &7553963922116481249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4004911657336551039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!23 &7584848927208440394
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28967,7 +29095,7 @@ GameObject:
   - component: {fileID: 5145783083187106340}
   - component: {fileID: 7596242749859803596}
   m_Layer: 0
-  m_Name: "\u0447\u0435\u0440\u043D\u044B\u0435 \u043A\u0440\u0443\u0433\u0438.010"
+  m_Name: "\u043A\u043B\u0430\u043F\u0430\u043D \u043E\u0431\u0440\u0430\u0442\u043D\u044B\u0439"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29134,9 +29262,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
-  _nameObject: "\u0413\u0430\u0437\u043E\u0432\u0430\u044F \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
+  _nameObject: "\u041A\u043B\u0430\u043F\u0430\u043D \u0433\u0430\u0437\u043E\u0432\u044B\u0439
+    \u0448\u0430\u0440\u043E\u0432\u044B\u0439"
+  _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
+    \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
+    \u0433\u0430\u0437"
   _imageObject: {fileID: 0}
 --- !u!114 &7648139056384688060
 MonoBehaviour:
@@ -29197,8 +29328,10 @@ GameObject:
   - component: {fileID: 3820544990754092273}
   - component: {fileID: 2826716995661887655}
   - component: {fileID: 7673819033525676321}
+  - component: {fileID: 7673819033525676323}
+  - component: {fileID: 7673819033525676322}
   m_Layer: 0
-  m_Name: "\u0416\u0435\u043B\u0442\u0430\u044F \u0442\u0440\u0443\u0431\u0430.022"
+  m_Name: "\u0443\u0437\u0435\u043B \u0443\u0447\u0435\u0442\u0430 \u0433\u0430\u0437\u04301"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29218,6 +29351,43 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5961433094461024481, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &7673819033525676322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7673819033525676320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 9cc5d65f970d0c04a879341839790992, type: 2}
+  _nameObject: "\u0443\u0437\u0435\u043B \u0443\u0447\u0435\u0442\u0430 \u0433\u0430\u0437\u0430"
+  _descriptionObject: "\u0434\u0430\u043D\u043D\u044B\u0439 \u0443\u0437\u0435\u043B
+    \u0441\u0447\u0438\u0442\u0430\u0435\u0442 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E
+    \u043F\u043E\u0442\u0440\u0435\u0431\u043B\u044F\u0435\u043C\u043E\u0433\u043E
+    \u0433\u0430\u0437\u0430"
+  _imageObject: {fileID: 0}
+--- !u!114 &7673819033525676323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7673819033525676320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &7678676536403848924
 GameObject:
   m_ObjectHideFlags: 0
@@ -29251,8 +29421,10 @@ GameObject:
   - component: {fileID: 4485397839569462445}
   - component: {fileID: 4716425158600944334}
   - component: {fileID: 7690562178748775374}
+  - component: {fileID: 7690562178748775376}
+  - component: {fileID: 7690562178748775375}
   m_Layer: 0
-  m_Name: "\u0416\u0435\u043B\u0442\u0430\u044F \u0442\u0440\u0443\u0431\u0430.021"
+  m_Name: "\u0443\u0437\u0435\u043B \u0443\u0447\u0435\u0442\u0430 \u0433\u0430\u0437\u04303"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29272,6 +29444,43 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2103644565511737807, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &7690562178748775375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7690562178748775373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 9cc5d65f970d0c04a879341839790992, type: 2}
+  _nameObject: "\u0443\u0437\u0435\u043B \u0443\u0447\u0435\u0442\u0430 \u0433\u0430\u0437\u0430"
+  _descriptionObject: "\u0434\u0430\u043D\u043D\u044B\u0439 \u0443\u0437\u0435\u043B
+    \u0441\u0447\u0438\u0442\u0430\u0435\u0442 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E
+    \u043F\u043E\u0442\u0440\u0435\u0431\u043B\u044F\u0435\u043C\u043E\u0433\u043E
+    \u0433\u0430\u0437\u0430"
+  _imageObject: {fileID: 0}
+--- !u!114 &7690562178748775376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7690562178748775373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &7715890241560349282
 Transform:
   m_ObjectHideFlags: 0
@@ -29379,7 +29588,7 @@ GameObject:
   - component: {fileID: 7766042632339769186}
   - component: {fileID: 7766042632339769185}
   m_Layer: 0
-  m_Name: "\u0447\u0435\u0440\u043D\u044B\u0435 \u043A\u0440\u0443\u0433\u0438.012"
+  m_Name: "\u0437\u0430\u0434\u0432\u0438\u0436\u043A\u04301"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29411,9 +29620,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
-  _nameObject: "\u0417\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
+  _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
+    \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
+    \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
+    \u0432\u043E\u0434\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &7766042632339769186
 MonoBehaviour:
@@ -30038,10 +30250,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
-  _nameObject: "\u041C\u0430\u043D\u043E\u043C\u0435\u0442\u0440 \u043F\u043E\u0441\u043B\u0435
-    \u043D\u0430\u0441\u043E\u0441\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &7876198290364293212
 MonoBehaviour:
@@ -30224,9 +30436,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
-  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &7989055432836897757
 MonoBehaviour:
@@ -30588,8 +30801,10 @@ GameObject:
   - component: {fileID: 1203603246910757303}
   - component: {fileID: 1368558697802377062}
   - component: {fileID: 8145961649085886609}
+  - component: {fileID: 8145961649085886611}
+  - component: {fileID: 8145961649085886610}
   m_Layer: 0
-  m_Name: "\u0433\u043E\u043B\u0443\u0431\u0430\u044F \u0442\u0440\u0443\u0431\u0430.026"
+  m_Name: "\u0444\u0438\u043B\u044C\u0442\u0440"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30609,6 +30824,41 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6446419613477841029, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &8145961649085886610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8145961649085886608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 9ebc542d0f8d4134babac149f6ac9a4f, type: 2}
+  _nameObject: "\u0444\u0438\u043B\u044C\u0442\u0440"
+  _descriptionObject: "\u043C\u0430\u043B\u044B\u0439 \u0444\u0438\u043B\u044C\u0442\u0440
+    \u0434\u043B\u044F \u043E\u0447\u0438\u0442\u0441\u043A\u0438 \u0432\u043E\u0434\u044B"
+  _imageObject: {fileID: 0}
+--- !u!114 &8145961649085886611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8145961649085886608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!23 &8157026859320864773
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30740,9 +30990,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
-  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &8169230870043735657
 MonoBehaviour:
@@ -30847,7 +31098,7 @@ GameObject:
   - component: {fileID: 8504158886267080170}
   - component: {fileID: 8504158886267080169}
   m_Layer: 0
-  m_Name: "\u0447\u0435\u0440\u043D\u044B\u0435 \u043A\u0440\u0443\u0433\u0438.017"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u044010"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30943,9 +31194,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
-  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &8262634520591040598
 MonoBehaviour:
@@ -30980,7 +31232,8 @@ GameObject:
   - component: {fileID: 8284421047985951329}
   - component: {fileID: 8284421047985951328}
   m_Layer: 0
-  m_Name: "\u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0430\u0442\u043E\u0440\u044B"
+  m_Name: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0432\u044B\u0441\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439
+    1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31013,9 +31266,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: 1ad77d771b049b44180fe1e44673bc51, type: 2}
-  _nameObject: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0434\u043F\u0438\u0442\u043A\u0438
+  _nameObject: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0432\u044B\u0441\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439
     1"
-  _descriptionObject: 
+  _descriptionObject: "\u043D\u0430\u0441\u043E\u0441 \u043D\u0443\u0436\u0435\u043D
+    \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u0432\u044B\u0441\u0438\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &8284421047985951329
 MonoBehaviour:
@@ -31024,7 +31279,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8284421047985951326}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -31119,9 +31374,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
-  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &8322953983211792861
 MonoBehaviour:
@@ -31262,7 +31518,8 @@ GameObject:
   - component: {fileID: 8743960766385544917}
   - component: {fileID: 8743960766385544916}
   m_Layer: 0
-  m_Name: "\u0416\u0435\u043B\u0442\u0430\u044F \u0442\u0440\u0443\u0431\u0430.019"
+  m_Name: "\u041A\u043B\u0430\u043F\u0430\u043D \u0433\u0430\u0437\u043E\u0432\u044B\u0439
+    \u0448\u0430\u0440\u043E\u0432\u044B\u0439"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31297,6 +31554,41 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7618277714833157250, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &8432938366847933596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4872637226727661071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionInfoSelection: {fileID: 11400000, guid: a2ba9637a8bef2640a55235d6f846183, type: 2}
+  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0443 \u0432\u043E\u0434\u044B"
+  _imageObject: {fileID: 0}
+--- !u!114 &8432938366847933597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4872637226727661071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!33 &8440345768038319499
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -31472,9 +31764,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
-  _nameObject: "\u041C\u0430\u043D\u043E\u043C\u0435\u0442\u0440 \u0434\u043E \u043D\u0430\u0441\u043E\u0441\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &8502589988979256314
 MonoBehaviour:
@@ -31535,9 +31828,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
-  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &8504158886267080170
 MonoBehaviour:
@@ -31626,8 +31920,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: 53790b456b6055d4c921a42978d31af3, type: 2}
-  _nameObject: "\u041A\u0440\u0430\u043D \u0442\u0440\u0435\u0445\u0440\u0430\u0437\u0432\u043E\u0434\u043D\u044B\u0439"
-  _descriptionObject: 
+  _nameObject: "\u041A\u0440\u0430\u043D \u0442\u0440\u0435\u0445 \u0445\u043E\u0434\u043E\u0432\u043E\u0439"
+  _descriptionObject: "\u044D\u0442\u043E\u0442 \u043A\u043B\u0430\u043F\u0430\u043D
+    \u0441\u043C\u0435\u0448\u0438\u0432\u0430\u0435\u0442 \u0433\u043E\u0440\u044F\u0447\u0443\u044E
+    \u0438 \u0445\u043E\u043B\u043E\u0434\u043D\u0443\u044E \u0432\u043E\u0434\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &8514959223044499008
 MonoBehaviour:
@@ -31764,9 +32060,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
-  _nameObject: "\u041C\u0430\u043D\u043E\u043C\u0435\u0442\u0440 \u0434\u043E \u043D\u0430\u0441\u043E\u0441\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &8533371437073387267
 MonoBehaviour:
@@ -31876,8 +32173,10 @@ GameObject:
   - component: {fileID: 6465852791962268721}
   - component: {fileID: 7584848927208440394}
   - component: {fileID: 8599326795751858570}
+  - component: {fileID: 8599326795751858572}
+  - component: {fileID: 8599326795751858571}
   m_Layer: 0
-  m_Name: "\u0416\u0435\u043B\u0442\u0430\u044F \u0442\u0440\u0443\u0431\u0430.004"
+  m_Name: "\u0443\u0437\u0435\u043B \u0443\u0447\u0435\u0442\u0430 \u0433\u0430\u0437\u04302"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31897,6 +32196,43 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8558997095523516582, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &8599326795751858571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8599326795751858569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 9cc5d65f970d0c04a879341839790992, type: 2}
+  _nameObject: "\u0443\u0437\u0435\u043B \u0443\u0447\u0435\u0442\u0430 \u0433\u0430\u0437\u0430"
+  _descriptionObject: "\u0434\u0430\u043D\u043D\u044B\u0439 \u0443\u0437\u0435\u043B
+    \u0441\u0447\u0438\u0442\u0430\u0435\u0442 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E
+    \u043F\u043E\u0442\u0440\u0435\u0431\u043B\u044F\u0435\u043C\u043E\u0433\u043E
+    \u0433\u0430\u0437\u0430"
+  _imageObject: {fileID: 0}
+--- !u!114 &8599326795751858572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8599326795751858569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &8600444468782992232
 Transform:
   m_ObjectHideFlags: 0
@@ -31946,9 +32282,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
-  _nameObject: "\u0417\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
+  _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
+    \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
+    \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
+    \u0432\u043E\u0434\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &8615088818869064214
 MonoBehaviour:
@@ -32097,7 +32436,7 @@ GameObject:
   - component: {fileID: 8839960927356163729}
   - component: {fileID: 8839960927356163728}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.019"
+  m_Name: "\u043A\u043B\u0430\u043F\u0430\u043D \u043E\u0431\u0440\u0430\u0442\u043D\u044B\u0439"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32181,6 +32520,41 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6699843523984380152, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &8659481936833332093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4146253223740639633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionInfoSelection: {fileID: 11400000, guid: a2ba9637a8bef2640a55235d6f846183, type: 2}
+  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0443 \u0432\u043E\u0434\u044B"
+  _imageObject: {fileID: 0}
+--- !u!114 &8659481936833332094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4146253223740639633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &8662343440960018644
 Transform:
   m_ObjectHideFlags: 0
@@ -32210,6 +32584,42 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8747166489282472718, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &8662343440960018646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073961303503647124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 6ee0b1bd19c6ae9469b1c0e5b0264cc9, type: 2}
+  _nameObject: "\u0434\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F
+    \u0432\u043E\u0434\u044B"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
+  _imageObject: {fileID: 0}
+--- !u!114 &8662343440960018647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073961303503647124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &8674083237011714335
 GameObject:
   m_ObjectHideFlags: 0
@@ -32225,7 +32635,7 @@ GameObject:
   - component: {fileID: 8674083237011714338}
   - component: {fileID: 8674083237011714337}
   m_Layer: 0
-  m_Name: "\u0447\u0435\u0440\u043D\u044B\u0435 \u043A\u0440\u0443\u0433\u0438.014"
+  m_Name: "\u0437\u0430\u0434\u0432\u0438\u0436\u043A\u04304"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32257,9 +32667,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
-  _nameObject: "\u0417\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
+  _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
+    \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
+    \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
+    \u0432\u043E\u0434\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &8674083237011714338
 MonoBehaviour:
@@ -32335,6 +32748,41 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2296413289301153862, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &8676480626538450253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6950412931452280870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
+  _imageObject: {fileID: 0}
+--- !u!114 &8676480626538450254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6950412931452280870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &8686276481119563965
 Transform:
   m_ObjectHideFlags: 0
@@ -32496,9 +32944,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
-  _nameObject: "\u0413\u0430\u0437\u043E\u0432\u0430\u044F \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
+  _nameObject: "\u041A\u043B\u0430\u043F\u0430\u043D \u0433\u0430\u0437\u043E\u0432\u044B\u0439
+    \u0448\u0430\u0440\u043E\u0432\u044B\u0439"
+  _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
+    \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
+    \u0433\u0430\u0437"
   _imageObject: {fileID: 0}
 --- !u!114 &8743960766385544917
 MonoBehaviour:
@@ -33307,7 +33758,7 @@ GameObject:
   - component: {fileID: 9109542044530022017}
   - component: {fileID: 9109542044530022016}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u0438\u044F \u0442\u0440\u0443\u0431\u0430 2.006"
+  m_Name: "\u0437\u0430\u0434\u0432\u0438\u0436\u043A\u04307"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33328,7 +33779,7 @@ GameObject:
   - component: {fileID: 8753272027711456265}
   - component: {fileID: 8753272027711456264}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u0438\u044F \u0442\u0440\u0443\u0431\u0430 2.007"
+  m_Name: "\u0444\u0438\u043B\u044C\u0442\u04402"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33361,8 +33812,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: 9ebc542d0f8d4134babac149f6ac9a4f, type: 2}
-  _nameObject: "\u0424\u0438\u043B\u0442\u0440"
-  _descriptionObject: 
+  _nameObject: "\u0424\u0438\u043B\u044C\u0442\u0440 \u0433\u0440\u0443\u0431\u043E\u0439
+    \u043E\u0447\u0438\u0441\u0442\u043A\u0438"
+  _descriptionObject: "\u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B
+    \u043E\u0447\u0438\u0449\u0430\u0442\u044C \u0432\u043E\u0434\u0443 \u043E\u0442
+    \u043C\u0443\u0441\u043E\u0440\u0430"
   _imageObject: {fileID: 0}
 --- !u!114 &8753272027711456265
 MonoBehaviour:
@@ -33479,9 +33933,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
-  _nameObject: "\u0417\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
+  _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
+    \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
+    \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
+    \u0432\u043E\u0434\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &8763269833046309395
 MonoBehaviour:
@@ -33516,7 +33973,7 @@ GameObject:
   - component: {fileID: 8764654146021317938}
   - component: {fileID: 8764654146021317937}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u0438\u044F \u0442\u0440\u0443\u0431\u0430 2.012"
+  m_Name: "\u0437\u0430\u0434\u0432\u0438\u0436\u043A\u04302"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33548,9 +34005,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
-  _nameObject: "\u0417\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
+  _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
+    \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
+    \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
+    \u0432\u043E\u0434\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &8764654146021317938
 MonoBehaviour:
@@ -33585,7 +34045,7 @@ GameObject:
   - component: {fileID: 9093149678832639440}
   - component: {fileID: 9093149678832639439}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.015"
+  m_Name: "\u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33659,9 +34119,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 6ee0b1bd19c6ae9469b1c0e5b0264cc9, type: 2}
-  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &8822848576273878158
 MonoBehaviour:
@@ -33751,7 +34212,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: 1799c0505ccd60947a39710d70c72721, type: 2}
   _nameObject: "\u0413\u0438\u0434\u0440\u043E\u0441\u0442\u0440\u0435\u043B\u043A\u0430"
-  _descriptionObject: 
+  _descriptionObject: "\u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0443\u043C\u0435\u043D\u044C\u0448\u0438\u0442\u044C
+    \u043A\u043E\u043D\u0442\u0443\u0440 \u043E\u0442\u043E\u043F\u043B\u0435\u043D\u0438\u044F
+    \u043A\u043E\u0442\u043B\u0430 \u0438 \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0442\u044C
+    \u0440\u0430\u0437\u043D\u0438\u0446\u0443 \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440
+    \u0432 \u043F\u043E\u0434\u0430\u044E\u0449\u0435\u043C \u0438 \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u043C
+    \u0442\u0440\u0443\u0431\u043E\u043F\u0440\u043E\u0432\u043E\u0434\u0435"
   _imageObject: {fileID: 0}
 --- !u!114 &8836726432320741155
 MonoBehaviour:
@@ -33760,7 +34226,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8055201252775681796}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -33806,7 +34272,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: 7c46a19023a1c754d9527a743c8033c9, type: 2}
-  _nameObject: "\u041C\u0443\u0444\u0442\u0430 \u043A\u043E\u043C\u043F\u0438\u0441\u0438\u0440\u0443\u0448\u0438\u044F"
+  _nameObject: "\u043A\u043B\u0430\u043F\u0430\u043D \u043E\u0431\u0440\u0430\u0442\u043D\u044B\u0439
+    \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0435\u0432\u044B\u0439"
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &8839960927356163729
@@ -33917,9 +34384,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
-  _nameObject: "\u0417\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
+  _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
+    \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
+    \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
+    \u0432\u043E\u0434\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &8849376801075841507
 MonoBehaviour:
@@ -33981,8 +34451,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: ead36504d4409a24b84fb58f26c74a31, type: 2}
-  _nameObject: "\u0412\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0430"
-  _descriptionObject: 
+  _nameObject: "\u0445\u0438\u043C. \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0430"
+  _descriptionObject: "\u043D\u0443\u0436\u043D\u0430 \u0447\u0442\u043E\u0431\u044B
+    \u0432\u043E\u0434\u0430 \u0431\u044B\u043B\u0430 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E\u0433\u043E"
   _imageObject: {fileID: 0}
 --- !u!114 &8865849269486157781
 MonoBehaviour:
@@ -33991,7 +34462,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4521597913846616442}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -34106,7 +34577,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: 1799c0505ccd60947a39710d70c72721, type: 2}
   _nameObject: "\u0413\u0438\u0434\u0440\u043E\u0441\u0442\u0440\u0435\u043B\u043A\u0430"
-  _descriptionObject: 
+  _descriptionObject: "\u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0443\u043C\u0435\u043D\u044C\u0448\u0438\u0442\u044C
+    \u043A\u043E\u043D\u0442\u0443\u0440 \u043E\u0442\u043E\u043F\u043B\u0435\u043D\u0438\u044F
+    \u043A\u043E\u0442\u043B\u0430 \u0438 \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0442\u044C
+    \u0440\u0430\u0437\u043D\u0438\u0446\u0443 \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440
+    \u0432 \u043F\u043E\u0434\u0430\u044E\u0449\u0435\u043C \u0438 \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u043C
+    \u0442\u0440\u0443\u0431\u043E\u043F\u0440\u043E\u0432\u043E\u0434\u0435"
   _imageObject: {fileID: 0}
 --- !u!114 &8889522585543883044
 MonoBehaviour:
@@ -34115,7 +34591,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8043494034643512782}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -34384,7 +34860,7 @@ GameObject:
   - component: {fileID: 9022144844068070002}
   - component: {fileID: 9022144844068070001}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.027"
+  m_Name: "\u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34508,7 +34984,7 @@ GameObject:
   - component: {fileID: 9038907983290553376}
   - component: {fileID: 9038907983290553375}
   m_Layer: 0
-  m_Name: "\u0441\u0435\u0440\u044B\u0439 \u0431\u043B\u043E\u043A"
+  m_Name: "\u0431\u0430\u043A \u0441\u043E\u043B\u0435\u0440\u0430\u0441\u0442\u0432\u043E\u0440\u0438\u0442\u0435\u043B\u044C"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34541,8 +35017,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: 74601f7a0fe511946b5a27a6938fbea6, type: 2}
-  _nameObject: "\u0421\u043E\u043B\u0435\u0432\u043E\u0439 \u0431\u0430\u043A"
-  _descriptionObject: 
+  _nameObject: "\u0431\u0430\u043A \u0441\u043E\u043B\u0435\u0440\u0430\u0441\u0442\u0432\u043E\u0440\u0438\u0442\u0435\u043B\u044C"
+  _descriptionObject: "\u0431\u0430\u043A \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B
+    \u0440\u0430\u0441\u0442\u0432\u043E\u0440\u044F\u0442\u044C \u0445\u0438\u043C.
+    \u0432\u0435\u0449\u0435\u0441\u0442\u0432\u0430(\u0441\u043E\u043B\u044C)"
   _imageObject: {fileID: 0}
 --- !u!114 &9038907983290553376
 MonoBehaviour:
@@ -34729,7 +35207,8 @@ GameObject:
   - component: {fileID: 9091221334155714001}
   - component: {fileID: 9091221334155714000}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.017"
+  m_Name: "\u0426\u0438\u0440\u043A\u0443\u043B\u044F\u0440\u043D\u044B\u0439 \u043D\u0430\u0441\u043E\u0441
+    \u0441 \u043C\u043E\u043A\u0440\u044B\u043C \u0440\u043E\u0442\u043E\u0440\u043E\u043C"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34763,8 +35242,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: c05e6250b9b7a56438194d276a53b6dd, type: 2}
   _nameObject: "\u0426\u0438\u0440\u043A\u0443\u043B\u044F\u0440\u043D\u044B\u0439
-    \u043D\u0430\u0441\u043E\u0441"
-  _descriptionObject: 
+    \u043D\u0430\u0441\u043E\u0441 \u0441 \u043C\u043E\u043A\u0440\u044B\u043C \u0440\u043E\u0442\u043E\u0440\u043E\u043C"
+  _descriptionObject: "\u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B
+    \u043A\u0430\u0447\u0430\u0442\u044C \u0432\u043E\u0434\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &9091221334155714001
 MonoBehaviour:
@@ -34852,9 +35332,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
-  _nameObject: "\u0417\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
+  _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
+    \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
+    \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
+    \u0432\u043E\u0434\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &9093149678832639440
 MonoBehaviour:
@@ -34943,8 +35426,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
-  _nameObject: "\u0417\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
-  _descriptionObject: 
+  _nameObject: "\u043A\u0440\u0430\u043D \u0448\u0430\u0440\u043E\u0432\u044B\u0439"
+  _descriptionObject: "\u0438\u043C \u043C\u043E\u0436\u043D\u043E \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
+    \u0432\u043E\u0434\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &9109542044530022017
 MonoBehaviour:
@@ -35069,7 +35553,7 @@ GameObject:
   - component: {fileID: 9127591016708550680}
   - component: {fileID: 9127591016708550679}
   m_Layer: 0
-  m_Name: "\u0441\u0438\u043D\u044F\u044F  \u0442\u0440\u0443\u0431\u0430.002"
+  m_Name: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u044015"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35101,10 +35585,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
-  _nameObject: "\u041C\u0430\u043D\u043E\u043C\u0435\u0442\u0440 \u043F\u043E\u0441\u043B\u0435
-    \u043D\u0430\u0441\u043E\u0441\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
 --- !u!114 &9127591016708550680
 MonoBehaviour:

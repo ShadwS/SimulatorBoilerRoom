@@ -22,4 +22,4 @@ MonoBehaviour:
   - "\u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u043E"
   _actionObject: 
   _changestate: 
-  _objectNotInfluencing: 0
+  _objectNotInfluencing: 1

@@ -23,4 +23,4 @@ MonoBehaviour:
   - "\u0412\u044B\u043A\u0440\u0443\u0447\u0435\u043D"
   _actionObject: 
   _changestate: 
-  _objectNotInfluencing: 0
+  _objectNotInfluencing: 1
