@@ -63,14 +63,13 @@ public class Settings : MonoBehaviour
 
     private void SaveToFile()
     {
-        GameCoreStruct gameCore = new GameCoreStruct()
-        {
-            Sensivity = _sensitivity,
-            Volume = _volumeSounds,
-            MysicState = _musicState,
-            Results = _results.ToArray()
-        };
-        
+        GameCoreStruct gameCore = new GameCoreStruct();
+
+        gameCore.Sensivity = _sensitivity;
+        gameCore.Volume = _volumeSounds;
+        gameCore.MysicState = _musicState;
+        gameCore.Results = _results.ToArray();
+
         string json = JsonUtility.ToJson(gameCore, true);
 
         try

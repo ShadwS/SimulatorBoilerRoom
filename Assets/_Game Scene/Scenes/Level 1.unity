@@ -1228,8 +1228,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 245.30313, y: -662.6177}
-  m_SizeDelta: {x: 333.6063, y: 279.7654}
+  m_AnchoredPosition: {x: 245.30313, y: -634.0731}
+  m_SizeDelta: {x: 333.6063, y: 222.6762}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &190336633
 MonoBehaviour:
@@ -1296,15 +1296,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 14.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 0.1
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 16
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -7835,9 +7835,9 @@ RectTransform:
   m_Father: {fileID: 1301915712}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 48.68341}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 233, y: 48.68341}
   m_SizeDelta: {x: 254.4259, y: 47.3657}
   m_Pivot: {x: 0.50000006, y: 0.50000006}
 --- !u!114 &1032668239
@@ -7886,7 +7886,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 697239342}
         m_TargetAssemblyTypeName: GameCanvas, Assembly-CSharp
-        m_MethodName: ButtonClickSound
+        m_MethodName: ButtonReadPDF
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7909,7 +7909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10482,6 +10482,142 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6000407479487422213, guid: c554a0de6a4b1dc44baec26c77ad5e58, type: 3}
   m_PrefabInstance: {fileID: 999575800}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1453590687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1453590688}
+  - component: {fileID: 1453590693}
+  - component: {fileID: 1453590692}
+  - component: {fileID: 1453590691}
+  - component: {fileID: 1453590690}
+  - component: {fileID: 1453590689}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1453590688
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453590687}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.00334, y: 0.01332, z: 0.0147}
+  m_LocalScale: {x: 0.0013956999, y: 0.00092097995, z: 0.0041945}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2881165671221419666}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1453590689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453590687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nameObject: "\u0430\u0432\u0430\u0440\u0438\u0439\u043D\u044B\u0439 \u0442\u0435\u0440\u043C\u043E\u0441\u0442\u0430\u0442"
+  _interactionInfoSelection: {fileID: 11400000, guid: 60132d8fc306b9446829248b23463d5c, type: 2}
+  _descriptionObject: "\u043E\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442
+    \u043A\u043E\u0442\u0435\u043B \u043F\u0440\u0438 \u043F\u0435\u0440\u0435\u0433\u0440\u0435\u0432\u0435
+    \u0438\u043B\u0438 \u0441\u043B\u0448\u043A\u043E\u043C \u043D\u0438\u0437\u043A\u043E\u0439
+    \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0435"
+  _imageObject: {fileID: 0}
+--- !u!114 &1453590690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453590687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!65 &1453590691
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453590687}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1453590692
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453590687}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1453590693
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453590687}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1469191727
 GameObject:
   m_ObjectHideFlags: 0
@@ -10700,7 +10836,7 @@ PrefabInstance:
     - target: {fileID: 8910275173122847322, guid: bd6d94f695c4ac44db9acd72efe56e59, type: 3}
       propertyPath: _imageObject
       value: 
-      objectReference: {fileID: 1705458247}
+      objectReference: {fileID: 0}
     - target: {fileID: 8910275174024032677, guid: bd6d94f695c4ac44db9acd72efe56e59, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -11750,17 +11886,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6660809488795418262, guid: 0d9bea5ade0a64f478fc1be0635d6f84, type: 3}
   m_PrefabInstance: {fileID: 1705458245}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1705458247 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6660809490124566851, guid: 0d9bea5ade0a64f478fc1be0635d6f84, type: 3}
-  m_PrefabInstance: {fileID: 1705458245}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1706564945 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 633761295776478404, guid: cb5641dadc6e3d541be4f22f5c01fa13, type: 3}
@@ -15433,8 +15558,6 @@ GameObject:
   - component: {fileID: 5111641606710271623}
   - component: {fileID: 604611319200042661}
   - component: {fileID: 5111641606710271624}
-  - component: {fileID: 5111641606710271626}
-  - component: {fileID: 5111641606710271625}
   m_Layer: 0
   m_Name: "\u0413\u0420\u041F\u0429"
   m_TagString: Untagged
@@ -17517,6 +17640,8 @@ GameObject:
   - component: {fileID: 2515354134801686570}
   - component: {fileID: 3308129813849497779}
   - component: {fileID: 6577014185415435668}
+  - component: {fileID: 6577014185415435670}
+  - component: {fileID: 6577014185415435669}
   m_Layer: 0
   m_Name: "\u0433\u043E\u043B\u0443\u0431\u0430\u044F \u0442\u0440\u0443\u0431\u0430.023"
   m_TagString: Untagged
@@ -18048,7 +18173,8 @@ Transform:
   m_LocalPosition: {x: 0.27307245, y: 2.179545, z: -0.24123357}
   m_LocalScale: {x: 117.36158, y: 55.296803, z: 23.88601}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1453590688}
   m_Father: {fileID: 543450653116442050}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18275,11 +18401,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: e49d819ae48e4254fa7f1632bc4348e3, type: 3}
 --- !u!114 &2971707114055854054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18977,11 +19103,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
   _nameObject: "\u043A\u0440\u0430\u043D \u0448\u0430\u0440\u043E\u0432\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
   _descriptionObject: "\u0438\u043C \u043C\u043E\u0436\u043D\u043E \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
     \u0432\u043E\u0434\u0443"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 67230647e47e793408535c9d1dbe5dd6, type: 3}
 --- !u!114 &3433316105499411676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19298,7 +19424,7 @@ GameObject:
   - component: {fileID: 3553487523745806923}
   - component: {fileID: 3553487523745806922}
   m_Layer: 0
-  m_Name: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0432\u044B\u0441\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439
+  m_Name: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0434\u043F\u0438\u0442\u043A\u0438
     2"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19331,13 +19457,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 1ad77d771b049b44180fe1e44673bc51, type: 2}
-  _nameObject: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0432\u044B\u0441\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439
+  _nameObject: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0434\u043F\u0438\u0442\u043A\u0438
     2"
+  _interactionInfoSelection: {fileID: 11400000, guid: 4390b370a4cafdf4199c66263c76d0c9, type: 2}
   _descriptionObject: "\u043D\u0430\u0441\u043E\u0441 \u043D\u0443\u0436\u0435\u043D
-    \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u0432\u044B\u0441\u0438\u0442\u044C
-    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+    \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u0434\u043F\u0438\u0442\u0430\u0442\u044C
+    \u0441\u0438\u0441\u0442\u0435\u043C\u0443 \u0432\u043E\u0434\u043E\u0439"
+  _imageObject: {fileID: 21300000, guid: b3294bb8019224c48b6bb2e82a933577, type: 3}
 --- !u!114 &3553487523745806923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19690,8 +19816,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _nameObject: "\u041A\u0440\u0430\u043D \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &3699383601065704498
@@ -20053,8 +20179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _nameObject: "\u041A\u0440\u0430\u043D \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &3921527759758234596
@@ -21280,13 +21406,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 9ebc542d0f8d4134babac149f6ac9a4f, type: 2}
   _nameObject: "\u0424\u0438\u043B\u044C\u0442\u0440 \u0433\u0440\u0443\u0431\u043E\u0439
     \u043E\u0447\u0438\u0441\u0442\u043A\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: 9ebc542d0f8d4134babac149f6ac9a4f, type: 2}
   _descriptionObject: "\u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B
     \u043E\u0447\u0438\u0449\u0430\u0442\u044C \u0432\u043E\u0434\u0443 \u043E\u0442
     \u043C\u0443\u0441\u043E\u0440\u0430"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 9d83243a5801c6e44a10cd62c3c93a35, type: 3}
 --- !u!114 &4570448283314249168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21411,8 +21537,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
   _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
+  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &4641747337037025857
@@ -21501,8 +21627,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: dcac8cd3737e3a04ab7b2e48d365ff06, type: 2}
   _nameObject: "\u0422\u0440\u0443\u0431\u0430 \u0431\u0430\u043A\u0430 \u0437\u0430\u043F\u0430\u0441\u0430"
+  _interactionInfoSelection: {fileID: 11400000, guid: dcac8cd3737e3a04ab7b2e48d365ff06, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &4641916711238693579
@@ -21577,6 +21703,8 @@ GameObject:
   - component: {fileID: 6973747394253566854}
   - component: {fileID: 6275523740239335703}
   - component: {fileID: 6973747394253566855}
+  - component: {fileID: 6973747394253566857}
+  - component: {fileID: 6973747394253566856}
   m_Layer: 0
   m_Name: "\u041A\u0440\u0430\u0441\u043D\u0430\u044F \u0442\u0440\u0443\u0431\u0430.002"
   m_TagString: Untagged
@@ -21824,9 +21952,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _nameObject: "\u041A\u043B\u0430\u043F\u0430\u043D \u0437\u0430\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F
     \u0431\u0430\u043A\u0430 \u0437\u0430\u043F\u0430\u0441\u0430"
+  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &4716609820649997879
@@ -22133,8 +22261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
   _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
+  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &4813635869796117754
@@ -22446,8 +22574,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _nameObject: "\u041A\u0440\u0430\u043D \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &4942717276436766140
@@ -22606,6 +22734,8 @@ GameObject:
   - component: {fileID: 3954480775959262795}
   - component: {fileID: 3652340861583329684}
   - component: {fileID: 6245180571206504841}
+  - component: {fileID: 6245180571206504843}
+  - component: {fileID: 6245180571206504842}
   m_Layer: 0
   m_Name: "\u0447\u0435\u0440\u043D\u044B\u0435 \u043A\u0440\u0443\u0433\u0438.004"
   m_TagString: Untagged
@@ -22746,40 +22876,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 302718617700697397, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
---- !u!114 &5111641606710271625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991783024764775523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 0}
-  _nameObject: "\u0413\u0420\u041F\u0429"
-  _descriptionObject: 
-  _imageObject: {fileID: 0}
---- !u!114 &5111641606710271626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991783024764775523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!23 &5117284192426275438
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23030,8 +23126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _nameObject: "\u041A\u0440\u0430\u043D \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &5179265188973254553
@@ -23162,8 +23258,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
   _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
+  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &5200897038624550335
@@ -23297,11 +23393,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5caf4d88edcc46e4ea85415549db2cfd, type: 2}
   _nameObject: "\u043A\u043E\u0442\u0435\u043B 1"
+  _interactionInfoSelection: {fileID: 11400000, guid: 5caf4d88edcc46e4ea85415549db2cfd, type: 2}
   _descriptionObject: "\u043A\u043E\u0442\u0435\u043B \u0434\u043B\u044F \u043D\u0430\u0433\u0440\u0435\u0432\u0430
     \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 653e72944ec87a347b558532bc66604d, type: 3}
 --- !u!114 &5205833708047135450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23482,11 +23578,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 27a687c0e61679b4bb0d992bafd61664, type: 2}
   _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B
     \u043A\u043E\u0442\u043B\u0430"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: 
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: e49d819ae48e4254fa7f1632bc4348e3, type: 3}
 --- !u!114 &5320098455684462419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23653,12 +23749,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: ef33df0753e0c14409c3de507190d92f, type: 2}
   _nameObject: "\u0441\u0447\u0435\u0442\u0447\u0438\u043A"
+  _interactionInfoSelection: {fileID: 11400000, guid: ef33df0753e0c14409c3de507190d92f, type: 2}
   _descriptionObject: "\u043F\u043E \u043D\u0435\u043C\u0443 \u043C\u043E\u044D\u043D\u043E
     \u0443\u0437\u043D\u0430\u0442\u044C \u0441\u043A\u043E\u043B\u044C\u043A\u043E
     \u0432\u043E\u0434\u044B \u0443\u0442\u0435\u043A\u043B\u043E"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: f0f2415b51b1f4943aa127850109f46a, type: 3}
 --- !u!114 &5362060761988895402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23866,11 +23962,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5caf4d88edcc46e4ea85415549db2cfd, type: 2}
   _nameObject: "\u043A\u043E\u0442\u0435\u043B 2"
+  _interactionInfoSelection: {fileID: 11400000, guid: b0512736a1dc4c048b3523448f526399, type: 2}
   _descriptionObject: "\u043A\u043E\u0442\u0435\u043B \u0434\u043B\u044F \u043D\u0430\u0433\u0440\u0435\u0432\u0430
     \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 653e72944ec87a347b558532bc66604d, type: 3}
 --- !u!114 &5516263840199805914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24133,8 +24229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
   _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
+  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &5600822546740882373
@@ -24316,7 +24412,7 @@ GameObject:
   - component: {fileID: 6941357675081153841}
   - component: {fileID: 6941357675081153840}
   m_Layer: 0
-  m_Name: "\u0433\u043E\u043B\u0443\u0431\u044B\u0435 \u043A\u0443\u0431\u044B"
+  m_Name: "\u0411\u0430\u043A \u0437\u0430\u043F\u0430\u0441\u0430"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24363,11 +24459,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: ead36504d4409a24b84fb58f26c74a31, type: 2}
   _nameObject: "\u0445\u0438\u043C. \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0430"
+  _interactionInfoSelection: {fileID: 11400000, guid: ead36504d4409a24b84fb58f26c74a31, type: 2}
   _descriptionObject: "\u043D\u0443\u0436\u043D\u0430 \u0447\u0442\u043E\u0431\u044B
     \u0432\u043E\u0434\u0430 \u0431\u044B\u043B\u0430 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E\u0433\u043E"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: ee4293106ad7fd84996a6f99e91f0840, type: 3}
 --- !u!114 &5718757035231828571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24442,9 +24538,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
     \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
     \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
     \u0432\u043E\u0434\u0443"
@@ -24535,11 +24631,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 27a687c0e61679b4bb0d992bafd61664, type: 2}
-  _nameObject: "\u0434\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B"
-  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
-    \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0443 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
+  _interactionInfoSelection: {fileID: 11400000, guid: 88a144587e59c36458e5900dc9eec053, type: 2}
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
+  _imageObject: {fileID: 21300000, guid: b896dcce2487be7419e63961c2e7ce6c, type: 3}
 --- !u!114 &5749924617310128641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24838,8 +24934,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
   _nameObject: "\u0413\u0430\u0437\u043E\u0432\u0430\u044F \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
+  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &5848659827888777425
@@ -24928,8 +25024,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
@@ -25058,8 +25154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: b7803b6d4288b784a96c84c8c9e7ee22, type: 2}
   _nameObject: "\u0414\u044B\u043C\u043E\u0432\u044B\u0435 \u0442\u0440\u0443\u0431\u044B"
+  _interactionInfoSelection: {fileID: 11400000, guid: b7803b6d4288b784a96c84c8c9e7ee22, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &5999614488754355952
@@ -25092,6 +25188,8 @@ GameObject:
   - component: {fileID: 3546033142916075103}
   - component: {fileID: 1924248768708098111}
   - component: {fileID: 6013297141082445988}
+  - component: {fileID: 6013297141082445990}
+  - component: {fileID: 6013297141082445989}
   m_Layer: 0
   m_Name: "\u0433\u043E\u043B\u0443\u0431\u0430\u044F \u0442\u0440\u0443\u0431\u0430.024"
   m_TagString: Untagged
@@ -25113,6 +25211,41 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7257626491909655615, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &6013297141082445989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6013297141082445987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
+  _interactionInfoSelection: {fileID: 11400000, guid: 88a144587e59c36458e5900dc9eec053, type: 2}
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
+  _imageObject: {fileID: 21300000, guid: b896dcce2487be7419e63961c2e7ce6c, type: 3}
+--- !u!114 &6013297141082445990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6013297141082445987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &6022068225534582015
 Transform:
   m_ObjectHideFlags: 0
@@ -25169,9 +25302,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: bcd1e47a3ed94c64d8c1b08688ff07fb, type: 2}
   _nameObject: "\u0411\u043B\u043E\u043A \u0433\u0430\u0437\u043E\u0432\u044B\u0445
     \u043A\u043B\u0430\u043F\u043E\u043D\u043E\u0432"
+  _interactionInfoSelection: {fileID: 11400000, guid: bcd1e47a3ed94c64d8c1b08688ff07fb, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &6036436200080647341
@@ -25515,8 +25648,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: bcd1e47a3ed94c64d8c1b08688ff07fb, type: 2}
   _nameObject: "\u0442\u0435\u0440\u043C\u043E\u0441\u0442\u0430\u0442"
+  _interactionInfoSelection: {fileID: 11400000, guid: bcd1e47a3ed94c64d8c1b08688ff07fb, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &6195638103900557934
@@ -25613,8 +25746,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 8d0e91f5c6ddf004589e004c5c2261a7, type: 2}
   _nameObject: "\u0412\u043E\u0437\u0434\u0443\u0445\u043E\u043E\u0442\u0432\u043E\u0434\u0447\u0438\u043A"
+  _interactionInfoSelection: {fileID: 11400000, guid: 8d0e91f5c6ddf004589e004c5c2261a7, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &6205007172583440199
@@ -25775,13 +25908,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
     \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
     \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
     \u0432\u043E\u0434\u0443"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 67230647e47e793408535c9d1dbe5dd6, type: 3}
 --- !u!114 &6238945286450501025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25829,6 +25962,41 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1167096461509507082, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &6245180571206504842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5057248683485785002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
+  _interactionInfoSelection: {fileID: 11400000, guid: 88a144587e59c36458e5900dc9eec053, type: 2}
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
+  _imageObject: {fileID: 21300000, guid: b896dcce2487be7419e63961c2e7ce6c, type: 3}
+--- !u!114 &6245180571206504843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5057248683485785002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &6257400730709412850
 Transform:
   m_ObjectHideFlags: 0
@@ -25999,13 +26167,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
     \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
     \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
     \u0432\u043E\u0434\u0443"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 67230647e47e793408535c9d1dbe5dd6, type: 3}
 --- !u!114 &6319129594483541538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26195,8 +26363,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _nameObject: "\u041A\u0440\u0430\u043D"
+  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &6431435689730079440
@@ -26335,13 +26503,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
     \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
     \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
     \u0432\u043E\u0434\u0443"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 67230647e47e793408535c9d1dbe5dd6, type: 3}
 --- !u!114 &6456510637467471356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26451,13 +26619,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
     \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
     \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
     \u0432\u043E\u0434\u0443"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 67230647e47e793408535c9d1dbe5dd6, type: 3}
 --- !u!114 &6467580772173886377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26582,6 +26750,41 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4166652404919137238, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &6577014185415435669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2433412969268772031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nameObject: "\u0434\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B"
+  _interactionInfoSelection: {fileID: 11400000, guid: a2ba9637a8bef2640a55235d6f846183, type: 2}
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
+    \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0443 \u043F\u043E\u0434\u0430\u0447\u0438"
+  _imageObject: {fileID: 21300000, guid: e2bb93d42b5800d479507274d8bc42c1, type: 3}
+--- !u!114 &6577014185415435670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2433412969268772031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &6577371015766071496
 Transform:
   m_ObjectHideFlags: 0
@@ -26715,11 +26918,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 27a687c0e61679b4bb0d992bafd61664, type: 2}
-  _nameObject: "\u0434\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B"
-  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
-    \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0443 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
+  _interactionInfoSelection: {fileID: 11400000, guid: 88a144587e59c36458e5900dc9eec053, type: 2}
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
+    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
+  _imageObject: {fileID: 21300000, guid: b896dcce2487be7419e63961c2e7ce6c, type: 3}
 --- !u!114 &6603785249931351197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26791,8 +26994,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _nameObject: "\u041A\u0440\u0430\u043D \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &6616035494252799167
@@ -27201,9 +27404,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: a92a0ada96d341441bde2e30114ab0e7, type: 2}
   _nameObject: "\u0413\u043E\u0440\u043E\u0434\u0441\u043A\u0430\u044F \u0442\u0440\u0443\u0431\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: a92a0ada96d341441bde2e30114ab0e7, type: 2}
+  _descriptionObject: "\u0442\u0440\u0443\u0431\u0430 \u043F\u043E \u043A\u043E\u0442\u043E\u0440\u043E\u0439
+    \u0432\u043E\u0434\u0430 \u043F\u043E\u0434\u0430\u0435\u0442\u0441\u044F \u0438\u0437
+    \u0433\u043E\u0440\u043E\u0434\u0430"
   _imageObject: {fileID: 0}
 --- !u!114 &6886112690155285452
 MonoBehaviour:
@@ -27350,10 +27555,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 6085a8721ede87e41ab21a870dc199fd, type: 2}
   _nameObject: "\u0411\u0430\u043A \u0437\u0430\u043F\u0430\u0441\u0430"
-  _descriptionObject: 
-  _imageObject: {fileID: 0}
+  _interactionInfoSelection: {fileID: 11400000, guid: 6085a8721ede87e41ab21a870dc199fd, type: 2}
+  _descriptionObject: "\u0431\u0430\u043A \u0432 \u043A\u043E\u0442\u043E\u0440\u043E\u043C
+    \u0445\u0440\u0430\u043D\u0438\u0442\u0441\u044F \u0437\u0430\u043F\u0430\u0441
+    \u0432\u043E\u0434\u044B"
+  _imageObject: {fileID: 21300000, guid: 46b0e0ecdfee07941acf254701a18665, type: 3}
 --- !u!114 &6941357675081153841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27455,11 +27662,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: e49d819ae48e4254fa7f1632bc4348e3, type: 3}
 --- !u!114 &6964049290744049519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27500,6 +27707,41 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1444246983327273985, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &6973747394253566856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4648031426499058264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B"
+  _interactionInfoSelection: {fileID: 11400000, guid: a2ba9637a8bef2640a55235d6f846183, type: 2}
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
+    \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0443 \u043F\u043E\u0434\u0430\u0447\u0438"
+  _imageObject: {fileID: 21300000, guid: e2bb93d42b5800d479507274d8bc42c1, type: 3}
+--- !u!114 &6973747394253566857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4648031426499058264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &6984998396242959600
 GameObject:
   m_ObjectHideFlags: 0
@@ -27603,11 +27845,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: e49d819ae48e4254fa7f1632bc4348e3, type: 3}
 --- !u!114 &7044573493244992861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27675,11 +27917,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: e49d819ae48e4254fa7f1632bc4348e3, type: 3}
 --- !u!114 &7060724476826217370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27765,12 +28007,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: c05e6250b9b7a56438194d276a53b6dd, type: 2}
   _nameObject: "\u0426\u0438\u0440\u043A\u0443\u043B\u044F\u0440\u043D\u044B\u0439
-    \u043D\u0430\u0441\u043E\u0441 \u0441 \u043C\u043E\u043A\u0440\u044B\u043C \u0440\u043E\u0442\u043E\u0440\u043E\u043C"
+    \u043D\u0430\u0441\u043E\u0441 \u21161 \u0441 \u043C\u043E\u043A\u0440\u044B\u043C
+    \u0440\u043E\u0442\u043E\u0440\u043E\u043C"
+  _interactionInfoSelection: {fileID: 11400000, guid: 99fbfdfeb2a14014dac445091547796b, type: 2}
   _descriptionObject: "\u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B
     \u043A\u0430\u0447\u0430\u0442\u044C \u0432\u043E\u0434\u0443"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: b3294bb8019224c48b6bb2e82a933577, type: 3}
 --- !u!114 &7089192218441772984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27823,9 +28066,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 7c46a19023a1c754d9527a743c8033c9, type: 2}
   _nameObject: "\u043A\u043B\u0430\u043F\u0430\u043D \u043E\u0431\u0440\u0430\u0442\u043D\u044B\u0439
     \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0435\u0432\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 7c46a19023a1c754d9527a743c8033c9, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &7094961042822738895
@@ -27887,11 +28130,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: e49d819ae48e4254fa7f1632bc4348e3, type: 3}
 --- !u!114 &7109127138143687414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27952,8 +28195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: e23ea78756d3df04a8393a8d49a5dcb7, type: 2}
   _nameObject: "\u043A\u043E\u0442\u0435\u043B"
+  _interactionInfoSelection: {fileID: 11400000, guid: e23ea78756d3df04a8393a8d49a5dcb7, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &7140245523484638410
@@ -28035,10 +28278,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
   _nameObject: "\u0417\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
+  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
   _descriptionObject: 
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 67230647e47e793408535c9d1dbe5dd6, type: 3}
 --- !u!114 &7165737734538514608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28239,8 +28482,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
   _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
+  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &7263334860441875148
@@ -28273,6 +28516,8 @@ GameObject:
   - component: {fileID: 6431049422298545841}
   - component: {fileID: 4288023578846212006}
   - component: {fileID: 8704767812095350310}
+  - component: {fileID: 8704767812095350312}
+  - component: {fileID: 8704767812095350311}
   m_Layer: 0
   m_Name: "\u0447\u0435\u0440\u043D\u044B\u0435 \u043A\u0440\u0443\u0433\u0438.021"
   m_TagString: Untagged
@@ -28328,14 +28573,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 482c9a288c896f0489e72b225dac3237, type: 2}
   _nameObject: "\u0441\u0435\u0442\u0435\u0432\u044B\u0439\u0435 \u043D\u0430\u0441\u043E\u0441\u044B
     \u0446\u0438\u0440\u043A\u0443\u043B\u044F\u0446\u0438\u043E\u043D\u043D\u044B\u0435"
+  _interactionInfoSelection: {fileID: 11400000, guid: 482c9a288c896f0489e72b225dac3237, type: 2}
   _descriptionObject: "\u043D\u0430\u0441\u043E\u0441\u044B \u0446\u0438\u0440\u043A\u0443\u043B\u044F\u0446\u0438\u0438
     \u043D\u0443\u0436\u043D\u044B \u0447\u0442\u043E\u0431\u044B \u0432\u043E\u0434\u0430
     \u0446\u0438\u0440\u043A\u0443\u043B\u0438\u0440\u043E\u0432\u0430\u043B\u0430
     \u043F\u043E \u043A\u043E\u043D\u0442\u0443\u0440\u0443"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: ae22ad43e4554fc41a4b39b311db3170, type: 3}
 --- !u!114 &7371299963282268548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28395,8 +28640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: ce5c741d41ba942489ae5c89afe83314, type: 2}
   _nameObject: "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0446\u0438\u044F"
+  _interactionInfoSelection: {fileID: 11400000, guid: ce5c741d41ba942489ae5c89afe83314, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &7381832542044518374
@@ -28588,8 +28833,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 87d4b184a2f278d47a79e9437ced467e, type: 2}
   _nameObject: "\u0422\u0440\u0443\u0431\u0430 \u043F\u043E\u0434\u0430\u0447\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: 87d4b184a2f278d47a79e9437ced467e, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &7476548937725805121
@@ -28734,9 +28979,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: e85545663493a46488fdea843916d932, type: 2}
   _nameObject: "\u0411\u043B\u043E\u043A \u0433\u0430\u0437\u043E\u0432\u044B\u0445
     \u043A\u043B\u0430\u043F\u043E\u043D\u043E\u0432"
+  _interactionInfoSelection: {fileID: 11400000, guid: e85545663493a46488fdea843916d932, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &7496195363858446719
@@ -28833,8 +29078,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
   _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
+  _interactionInfoSelection: {fileID: 11400000, guid: 49b608f02b1348a49b72bd96e4c93462, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &7537383137360683615
@@ -28923,9 +29168,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: fbb5ef0cff3dd7641ad1ad7a572ef1b9, type: 2}
   _nameObject: "\u0434\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F
     \u0433\u0430\u0437\u0430"
+  _interactionInfoSelection: {fileID: 11400000, guid: fbb5ef0cff3dd7641ad1ad7a572ef1b9, type: 2}
   _descriptionObject: "\u043F\u043E \u044D\u0442\u043E\u043C\u0443 \u0434\u0430\u0442\u0447\u0438\u043A\u0443
     \u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C \u0444\u0430\u043A\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0433\u0430\u0437\u0430"
@@ -29016,12 +29261,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 6ee0b1bd19c6ae9469b1c0e5b0264cc9, type: 2}
-  _nameObject: "\u0434\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F
-    \u0432\u043E\u0434\u044B"
+  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
+  _interactionInfoSelection: {fileID: 11400000, guid: 88a144587e59c36458e5900dc9eec053, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: b896dcce2487be7419e63961c2e7ce6c, type: 3}
 --- !u!114 &7553963922116481249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29199,8 +29443,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _nameObject: "\u041A\u0440\u0430\u043D \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &7646704135309126542
@@ -29262,13 +29506,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _nameObject: "\u041A\u043B\u0430\u043F\u0430\u043D \u0433\u0430\u0437\u043E\u0432\u044B\u0439
     \u0448\u0430\u0440\u043E\u0432\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
     \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
     \u0433\u0430\u0437"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 67230647e47e793408535c9d1dbe5dd6, type: 3}
 --- !u!114 &7648139056384688060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29363,13 +29607,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 9cc5d65f970d0c04a879341839790992, type: 2}
   _nameObject: "\u0443\u0437\u0435\u043B \u0443\u0447\u0435\u0442\u0430 \u0433\u0430\u0437\u0430"
+  _interactionInfoSelection: {fileID: 11400000, guid: 9cc5d65f970d0c04a879341839790992, type: 2}
   _descriptionObject: "\u0434\u0430\u043D\u043D\u044B\u0439 \u0443\u0437\u0435\u043B
     \u0441\u0447\u0438\u0442\u0430\u0435\u0442 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E
     \u043F\u043E\u0442\u0440\u0435\u0431\u043B\u044F\u0435\u043C\u043E\u0433\u043E
     \u0433\u0430\u0437\u0430"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: ec9b7965a19b33b43904a41ab0df89f7, type: 3}
 --- !u!114 &7673819033525676323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29456,13 +29700,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 9cc5d65f970d0c04a879341839790992, type: 2}
   _nameObject: "\u0443\u0437\u0435\u043B \u0443\u0447\u0435\u0442\u0430 \u0433\u0430\u0437\u0430"
+  _interactionInfoSelection: {fileID: 11400000, guid: 9cc5d65f970d0c04a879341839790992, type: 2}
   _descriptionObject: "\u0434\u0430\u043D\u043D\u044B\u0439 \u0443\u0437\u0435\u043B
     \u0441\u0447\u0438\u0442\u0430\u0435\u0442 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E
     \u043F\u043E\u0442\u0440\u0435\u0431\u043B\u044F\u0435\u043C\u043E\u0433\u043E
     \u0433\u0430\u0437\u0430"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: ec9b7965a19b33b43904a41ab0df89f7, type: 3}
 --- !u!114 &7690562178748775376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29522,8 +29766,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
   _nameObject: "\u0413\u0430\u0437\u043E\u0432\u0430\u044F \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
+  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &7715890241560349285
@@ -29620,13 +29864,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
     \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
     \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
     \u0432\u043E\u0434\u0443"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 67230647e47e793408535c9d1dbe5dd6, type: 3}
 --- !u!114 &7766042632339769186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29747,9 +29991,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 87d4b184a2f278d47a79e9437ced467e, type: 2}
   _nameObject: "\u0422\u0440\u0443\u0431\u0430 \u043F\u043E\u0434\u0430\u0447\u0438"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 87d4b184a2f278d47a79e9437ced467e, type: 2}
+  _descriptionObject: "\u043F\u043E \u0442\u0440\u0443\u0431\u0435 \u043F\u043E\u0434\u0430\u0435\u0442\u0441\u044F
+    \u0433\u043E\u0440\u044F\u0447\u0430\u044F \u0432\u043E\u0434\u0430"
   _imageObject: {fileID: 0}
 --- !u!114 &7785678489882249384
 MonoBehaviour:
@@ -29845,8 +30090,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _nameObject: "\u041A\u0440\u0430\u043D \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &7819431532339875277
@@ -29914,8 +30159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _nameObject: "\u041A\u0440\u0430\u043D \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &7822105101811668262
@@ -30105,11 +30350,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 27a687c0e61679b4bb0d992bafd61664, type: 2}
   _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B
     \u043A\u043E\u0442\u043B\u0430"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: 
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: e49d819ae48e4254fa7f1632bc4348e3, type: 3}
 --- !u!114 &7852869642083163543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30250,11 +30495,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: e49d819ae48e4254fa7f1632bc4348e3, type: 3}
 --- !u!114 &7876198290364293212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30314,6 +30559,8 @@ GameObject:
   - component: {fileID: 19168366733089711}
   - component: {fileID: 4734528605850993552}
   - component: {fileID: 7923642647913164477}
+  - component: {fileID: 7923642647913164479}
+  - component: {fileID: 7923642647913164478}
   m_Layer: 0
   m_Name: "\u041A\u0440\u0430\u0441\u043D\u0430\u044F \u0442\u0440\u0443\u0431\u0430.008"
   m_TagString: Untagged
@@ -30335,6 +30582,41 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3945161734443692150, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &7923642647913164478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7923642647913164476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B"
+  _interactionInfoSelection: {fileID: 11400000, guid: a2ba9637a8bef2640a55235d6f846183, type: 2}
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
+    \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0443 \u043F\u043E\u0434\u0430\u0447\u0438"
+  _imageObject: {fileID: 21300000, guid: e2bb93d42b5800d479507274d8bc42c1, type: 3}
+--- !u!114 &7923642647913164479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7923642647913164476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &7962471920299749386
 GameObject:
   m_ObjectHideFlags: 0
@@ -30436,11 +30718,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: e49d819ae48e4254fa7f1632bc4348e3, type: 3}
 --- !u!114 &7989055432836897757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30535,9 +30817,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 8911365d6ab4cc24b8a2ff2ce6a1f99a, type: 2}
   _nameObject: "\u0413\u0430\u0437\u043E\u0432\u0430\u044F \u0442\u0440\u0443\u0431\u0430"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: 8911365d6ab4cc24b8a2ff2ce6a1f99a, type: 2}
+  _descriptionObject: "\u0433\u0430\u0437\u043E\u0432\u0430\u044F \u0442\u0440\u0443\u0431\u0430"
   _imageObject: {fileID: 0}
 --- !u!114 &8002927446338240960
 MonoBehaviour:
@@ -30598,9 +30880,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: a611ae6ff6baccd46911aeff51963315, type: 2}
   _nameObject: "\u0422\u0440\u0443\u0431\u0430 \u043E\u0431\u0440\u0430\u0442\u043A\u0438"
-  _descriptionObject: 
+  _interactionInfoSelection: {fileID: 11400000, guid: a611ae6ff6baccd46911aeff51963315, type: 2}
+  _descriptionObject: "\u043F\u043E \u0442\u0440\u0443\u0431\u0435 \u0432\u043E\u0434\u0430
+    \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044F \u043E\u0431\u0440\u0430\u0442\u043D\u043E
+    \u0432 \u043A\u043E\u0442\u0435\u043B\u044C\u043D\u0443\u044E"
   _imageObject: {fileID: 0}
 --- !u!114 &8025689966335915179
 MonoBehaviour:
@@ -30836,11 +31120,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 9ebc542d0f8d4134babac149f6ac9a4f, type: 2}
   _nameObject: "\u0444\u0438\u043B\u044C\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 9ebc542d0f8d4134babac149f6ac9a4f, type: 2}
   _descriptionObject: "\u043C\u0430\u043B\u044B\u0439 \u0444\u0438\u043B\u044C\u0442\u0440
     \u0434\u043B\u044F \u043E\u0447\u0438\u0442\u0441\u043A\u0438 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 9d83243a5801c6e44a10cd62c3c93a35, type: 3}
 --- !u!114 &8145961649085886611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30927,8 +31211,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: a611ae6ff6baccd46911aeff51963315, type: 2}
   _nameObject: "\u0422\u0440\u0443\u0431\u0430 \u043E\u0431\u0440\u0430\u0442\u043A\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: a611ae6ff6baccd46911aeff51963315, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &8157026859320864776
@@ -30990,8 +31274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
@@ -31194,11 +31478,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: e49d819ae48e4254fa7f1632bc4348e3, type: 3}
 --- !u!114 &8262634520591040598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31232,7 +31516,7 @@ GameObject:
   - component: {fileID: 8284421047985951329}
   - component: {fileID: 8284421047985951328}
   m_Layer: 0
-  m_Name: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0432\u044B\u0441\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439
+  m_Name: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0434\u043F\u0438\u0434\u043A\u0438
     1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31265,13 +31549,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 1ad77d771b049b44180fe1e44673bc51, type: 2}
-  _nameObject: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0432\u044B\u0441\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439
+  _nameObject: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0434\u043F\u0438\u0442\u043A\u0438
     1"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1ad77d771b049b44180fe1e44673bc51, type: 2}
   _descriptionObject: "\u043D\u0430\u0441\u043E\u0441 \u043D\u0443\u0436\u0435\u043D
-    \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u0432\u044B\u0441\u0438\u0442\u044C
-    \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+    \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u0434\u043F\u0438\u0442\u0430\u0442\u044C
+    \u0441\u0438\u0441\u0442\u0435\u043C\u0443 \u0432\u043E\u0434\u043E\u0439"
+  _imageObject: {fileID: 21300000, guid: b3294bb8019224c48b6bb2e82a933577, type: 3}
 --- !u!114 &8284421047985951329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31374,11 +31658,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: e49d819ae48e4254fa7f1632bc4348e3, type: 3}
 --- !u!114 &8322953983211792861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31566,11 +31850,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: a2ba9637a8bef2640a55235d6f846183, type: 2}
   _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B"
-  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
-    \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0443 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _interactionInfoSelection: {fileID: 11400000, guid: a2ba9637a8bef2640a55235d6f846183, type: 2}
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
+    \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0443 \u043F\u043E\u0434\u0430\u0447\u0438"
+  _imageObject: {fileID: 21300000, guid: e2bb93d42b5800d479507274d8bc42c1, type: 3}
 --- !u!114 &8432938366847933597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31701,8 +31985,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _nameObject: "\u041A\u0440\u0430\u043D \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &8469358211965705131
@@ -31764,11 +32048,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: e49d819ae48e4254fa7f1632bc4348e3, type: 3}
 --- !u!114 &8502589988979256314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31828,11 +32112,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: e49d819ae48e4254fa7f1632bc4348e3, type: 3}
 --- !u!114 &8504158886267080170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31919,12 +32203,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 53790b456b6055d4c921a42978d31af3, type: 2}
   _nameObject: "\u041A\u0440\u0430\u043D \u0442\u0440\u0435\u0445 \u0445\u043E\u0434\u043E\u0432\u043E\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 53790b456b6055d4c921a42978d31af3, type: 2}
   _descriptionObject: "\u044D\u0442\u043E\u0442 \u043A\u043B\u0430\u043F\u0430\u043D
     \u0441\u043C\u0435\u0448\u0438\u0432\u0430\u0435\u0442 \u0433\u043E\u0440\u044F\u0447\u0443\u044E
     \u0438 \u0445\u043E\u043B\u043E\u0434\u043D\u0443\u044E \u0432\u043E\u0434\u0443"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: fa898c4bb9757d94da94aadcd3e0fdd6, type: 3}
 --- !u!114 &8514959223044499008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32060,11 +32344,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: e49d819ae48e4254fa7f1632bc4348e3, type: 3}
 --- !u!114 &8533371437073387267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32208,13 +32492,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 9cc5d65f970d0c04a879341839790992, type: 2}
   _nameObject: "\u0443\u0437\u0435\u043B \u0443\u0447\u0435\u0442\u0430 \u0433\u0430\u0437\u0430"
+  _interactionInfoSelection: {fileID: 11400000, guid: 9cc5d65f970d0c04a879341839790992, type: 2}
   _descriptionObject: "\u0434\u0430\u043D\u043D\u044B\u0439 \u0443\u0437\u0435\u043B
     \u0441\u0447\u0438\u0442\u0430\u0435\u0442 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E
     \u043F\u043E\u0442\u0440\u0435\u0431\u043B\u044F\u0435\u043C\u043E\u0433\u043E
     \u0433\u0430\u0437\u0430"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: ec9b7965a19b33b43904a41ab0df89f7, type: 3}
 --- !u!114 &8599326795751858572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32282,13 +32566,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
     \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
     \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
     \u0432\u043E\u0434\u0443"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 67230647e47e793408535c9d1dbe5dd6, type: 3}
 --- !u!114 &8615088818869064214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32532,11 +32816,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: a2ba9637a8bef2640a55235d6f846183, type: 2}
   _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B"
-  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
-    \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0443 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _interactionInfoSelection: {fileID: 11400000, guid: a2ba9637a8bef2640a55235d6f846183, type: 2}
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
+    \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0443 \u043F\u043E\u0434\u0430\u0447\u0438"
+  _imageObject: {fileID: 21300000, guid: e2bb93d42b5800d479507274d8bc42c1, type: 3}
 --- !u!114 &8659481936833332094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32596,12 +32880,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 6ee0b1bd19c6ae9469b1c0e5b0264cc9, type: 2}
-  _nameObject: "\u0434\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F
-    \u0432\u043E\u0434\u044B"
+  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u044F"
+  _interactionInfoSelection: {fileID: 11400000, guid: 88a144587e59c36458e5900dc9eec053, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: b896dcce2487be7419e63961c2e7ce6c, type: 3}
 --- !u!114 &8662343440960018647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32667,13 +32950,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
     \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
     \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
     \u0432\u043E\u0434\u0443"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 67230647e47e793408535c9d1dbe5dd6, type: 3}
 --- !u!114 &8674083237011714338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32760,11 +33043,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: e49d819ae48e4254fa7f1632bc4348e3, type: 3}
 --- !u!114 &8676480626538450254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32835,6 +33118,41 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6372852085439225424, guid: 005c698fc90199146b461f7eaef3da5b, type: 3}
+--- !u!114 &8704767812095350311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7289688247382740862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nameObject: "\u0414\u0430\u0442\u0447\u0438\u043A \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B"
+  _interactionInfoSelection: {fileID: 11400000, guid: a2ba9637a8bef2640a55235d6f846183, type: 2}
+  _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
+    \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0443 \u043F\u043E\u0434\u0430\u0447\u0438"
+  _imageObject: {fileID: 21300000, guid: e2bb93d42b5800d479507274d8bc42c1, type: 3}
+--- !u!114 &8704767812095350312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7289688247382740862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &8734845016549466770
 GameObject:
   m_ObjectHideFlags: 0
@@ -32944,13 +33262,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _nameObject: "\u041A\u043B\u0430\u043F\u0430\u043D \u0433\u0430\u0437\u043E\u0432\u044B\u0439
     \u0448\u0430\u0440\u043E\u0432\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
     \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
     \u0433\u0430\u0437"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 67230647e47e793408535c9d1dbe5dd6, type: 3}
 --- !u!114 &8743960766385544917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33811,13 +34129,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 9ebc542d0f8d4134babac149f6ac9a4f, type: 2}
   _nameObject: "\u0424\u0438\u043B\u044C\u0442\u0440 \u0433\u0440\u0443\u0431\u043E\u0439
     \u043E\u0447\u0438\u0441\u0442\u043A\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: 9ebc542d0f8d4134babac149f6ac9a4f, type: 2}
   _descriptionObject: "\u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B
     \u043E\u0447\u0438\u0449\u0430\u0442\u044C \u0432\u043E\u0434\u0443 \u043E\u0442
     \u043C\u0443\u0441\u043E\u0440\u0430"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 9d83243a5801c6e44a10cd62c3c93a35, type: 3}
 --- !u!114 &8753272027711456265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33933,13 +34251,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
     \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
     \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
     \u0432\u043E\u0434\u0443"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 67230647e47e793408535c9d1dbe5dd6, type: 3}
 --- !u!114 &8763269833046309395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34005,13 +34323,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
     \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
     \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
     \u0432\u043E\u0434\u0443"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 67230647e47e793408535c9d1dbe5dd6, type: 3}
 --- !u!114 &8764654146021317938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34119,11 +34437,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: e49d819ae48e4254fa7f1632bc4348e3, type: 3}
 --- !u!114 &8822848576273878158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34210,15 +34528,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 1799c0505ccd60947a39710d70c72721, type: 2}
   _nameObject: "\u0413\u0438\u0434\u0440\u043E\u0441\u0442\u0440\u0435\u043B\u043A\u0430"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1799c0505ccd60947a39710d70c72721, type: 2}
   _descriptionObject: "\u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0443\u043C\u0435\u043D\u044C\u0448\u0438\u0442\u044C
     \u043A\u043E\u043D\u0442\u0443\u0440 \u043E\u0442\u043E\u043F\u043B\u0435\u043D\u0438\u044F
     \u043A\u043E\u0442\u043B\u0430 \u0438 \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0442\u044C
     \u0440\u0430\u0437\u043D\u0438\u0446\u0443 \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440
     \u0432 \u043F\u043E\u0434\u0430\u044E\u0449\u0435\u043C \u0438 \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u043C
     \u0442\u0440\u0443\u0431\u043E\u043F\u0440\u043E\u0432\u043E\u0434\u0435"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 4da8bb9b19f04f449bd67d6a2441a3ce, type: 3}
 --- !u!114 &8836726432320741155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34271,9 +34589,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 7c46a19023a1c754d9527a743c8033c9, type: 2}
   _nameObject: "\u043A\u043B\u0430\u043F\u0430\u043D \u043E\u0431\u0440\u0430\u0442\u043D\u044B\u0439
     \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0435\u0432\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 7c46a19023a1c754d9527a743c8033c9, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &8839960927356163729
@@ -34384,13 +34702,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
     \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
     \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
     \u0432\u043E\u0434\u0443"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 67230647e47e793408535c9d1dbe5dd6, type: 3}
 --- !u!114 &8849376801075841507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34450,11 +34768,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: ead36504d4409a24b84fb58f26c74a31, type: 2}
   _nameObject: "\u0445\u0438\u043C. \u0432\u043E\u0434\u043E\u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0430"
+  _interactionInfoSelection: {fileID: 11400000, guid: ead36504d4409a24b84fb58f26c74a31, type: 2}
   _descriptionObject: "\u043D\u0443\u0436\u043D\u0430 \u0447\u0442\u043E\u0431\u044B
     \u0432\u043E\u0434\u0430 \u0431\u044B\u043B\u0430 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E\u0433\u043E"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: ee4293106ad7fd84996a6f99e91f0840, type: 3}
 --- !u!114 &8865849269486157781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34575,15 +34893,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 1799c0505ccd60947a39710d70c72721, type: 2}
   _nameObject: "\u0413\u0438\u0434\u0440\u043E\u0441\u0442\u0440\u0435\u043B\u043A\u0430"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1799c0505ccd60947a39710d70c72721, type: 2}
   _descriptionObject: "\u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0443\u043C\u0435\u043D\u044C\u0448\u0438\u0442\u044C
     \u043A\u043E\u043D\u0442\u0443\u0440 \u043E\u0442\u043E\u043F\u043B\u0435\u043D\u0438\u044F
     \u043A\u043E\u0442\u043B\u0430 \u0438 \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0442\u044C
     \u0440\u0430\u0437\u043D\u0438\u0446\u0443 \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440
     \u0432 \u043F\u043E\u0434\u0430\u044E\u0449\u0435\u043C \u0438 \u043E\u0431\u0440\u0430\u0442\u043D\u043E\u043C
     \u0442\u0440\u0443\u0431\u043E\u043F\u0440\u043E\u0432\u043E\u0434\u0435"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 4da8bb9b19f04f449bd67d6a2441a3ce, type: 3}
 --- !u!114 &8889522585543883044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34731,8 +35049,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _nameObject: "\u041A\u0440\u0430\u043D \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &8911250665868834402
@@ -34794,8 +35112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _nameObject: "\u041A\u0440\u0430\u043D \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &8968267962774638255
@@ -34892,10 +35210,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
   _nameObject: "\u0417\u0430\u0434\u0432\u0438\u0436\u043A\u0430"
+  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
   _descriptionObject: 
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 67230647e47e793408535c9d1dbe5dd6, type: 3}
 --- !u!114 &9022144844068070002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35016,12 +35334,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 74601f7a0fe511946b5a27a6938fbea6, type: 2}
   _nameObject: "\u0431\u0430\u043A \u0441\u043E\u043B\u0435\u0440\u0430\u0441\u0442\u0432\u043E\u0440\u0438\u0442\u0435\u043B\u044C"
+  _interactionInfoSelection: {fileID: 11400000, guid: 74601f7a0fe511946b5a27a6938fbea6, type: 2}
   _descriptionObject: "\u0431\u0430\u043A \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B
     \u0440\u0430\u0441\u0442\u0432\u043E\u0440\u044F\u0442\u044C \u0445\u0438\u043C.
     \u0432\u0435\u0449\u0435\u0441\u0442\u0432\u0430(\u0441\u043E\u043B\u044C)"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 4b1f4e01f01a5fb4189615986686a3d8, type: 3}
 --- !u!114 &9038907983290553376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35141,8 +35459,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _nameObject: "\u041A\u0440\u0430\u043D"
+  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &9059648755132129683
@@ -35240,12 +35558,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: c05e6250b9b7a56438194d276a53b6dd, type: 2}
   _nameObject: "\u0426\u0438\u0440\u043A\u0443\u043B\u044F\u0440\u043D\u044B\u0439
-    \u043D\u0430\u0441\u043E\u0441 \u0441 \u043C\u043E\u043A\u0440\u044B\u043C \u0440\u043E\u0442\u043E\u0440\u043E\u043C"
+    \u043D\u0430\u0441\u043E\u0441 \u21162 \u0441 \u043C\u043E\u043A\u0440\u044B\u043C
+    \u0440\u043E\u0442\u043E\u0440\u043E\u043C"
+  _interactionInfoSelection: {fileID: 11400000, guid: c05e6250b9b7a56438194d276a53b6dd, type: 2}
   _descriptionObject: "\u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B
     \u043A\u0430\u0447\u0430\u0442\u044C \u0432\u043E\u0434\u0443"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: b3294bb8019224c48b6bb2e82a933577, type: 3}
 --- !u!114 &9091221334155714001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35332,13 +35651,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _nameObject: "\u0417\u0430\u0442\u0432\u043E\u0440 \u0434\u0438\u0441\u043A\u043E\u0432\u044B\u0439
     \u043C\u0435\u0436\u0444\u043B\u0430\u043D\u0446\u0432\u0435\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 18f9933fb7367b54e8e63fa5db82b6ec, type: 2}
   _descriptionObject: "\u044D\u0442\u043E\u0442 \u0437\u0430\u0442\u0432\u043E\u0440
     \u043D\u0443\u0436\u0435\u043D \u0447\u0442\u043E\u0431\u044B \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
     \u0432\u043E\u0434\u0443"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 67230647e47e793408535c9d1dbe5dd6, type: 3}
 --- !u!114 &9093149678832639440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35425,11 +35744,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
   _nameObject: "\u043A\u0440\u0430\u043D \u0448\u0430\u0440\u043E\u0432\u044B\u0439"
+  _interactionInfoSelection: {fileID: 11400000, guid: 338bb832dc2701c498cd74c270e3d479, type: 2}
   _descriptionObject: "\u0438\u043C \u043C\u043E\u0436\u043D\u043E \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u044C
     \u0432\u043E\u0434\u0443"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: 67230647e47e793408535c9d1dbe5dd6, type: 3}
 --- !u!114 &9109542044530022017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35516,8 +35835,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _nameObject: "\u041A\u0440\u0430\u043D \u0437\u0430\u0434\u0432\u0438\u0436\u043A\u0438"
+  _interactionInfoSelection: {fileID: 11400000, guid: d5a9e7b20920cd743959e6fe4da872cc, type: 2}
   _descriptionObject: 
   _imageObject: {fileID: 0}
 --- !u!114 &9119339142553641272
@@ -35585,11 +35904,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: e49d819ae48e4254fa7f1632bc4348e3, type: 3}
 --- !u!114 &9127591016708550680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35737,10 +36056,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionInfoSelection: {fileID: 11400000, guid: 65a1d2ee8f57e5444951b6a235020b9a, type: 2}
   _nameObject: "\u0411\u0430\u043A\u0438 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u044F"
+  _interactionInfoSelection: {fileID: 11400000, guid: 65a1d2ee8f57e5444951b6a235020b9a, type: 2}
   _descriptionObject: 
-  _imageObject: {fileID: 0}
+  _imageObject: {fileID: 21300000, guid: cd2937cd3b644604ba5eca04133bbe41, type: 3}
 --- !u!114 &9196069693675841066
 MonoBehaviour:
   m_ObjectHideFlags: 0

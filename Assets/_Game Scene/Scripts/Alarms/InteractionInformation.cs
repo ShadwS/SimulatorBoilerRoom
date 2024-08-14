@@ -3,6 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "InteractionInfoSelection", menuName = "infoObjectInteraction", order = 1)]
 public class InteractionInformation : ScriptableObject
 {
+    public string FilePath => _filePath;
     public string[] NameButtons { get { return _nameButtons; } }
     public int CorrectButtonNumber { get { return _correctButtonNumber; } }
     public string[] ObjectState { get { return _objectState; } }
@@ -16,4 +17,5 @@ public class InteractionInformation : ScriptableObject
     [SerializeField] private string _actionObject;
     [SerializeField] private string _changestate;
     [SerializeField] private bool _objectNotInfluencing;
+    [SerializeField] private string _filePath;
 }

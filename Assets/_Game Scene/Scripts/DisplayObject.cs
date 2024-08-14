@@ -19,6 +19,7 @@ public class DisplayObject : PlayerRayCast
         {
             _nameObjectOld = _descriptionObject;
             OnNameObject?.Invoke(_nameObjectOld.GetNameObject(),true);
+            GameCanvas.Instance.SetFilePath(_nameObjectOld.FilePath);
             _nameObjectOld.OutlineOn(true);
             _onRayCast = true;
         }

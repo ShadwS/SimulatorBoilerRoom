@@ -49,7 +49,15 @@ public abstract class Alarm : MonoBehaviour
         CorrectObject();
     }
 
-    protected virtual void CorrectObject() => _correctObject = _interactionInfoSelect.name == _sequencing[_subsequenceInteraction].name ? true : false;
+    //protected virtual void CorrectObject() => _correctObject = 
+    //    _interactionInfoSelect.name == _sequencing[_subsequenceInteraction].name ? true : false;
+
+    protected virtual void CorrectObject()
+    {
+        _correctObject =
+        _interactionInfoSelect.name == _sequencing[_subsequenceInteraction].name ? true : false;
+        print($"{_interactionInfoSelect.name} = {_sequencing[_subsequenceInteraction].name}");
+    }
 
     protected virtual void ButtonClick(int nomerButton)
     {
@@ -71,7 +79,10 @@ public abstract class Alarm : MonoBehaviour
 
     protected virtual void InteractionInfoTextColorUpdate(bool value) 
     {
-        if(_alarmCanvas.Gamecnavas.ComplexitySelect.ComplexityGame == ComplexityGame.Difficult) { return; }
+        if(_alarmCanvas.Gamecnavas.ComplexitySelect.ComplexityGame == ComplexityGame.Difficult) 
+        { 
+            return; 
+        }
         _alarmCanvas.Texts[1].GetComponent<TMP_Text>().color = value ? Color.green : Color.red;
     }
 
@@ -88,7 +99,10 @@ public abstract class Alarm : MonoBehaviour
         _alarmCanvas.Texts[2].gameObject.SetActive(false);
         _alarmCanvas.Texts[1].gameObject.SetActive(false);
         _alarmCanvas.Texts[1].GetComponent<TMP_Text>().color = Color.white;
-        if (_subsequenceInteraction != _rightAnswers.Length) { return; }
+        if (_subsequenceInteraction != _rightAnswers.Length) 
+        {
+            return; 
+        }
         float numberOfCorrectAnswers = 0;
         for (int i = 0; i < _rightAnswers.Length; i++)
         {

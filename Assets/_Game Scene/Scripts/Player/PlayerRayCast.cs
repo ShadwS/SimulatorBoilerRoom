@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class PlayerRayCast : MonoBehaviour
 {
-    public static event Action<string,string, Image, InteractionInformation> OnInteractionObject;
+    public static event Action<string,string, Sprite, InteractionInformation> OnInteractionObject;
     public static event Action<bool> OnPanel;
 
     [SerializeField] private RaycastHit _hitTarget;

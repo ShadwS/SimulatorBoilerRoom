@@ -4,10 +4,12 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Outline))]
 public class DescriptionObject : MonoBehaviour
 {
+    public string FilePath => _interactionInfoSelection.FilePath; 
+    public string _nameObject;
+
     [SerializeField] private InteractionInformation _interactionInfoSelection;
-    [SerializeField] private string _nameObject;
     [SerializeField] private string _descriptionObject;
-    [SerializeField] private Image _imageObject;
+    [SerializeField] private Sprite _imageObject;
     private Outline _outline;
 
     private void Awake()
@@ -22,7 +24,7 @@ public class DescriptionObject : MonoBehaviour
 
     public string GetDescription() => _descriptionObject;
 
-    public Image GetImage() => _imageObject;
+    public Sprite GetImage() => _imageObject;
 
     public InteractionInformation GetInteractionInfoSelection()
     {

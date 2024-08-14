@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,6 +13,8 @@ public class GameCanvas : MonoBehaviour
     public static event Action<InteractionInformation> UpdateInteractionInformation;
     public static event Action BackGame;
     public event Action<float, float, ComplexityGame> OnWin;
+
+    public static GameCanvas Instance;
 
     public Complexity ComplexitySelect { get => _complexitySelect; }
 
@@ -39,6 +42,9 @@ public class GameCanvas : MonoBehaviour
     private float _timer;
     private float _corectPoint;
     private Complexity _complexitySelect;
+    private string _filePath = "";
+
+    private void Awake() => Instance = this;
 
     private void Start()
     {
@@ -61,7 +67,7 @@ public class GameCanvas : MonoBehaviour
                 _complexitySelect = difficulty;
             }
         }
-        if (_complexitySelect.Time != 0) 
+        if (_complexitySelect.Time != 0)
         {
             _timer = _complexitySelect.Time;
             OnTimer();
@@ -81,6 +87,20 @@ public class GameCanvas : MonoBehaviour
         PlayerRayCast.OnPanel -= OnPanelClickF;
         Settings.Instance.UpdateVolume -= UpdateSoundButtonCLick;
         Pause.OnPause -= OnCanvas;
+    }
+
+    private void OnApplicationFocus(bool focus) => Time.timeScale = focus ? 1 : 0;
+
+    public void SetFilePath(string path)
+    {
+        if (path != "")
+        {
+            _filePath = path + ".pdf";
+        }
+        else
+        {
+            _filePath = "";
+        }
     }
 
     public void ButtonANew()
@@ -143,6 +163,15 @@ public class GameCanvas : MonoBehaviour
 
     public void ButtonClickSound() => _buttonClick.Play();
 
+    public void ButtonReadPDF()
+    {
+        if (_filePath != "")
+        {
+            string filePath = Path.Combine(Application.streamingAssetsPath, _filePath);
+            System.Diagnostics.Process.Start(filePath);
+        }
+    }
+
     public void ButttonOptions(bool value) => _panels[3].SetActive(value);
 
     private IEnumerator TimerGame()
@@ -163,7 +192,7 @@ public class GameCanvas : MonoBehaviour
         _panels[1].SetActive(value);
     }
 
-    private void InteractionObject(string name, string description, Image imageObject, InteractionInformation interactionInfoSelection)
+    private void InteractionObject(string name, string description, Sprite imageObject, InteractionInformation interactionInfoSelection)
     {
         UpdateInteractionInformation?.Invoke(interactionInfoSelection);
         OnÑontrol?.Invoke(false);
@@ -175,7 +204,7 @@ public class GameCanvas : MonoBehaviour
         Cursor.visible = true;
         _objectNameText.text = name;
         _descriptionText.text = description;
-        _imageObject = imageObject;
+        _imageObject.sprite = imageObject;
     }
 
     private void UpdateSoundButtonCLick(float value) => _buttonClick.volume = value / 100;
