@@ -1,5 +1,5 @@
 [System.Serializable]
-public struct GameCoreStruct 
+public class GameCoreStruct 
 {
     public float Sensivity;
     public float Volume;

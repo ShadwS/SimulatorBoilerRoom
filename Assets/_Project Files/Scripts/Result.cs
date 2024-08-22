@@ -1,5 +1,5 @@
 [System.Serializable]
-public struct Result
+public class Result
 {
     public int Level;
     public ComplexityGame Complexity;

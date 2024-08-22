@@ -19425,7 +19425,7 @@ GameObject:
   - component: {fileID: 3553487523745806922}
   m_Layer: 0
   m_Name: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0434\u043F\u0438\u0442\u043A\u0438
-    2"
+    1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19458,7 +19458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nameObject: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0434\u043F\u0438\u0442\u043A\u0438
-    2"
+    1"
   _interactionInfoSelection: {fileID: 11400000, guid: 4390b370a4cafdf4199c66263c76d0c9, type: 2}
   _descriptionObject: "\u043D\u0430\u0441\u043E\u0441 \u043D\u0443\u0436\u0435\u043D
     \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u0434\u043F\u0438\u0442\u0430\u0442\u044C
@@ -31516,8 +31516,8 @@ GameObject:
   - component: {fileID: 8284421047985951329}
   - component: {fileID: 8284421047985951328}
   m_Layer: 0
-  m_Name: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0434\u043F\u0438\u0434\u043A\u0438
-    1"
+  m_Name: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0434\u043F\u0438\u0442\u043A\u0438
+    2"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31550,7 +31550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nameObject: "\u041D\u0430\u0441\u043E\u0441 \u043F\u043E\u0434\u043F\u0438\u0442\u043A\u0438
-    1"
+    2"
   _interactionInfoSelection: {fileID: 11400000, guid: 1ad77d771b049b44180fe1e44673bc51, type: 2}
   _descriptionObject: "\u043D\u0430\u0441\u043E\u0441 \u043D\u0443\u0436\u0435\u043D
     \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u0434\u043F\u0438\u0442\u0430\u0442\u044C

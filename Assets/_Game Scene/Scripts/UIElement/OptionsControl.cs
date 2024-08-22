@@ -12,6 +12,7 @@ public class OptionsControl : MonoBehaviour
     private void Start()
     {
         GameCanvas.SynchronizationOptions += Synchronization;
+        Synchronization();
         SliderSensetivityStart();
         SliderSoundsStart();
         TextSensUpdate(_sliderSensetivity.value);

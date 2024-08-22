@@ -11,12 +11,18 @@ public class Settings : MonoBehaviour
     public event Action<float> UpdateSensitivity;
     public event Action<float> UpdateVolume;
 
-    public int Level { get => _level; set => _level = value; }
-    public ComplexityGame Complexity { get => _currentComplexity; set => _currentComplexity = value;}
-    public float Sensitivity { get => _sensitivity; set { UpdateSensitivity?.Invoke(value); _sensitivity = value; } }
-    public float VolumeSounds { get => _volumeSounds; set { UpdateVolume?.Invoke(value); _volumeSounds = value; } }
-    public bool MusicState { get => _musicState; set => _musicState = value; }
-    public GameObject AlarmSelected { get => _alarmSelected; set => _alarmSelected = value; }
+    public int Level { get => _level; 
+        set => _level = value; }
+    public ComplexityGame Complexity { get => _currentComplexity; 
+        set => _currentComplexity = value;}
+    public float Sensitivity { get => _sensitivity; 
+        set { UpdateSensitivity?.Invoke(value); _sensitivity = value; } }
+    public float VolumeSounds { get => _volumeSounds; 
+        set { UpdateVolume?.Invoke(value); _volumeSounds = value; } }
+    public bool MusicState { get => _musicState; 
+        set => _musicState = value; }
+    public GameObject AlarmSelected { get => _alarmSelected; 
+        set => _alarmSelected = value; }
     public List<Result> Results { get { return _results; } }
 
     private List<Result> _results;
@@ -63,12 +69,13 @@ public class Settings : MonoBehaviour
 
     private void SaveToFile()
     {
-        GameCoreStruct gameCore = new GameCoreStruct();
-
-        gameCore.Sensivity = _sensitivity;
-        gameCore.Volume = _volumeSounds;
-        gameCore.MysicState = _musicState;
-        gameCore.Results = _results.ToArray();
+        GameCoreStruct gameCore = new()
+        {
+            Sensivity = _sensitivity,
+            Volume = _volumeSounds,
+            MysicState = _musicState,
+            Results = _results.ToArray()
+        };
 
         string json = JsonUtility.ToJson(gameCore, true);
 
