@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -23895,7 +23895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nameObject: "\u0441\u0447\u0435\u0442\u0447\u0438\u043A"
   _interactionInfoSelection: {fileID: 11400000, guid: ef33df0753e0c14409c3de507190d92f, type: 2}
-  _descriptionObject: "\u043F\u043E \u043D\u0435\u043C\u0443 \u043C\u043E\u044D\u043D\u043E
+  _descriptionObject: "\u043F\u043E \u043D\u0435\u043C\u0443 \u043C\u043E\u0436\u043D\u043E
     \u0443\u0437\u043D\u0430\u0442\u044C \u0441\u043A\u043E\u043B\u044C\u043A\u043E
     \u0432\u043E\u0434\u044B \u0443\u0442\u0435\u043A\u043B\u043E"
   _imageObject: {fileID: 21300000, guid: f0f2415b51b1f4943aa127850109f46a, type: 3}
@@ -25169,7 +25169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
@@ -25300,7 +25300,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nameObject: "\u0414\u044B\u043C\u043E\u0432\u044B\u0435 \u0442\u0440\u0443\u0431\u044B"
   _interactionInfoSelection: {fileID: 11400000, guid: b7803b6d4288b784a96c84c8c9e7ee22, type: 2}
-  _descriptionObject: 
+  _descriptionObject: "\u0422\u0440\u0443\u0431\u044B \u043D\u0443\u0436\u043D\u044B
+    \u0447\u0442\u043E\u0431\u044B \u0432\u044B\u0445\u043E\u0434\u0438\u043B \u0434\u044B\u043C
+    \u0438\u0437 \u043A\u043E\u0442\u043B\u0430 \u043D\u0430 \u0443\u043B\u0438\u0446\u0443"
   _imageObject: {fileID: 0}
 --- !u!114 &5999614488754355952
 MonoBehaviour:
@@ -28979,7 +28981,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nameObject: "\u0422\u0440\u0443\u0431\u0430 \u043F\u043E\u0434\u0430\u0447\u0438"
   _interactionInfoSelection: {fileID: 11400000, guid: 87d4b184a2f278d47a79e9437ced467e, type: 2}
-  _descriptionObject: 
+  _descriptionObject: "\u0422\u0440\u0443\u0431\u0430 \u043F\u043E\u0434\u0430\u0447\u0438"
   _imageObject: {fileID: 0}
 --- !u!114 &7476548937725805121
 MonoBehaviour:
@@ -31357,7 +31359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nameObject: "\u0422\u0440\u0443\u0431\u0430 \u043E\u0431\u0440\u0430\u0442\u043A\u0438"
   _interactionInfoSelection: {fileID: 11400000, guid: a611ae6ff6baccd46911aeff51963315, type: 2}
-  _descriptionObject: 
+  _descriptionObject: "\u0422\u0440\u0443\u0431\u0430 \u043E\u0431\u0440\u0430\u0442\u043A\u0438"
   _imageObject: {fileID: 0}
 --- !u!114 &8157026859320864776
 MonoBehaviour:
@@ -31419,7 +31421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nameObject: "\u043C\u0430\u043D\u043E\u043C\u0435\u0442\u0440"
-  _interactionInfoSelection: {fileID: 11400000, guid: 5b017c0552d885149969b44e7b1a22ad, type: 2}
+  _interactionInfoSelection: {fileID: 11400000, guid: 1fbcf3e09ad80a642bafe76e97cc2b61, type: 2}
   _descriptionObject: "\u043C\u043E\u0436\u043D\u043E \u0443\u0437\u043D\u0430\u0442\u044C
     \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044B"
   _imageObject: {fileID: 0}
@@ -32347,7 +32349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4e208b4e9083f4fa2d495e4ee807d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nameObject: "\u041A\u0440\u0430\u043D \u0442\u0440\u0435\u0445 \u0445\u043E\u0434\u043E\u0432\u043E\u0439"
+  _nameObject: "\u041A\u0440\u0430\u043D \u0442\u0440\u0435\u0445\u0445\u043E\u0434\u043E\u0432\u043E\u0439"
   _interactionInfoSelection: {fileID: 11400000, guid: 53790b456b6055d4c921a42978d31af3, type: 2}
   _descriptionObject: "\u044D\u0442\u043E\u0442 \u043A\u043B\u0430\u043F\u0430\u043D
     \u0441\u043C\u0435\u0448\u0438\u0432\u0430\u0435\u0442 \u0433\u043E\u0440\u044F\u0447\u0443\u044E
@@ -36202,7 +36204,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nameObject: "\u0411\u0430\u043A\u0438 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u044F"
   _interactionInfoSelection: {fileID: 11400000, guid: 65a1d2ee8f57e5444951b6a235020b9a, type: 2}
-  _descriptionObject: 
+  _descriptionObject: "\u0411\u0430\u043A\u0438 \u0441\u043B\u0443\u0436\u0430\u0442
+    \u0434\u043B\u044F \u0442\u043E\u0433\u043E \u0441\u043E\u0431\u0438\u0440\u0430\u0442\u044C
+    \u0438\u0437\u0431\u044B\u0442\u043E\u0447\u043D\u043E\u0435 \u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435
+    \u0438 \u0441\u0442\u0440\u0430\u0432\u043B\u0438\u0432\u0430\u0442\u044C \u0435\u0433\u043E"
   _imageObject: {fileID: 21300000, guid: cd2937cd3b644604ba5eca04133bbe41, type: 3}
 --- !u!114 &9196069693675841066
 MonoBehaviour:
