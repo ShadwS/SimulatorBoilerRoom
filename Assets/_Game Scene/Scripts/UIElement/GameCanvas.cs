@@ -12,7 +12,7 @@ public class GameCanvas : MonoBehaviour
     public static event Action<bool> On—ontrol;
     public static event Action<InteractionInformation> UpdateInteractionInformation;
     public static event Action BackGame;
-    public event Action<float, float, ComplexityGame> OnWin;
+    public event Action<float, float, ComplexityGame, string> OnWin;
 
     public static GameCanvas Instance;
 
@@ -39,6 +39,7 @@ public class GameCanvas : MonoBehaviour
     [SerializeField] private TMP_Text _explanationText;
     [SerializeField] private Image _imageObject;
     [SerializeField] private AudioSource _buttonClick;
+    [SerializeField] private AlarmCanvas _alarmCanvas;
     private float _timer;
     private float _corectPoint;
     private Complexity _complexitySelect;
@@ -145,7 +146,7 @@ public class GameCanvas : MonoBehaviour
         SynchronizationOptions?.Invoke();
         float time = _complexitySelect.Time - _timer;
         _corectPoint = MathF.Round(pointAttitude);
-        OnWin?.Invoke(time, _corectPoint, _complexitySelect.ComplexityGame);
+        OnWin?.Invoke(time, _corectPoint, _complexitySelect.ComplexityGame, Settings.Instance.AlarmSelected.name);
         if (_panels[9].activeSelf ==  false)
         {
             _timeText.gameObject.SetActive(false);

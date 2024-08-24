@@ -4,22 +4,29 @@ using UnityEngine;
 
 public class DisplayResult : MonoBehaviour
 {
-    public int LevelResult {  get => _levelResult; }
+    public string NameAlarmResult { get => _nameAlarmResult; set => _nameAlarmResult = value; }
+
+    public string NameAlalrm { get => _nameAlarm; set => _nameAlarm = value; }
+
     public List<TextResult> PanelComplexity { get => _panelComplexity; }
 
     [SerializeField] private ResultControl _control;
 
     [Header("Левел панели")]
-    [SerializeField] private int _levelResult;
+    [SerializeField] private string _nameAlarmResult;
+    [SerializeField] private string _nameAlarm;
 
     [Header("тексты")]
     [SerializeField] private string[] _text;
     [SerializeField] private TMP_Text _complexityText;
+    [SerializeField] private TMP_Text _textName;
 
     [Header("Список панелей сложности")]
     [SerializeField] private List<TextResult> _panelComplexity;
 
     private int _complexityIndex = 0;
+
+    private void Start() => _textName.text = _nameAlarm;
 
     public void UpdateText(float time, float point, ComplexityGame complexity)
     {

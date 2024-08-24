@@ -1414,8 +1414,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2178,12 +2178,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _control: {fileID: 0}
-  _levelResult: 0
+  _nameAlarmResult: 
+  _nameAlarm: 
   _text:
   - "\u043B\u0435\u0433\u043A\u043E"
   - "\u0441\u0440\u0435\u0434\u043D\u0435"
   - "\u0441\u043B\u043E\u0436\u043D\u043E"
   _complexityText: {fileID: 8185862544716365496}
+  _textName: {fileID: 7615041234217215918}
   _panelComplexity:
   - {fileID: 6723748774485614689}
   - {fileID: 8079361470799280735}

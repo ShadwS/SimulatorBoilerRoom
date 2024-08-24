@@ -33,6 +33,7 @@ public abstract class Alarm : MonoBehaviour
         }
         _alarmCanvas.Texts[2].gameObject.SetActive(false);
         _alarmCanvas.Texts[1].gameObject.SetActive(false);
+        _alarmCanvas.AlarmName = _name;
     }
 
     protected virtual void OnDestroy()
@@ -53,7 +54,6 @@ public abstract class Alarm : MonoBehaviour
     {
         _correctObject =
         _interactionInfoSelect.name == _sequencing[_subsequenceInteraction].name ? true : false;
-        print($"{_interactionInfoSelect.name} = {_sequencing[_subsequenceInteraction].name}");
     }
 
     protected virtual void ButtonClick(int nomerButton)
@@ -108,7 +108,7 @@ public abstract class Alarm : MonoBehaviour
                 numberOfCorrectAnswers++;
             }
         }
-        numberOfCorrectAnswers -= _buttonActionOn ?  0 : 1; 
+        //numberOfCorrectAnswers -= _buttonActionOn ?  0 : 1; 
         if (_badButtons < _rightAnswers.Length) 
         {
             _alarmCanvas.Victori(numberOfCorrectAnswers / _rightAnswers.Length * 100);

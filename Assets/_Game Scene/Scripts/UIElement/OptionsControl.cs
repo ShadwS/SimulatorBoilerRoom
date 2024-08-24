@@ -50,6 +50,6 @@ public class OptionsControl : MonoBehaviour
     {
         _sliderSounds.value = Settings.Instance.VolumeSounds;
         _sliderSounds.maxValue = 100;
-        _sliderSounds.minValue = 100 / 10;
+        _sliderSounds.minValue = 0;
     }
 }

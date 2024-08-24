@@ -19,14 +19,14 @@ public class ResultControl : MonoBehaviour
         {
             for (int i = 0; i < _settings.Results.Count; i++)
             {
-                if (_settings.Results[i].Level == _displayResults[_indexResult].LevelResult)
+                for (int j = 0; j < _displayResults.Length; j++)
                 {
-                    CheckingComplexity(i);
-                }
-                else
-                {
-                    _indexResult++;
-                }
+                    if (_settings.Results[i].NameAlarm == _displayResults[j].NameAlarmResult)
+                    {
+                        _indexResult = j;
+                        CheckingComplexity(i);
+                    }
+                } 
             }
         } 
     }

@@ -11,8 +11,8 @@ public class Settings : MonoBehaviour
     public event Action<float> UpdateSensitivity;
     public event Action<float> UpdateVolume;
 
-    public int Level { get => _level; 
-        set => _level = value; }
+    public int AlarmNumber { get => _alarmNumber; 
+        set => _alarmNumber = value; }
     public ComplexityGame Complexity { get => _currentComplexity; 
         set => _currentComplexity = value;}
     public float Sensitivity { get => _sensitivity; 
@@ -28,13 +28,13 @@ public class Settings : MonoBehaviour
     private List<Result> _results;
     private GameObject _alarmSelected;
     private bool _musicState = true;
-    private int _level;
+    private int _alarmNumber;
 
     [Header("Settings")]
 
     [SerializeField] private ComplexityGame _currentComplexity;
     [SerializeField, Range(1, 500)] private float _sensitivity;
-    [SerializeField, Range(10, 100)] private float _volumeSounds;
+    [SerializeField, Range(0, 100)] private float _volumeSounds;
 
     [Header("Save Config")]
 
@@ -43,7 +43,7 @@ public class Settings : MonoBehaviour
 
     private void Awake()
     {
-        Level = 1;
+        AlarmNumber = 1;
         if (Instance == null)
         {
             _results = new List<Result>();
@@ -74,6 +74,7 @@ public class Settings : MonoBehaviour
             Sensivity = _sensitivity,
             Volume = _volumeSounds,
             MysicState = _musicState,
+            NumberAlarm = _alarmNumber,
             Results = _results.ToArray()
         };
 
@@ -105,6 +106,7 @@ public class Settings : MonoBehaviour
             _musicState = gameCoreStructFromJson.MysicState;
             _volumeSounds = gameCoreStructFromJson.Volume;
             _sensitivity = gameCoreStructFromJson.Sensivity;
+            _alarmNumber = gameCoreStructFromJson.NumberAlarm;
             _results = gameCoreStructFromJson.Results.ToList();
 
         }

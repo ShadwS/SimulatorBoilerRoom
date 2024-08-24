@@ -16,7 +16,7 @@ public class LoadingScene : MonoBehaviour
 
     private IEnumerator AsyncLoad()
     {
-        string nameScene = SceneManager.GetActiveScene().name == "Loading Game" ? $"Level {Settings.Instance.Level}" : "Menu";
+        string nameScene = SceneManager.GetActiveScene().name == "Loading Game" ? $"Level {1}" : "Menu";
         _operation = SceneManager.LoadSceneAsync(nameScene);
 
         while (!_operation.isDone)

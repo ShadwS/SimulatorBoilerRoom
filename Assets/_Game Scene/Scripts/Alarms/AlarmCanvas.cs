@@ -15,6 +15,8 @@ public class AlarmCanvas : MonoBehaviour
     public TMP_Text[] Texts { get => _texts; set => _texts = value; }
     public GameCanvas Gamecnavas { get => _gameCanvas; }
 
+    public string AlarmName;
+
     [SerializeField] private AlarmSelection _alarmSelection;
     [SerializeField] private Button[] _buttons;
     [SerializeField] private TMP_Text[] _textsButtons;

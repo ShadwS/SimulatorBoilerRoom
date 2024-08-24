@@ -6,8 +6,7 @@ using UnityEngine.UI;
 public class Menu : MonoBehaviour
 {
     [SerializeField] private Toggle _music;
-    [SerializeField] private Button[] _buttonsLevel;
-    [SerializeField] private Button[] _buttonsAlarm;
+    [SerializeField] private Button[] _buttonsNumberAlarm;
     [SerializeField] private Button[] _buttonsComplexity;
     [SerializeField] private GameObject[] _panels;
     [SerializeField] private GameObject[] _alarms;
@@ -18,26 +17,28 @@ public class Menu : MonoBehaviour
     //3-ResultPanel
     //4-OptionsPanel
     //5-QuitPanel
-    //6-AlarmPanel 
+    [SerializeField] private DisplayResult[] _displayResults;
 
     private void Start()
     {
         Settings.Instance.UpdateVolume += SoundsVolumeUpdate;
-        for (int i = 1; i < _buttonsLevel.Length; i++)
+
+        for (int i = 0; i < _buttonsNumberAlarm.Length; i++)
         {
-            _buttonsLevel[i].interactable = i < Settings.Instance.Level ? true : false;
-        }
-        for (int i = 0;  i < _buttonsAlarm.Length; i++)
+            Alarm alarm = _alarms[i].GetComponent<Alarm>();
+            _buttonsNumberAlarm[i].GetComponentInChildren<TMP_Text>().text = alarm.Name;
+            _displayResults[i].NameAlalrm = alarm.Name;
+            _displayResults[i].NameAlarmResult = alarm.gameObject.name;
+        } 
+
+        if (Settings.Instance.AlarmNumber < _buttonsNumberAlarm.Length)
         {
-            if (i < _alarms.Length)
+            for (int i = Settings.Instance.AlarmNumber; i < _buttonsNumberAlarm.Length; i++)
             {
-                _buttonsAlarm[i].GetComponentInChildren<TMP_Text>().text = _alarms[i].GetComponent<Alarm>().Name;
-            }
-            else
-            {
-                _buttonsAlarm[i].gameObject.SetActive(false);
+                _buttonsNumberAlarm[i].interactable = false;
             }
         }
+        
         _panels[0].SetActive(true);
         for (int i = 1; i < _panels.Length; i++)
         {
@@ -49,23 +50,17 @@ public class Menu : MonoBehaviour
 
     private void OnDestroy() => Settings.Instance.UpdateVolume -= SoundsVolumeUpdate;
 
-    public void ButtonAlarm(int index)
-    {
-        Settings.Instance.AlarmSelected = _alarms[index];
-        StartGame();
-    }
-
     public void ButtonLevels()
     {
         _panels[0].SetActive(false);
         _panels[1].SetActive(true);
     }
 
-    public void ButtonLvl(int lvl)
+    public void ButtonAlarm(int number)
     {
-        Settings.Instance.Level = lvl;
-        Complexitiesbuttons(lvl);
+        Complexitiesbuttons(number);
         _panels[2].SetActive(true);
+        Settings.Instance.AlarmSelected = _alarms[number - 1];
     }
 
     public void ButtonComplexsity(int value)
@@ -78,7 +73,7 @@ public class Menu : MonoBehaviour
         }
         else
         {
-            _panels[6].SetActive(true);
+            StartGame();
         }
         
     }
@@ -114,7 +109,7 @@ public class Menu : MonoBehaviour
         _panels[0].SetActive(false);
     }
 
-    private void Complexitiesbuttons(int correctLevel)
+    private void Complexitiesbuttons(int correctNumberAlarm)
     {
         for (int i = 1; i < _buttonsComplexity.Length; i++)
         {
@@ -123,7 +118,7 @@ public class Menu : MonoBehaviour
         if (Settings.Instance.Results == null) { return; }
         for(int i = 0; i < Settings.Instance.Results.Count; i++)
         {
-            if (Settings.Instance.Results[i].Level == correctLevel)
+            if (Settings.Instance.Results[i].NameAlarm == _alarms[correctNumberAlarm - 1].name)
             {
                 if(Settings.Instance.Results[i].Complexity == ComplexityGame.Difficult){ break; }
                 TextButtonComplexity((int)Settings.Instance.Results[i].Complexity + 1, true);
