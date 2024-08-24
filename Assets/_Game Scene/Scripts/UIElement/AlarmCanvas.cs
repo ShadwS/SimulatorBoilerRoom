@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,6 +14,8 @@ public class AlarmCanvas : MonoBehaviour
     public TMP_Text[] Texts { get => _texts; set => _texts = value; }
     public GameCanvas Gamecnavas { get => _gameCanvas; }
 
+    public TaskControl TaskControl { get => _taskControl; }
+
     public string AlarmName;
 
     [SerializeField] private AlarmSelection _alarmSelection;
@@ -22,13 +23,14 @@ public class AlarmCanvas : MonoBehaviour
     [SerializeField] private TMP_Text[] _textsButtons;
     [SerializeField] private TMP_Text[] _texts;
     [SerializeField] private GameObject _panelInterface;
+    [SerializeField] private TaskControl _taskControl;
     //0- alarmText
     //1- objectState
     //2- objectAction
     //3- Interaction
-    [SerializeField] public List<TMP_Text> TextsTask;
     private InteractionInformation _interactionInfoSelect;
     private GameCanvas _gameCanvas;
+    
     private float _timer;
 
     private void Awake() => Instance = this;
