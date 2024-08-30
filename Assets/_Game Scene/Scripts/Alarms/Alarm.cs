@@ -7,10 +7,12 @@ public abstract class Alarm : MonoBehaviour
 
     [SerializeField] private string _name;
     [SerializeField] private string[] _tasks;
+    [SerializeField] private string[] _correctAnswers;
     [SerializeField] private InteractionInformation[] _sequencing;
     private InteractionInformation _interactionInfoSelect;
     private int _subsequenceInteraction = 0;
     private bool[] _rightAnswers;
+    private int _correctAnswersIndex = 0;
     private bool _correctObject = false;
     private bool _buttonActionOn = false;
     private int _checkClicks = 0;
@@ -34,6 +36,7 @@ public abstract class Alarm : MonoBehaviour
         _alarmCanvas.Texts[2].gameObject.SetActive(false);
         _alarmCanvas.Texts[1].gameObject.SetActive(false);
         _alarmCanvas.AlarmName = _name;
+        _alarmCanvas.CorrectAnswers = _correctAnswers[_correctAnswersIndex];
     }
 
     protected virtual void OnDestroy()
@@ -74,11 +77,11 @@ public abstract class Alarm : MonoBehaviour
         }
     }
 
-    protected virtual void InteractionInfoTextColorUpdate(bool value) 
+    protected virtual void InteractionInfoTextColorUpdate(bool value)
     {
-        if(_alarmCanvas.Gamecnavas.ComplexitySelect.ComplexityGame == ComplexityGame.Difficult) 
-        { 
-            return; 
+        if (_alarmCanvas.Gamecnavas.ComplexitySelect.ComplexityGame == ComplexityGame.Difficult)
+        {
+            return;
         }
         _alarmCanvas.Texts[1].GetComponent<TMP_Text>().color = value ? Color.green : Color.red;
     }
@@ -96,9 +99,9 @@ public abstract class Alarm : MonoBehaviour
         _alarmCanvas.Texts[2].gameObject.SetActive(false);
         _alarmCanvas.Texts[1].gameObject.SetActive(false);
         _alarmCanvas.Texts[1].GetComponent<TMP_Text>().color = Color.white;
-        if (_subsequenceInteraction != _rightAnswers.Length) 
+        if (_subsequenceInteraction != _rightAnswers.Length)
         {
-            return; 
+            return;
         }
         float numberOfCorrectAnswers = 0;
         for (int i = 0; i < _rightAnswers.Length; i++)
@@ -108,12 +111,11 @@ public abstract class Alarm : MonoBehaviour
                 numberOfCorrectAnswers++;
             }
         }
-        //numberOfCorrectAnswers -= _buttonActionOn ?  0 : 1; 
-        if (_badButtons < _rightAnswers.Length) 
+        if (_badButtons < _rightAnswers.Length)
         {
             _alarmCanvas.Victori(numberOfCorrectAnswers / _rightAnswers.Length * 100);
         }
-        else if(_badButtons >= _rightAnswers.Length)
+        else if (_badButtons >= _rightAnswers.Length)
         {
             _alarmCanvas.Defeat("Вы не ответили не на один вопрос");
         }
@@ -155,5 +157,8 @@ public abstract class Alarm : MonoBehaviour
                 TaskTextColorUpdate(_subsequenceInteraction, false);
             }
         }
+        _correctAnswersIndex++;
+        if (_correctAnswersIndex > _correctAnswers.Length - 1) { return; }
+        _alarmCanvas.CorrectAnswers = _correctAnswers[_correctAnswersIndex];
     }
 }

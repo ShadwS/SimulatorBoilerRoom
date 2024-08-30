@@ -13,8 +13,9 @@ public class AlarmCanvas : MonoBehaviour
 
     public TMP_Text[] Texts { get => _texts; set => _texts = value; }
     public GameCanvas Gamecnavas { get => _gameCanvas; }
-
+    public Button[] Buttons { get => _buttons; }
     public TaskControl TaskControl { get => _taskControl; }
+    public string CorrectAnswers { get => _correctAnswers; set => _correctAnswers = value; }
 
     public string AlarmName;
 
@@ -30,7 +31,8 @@ public class AlarmCanvas : MonoBehaviour
     //3- Interaction
     private InteractionInformation _interactionInfoSelect;
     private GameCanvas _gameCanvas;
-    
+    private string _correctAnswers;
+
     private float _timer;
 
     private void Awake() => Instance = this;
@@ -67,9 +69,11 @@ public class AlarmCanvas : MonoBehaviour
     {
         _interactionInfoSelect = interactionInfo;
         int index = 1;
+        Shuffle(_interactionInfoSelect.NameButtons, _interactionInfoSelect.ObjectState);
+        _interactionInfoSelect.CorrectButtonNumber = TheCorrectAnswerIsASearch(_interactionInfoSelect.NameButtons);
         for (int i = 0; i < _buttons.Length; i++)
         {
-            if(i < _interactionInfoSelect.NameButtons.Length)
+            if (i < _interactionInfoSelect.NameButtons.Length)
             {
                 _buttons[i].interactable = true;
                 _textsButtons[i].text = $"{index}: {_interactionInfoSelect.NameButtons[i]}";
@@ -81,6 +85,37 @@ public class AlarmCanvas : MonoBehaviour
                 _textsButtons[i].text = "";
             }
         }
+
+    }
+
+    private void Shuffle(string[] nameButtons, string[] stateObject)
+    {
+        for (int i = nameButtons.Length - 1; i >= 1; i--)
+        {
+            int rand = new System.Random().Next(i + 1);
+            var elemName = nameButtons[rand];
+            var elemState = stateObject[rand];
+            nameButtons[rand] = nameButtons[i];
+            stateObject[rand] = stateObject[i];
+            nameButtons[i] = elemName;
+            stateObject[i] = elemState;
+        }
+        _interactionInfoSelect.NameButtons = nameButtons;
+        _interactionInfoSelect.ObjectState = stateObject;
+    }
+
+    private int TheCorrectAnswerIsASearch(string[] texts)
+    {
+        int rightAnswerIndex = 0;
+        for (int i = 0; i < texts.Length; i++)
+        {
+            if (_correctAnswers == texts[i])
+            {
+                rightAnswerIndex = i;
+                break;
+            }
+        }
+        return rightAnswerIndex;
     }
 
     private IEnumerator FlashingText()
