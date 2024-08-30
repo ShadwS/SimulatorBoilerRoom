@@ -13,9 +13,10 @@ public class InteractionInformation : ScriptableObject
 
     [SerializeField] private string[] _nameButtons;
     [SerializeField] private string[] _objectState;
-    [SerializeField] private int _correctButtonNumber;
     [SerializeField] private string _actionObject;
     [SerializeField] private string _changestate;
     [SerializeField] private bool _objectNotInfluencing;
     [SerializeField] private string _filePath;
+
+    private int _correctButtonNumber;
 }
