@@ -99,7 +99,7 @@ public class Menu : MonoBehaviour
 
     public void ButtonQuit() => _panels[5].SetActive(true);
 
-    public void ButtonYes() => Application.Quit();
+    public void ButtonYes() => Settings.Instance.QuitGame();
 
     public void ButtonSound() => _audioSourses[1].Play();
 

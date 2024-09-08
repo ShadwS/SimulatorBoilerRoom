@@ -33,7 +33,7 @@ public class Pause : MonoBehaviour
 
     public void ButtonsYesOrNot(bool value) => _panels[2].SetActive(value);
 
-    public void ButtonQuit() => Application.Quit();
+    public void ButtonQuit() => Settings.Instance.QuitGame();
 
     private IEnumerator StartPause()
     {

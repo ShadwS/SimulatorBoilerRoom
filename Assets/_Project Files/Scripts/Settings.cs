@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using System.IO;
 using System.Linq;
 using UnityEngine.SceneManagement;
 
@@ -38,8 +37,9 @@ public class Settings : MonoBehaviour
 
     [Header("Save Config")]
 
-    [SerializeField] private string _savePath;
     [SerializeField] private string _savedFileName = "Save.json";
+    [SerializeField] private readonly string _keyPlayerPrefs = "SaveGameInfo";
+    private string _saveInfo;
 
     private void Awake()
     {
@@ -54,18 +54,20 @@ public class Settings : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
-#if UNITY_ANDROID && !UNITY_EDITOR
-        _savePath = Path.Combine(Application.persistentDataPath, _savedFileName);
-#else
-        _savePath = Path.Combine(Application.dataPath, _savedFileName);
-#endif
-        if(Time.realtimeSinceStartup < 10 && SceneManager.GetActiveScene().name == "Menu")
+#if !UNITY_EDITOR
+        if (Time.realtimeSinceStartup < 30 && SceneManager.GetActiveScene().name == "Menu")
         {
             LoadFromFile();
         }
+#endif
     }
 
-    private void OnApplicationQuit() => SaveToFile();
+    public void QuitGame()
+    {
+#if !UNITY_EDITOR
+         SaveToFile();
+#endif
+    }
 
     private void SaveToFile()
     {
@@ -78,30 +80,17 @@ public class Settings : MonoBehaviour
             Results = _results.ToArray()
         };
 
-        string json = JsonUtility.ToJson(gameCore, true);
-
-        try
-        {
-            File.WriteAllText(_savePath, json);
-        }
-        catch (Exception e)
-        {
-            Debug.Log("{GameLog} => [Settings] - (<color = red>Error</color>) - SaveToFile -> " + e.Message);
-        }
+        PlayerPrefs.SetString(_keyPlayerPrefs, JsonUtility.ToJson(gameCore));
+        PlayerPrefs.SetFloat("Sens", _sensitivity);
+        Application.Quit();
     }
 
     private void LoadFromFile()
     {
-        if (!File.Exists(_savePath))
+        if (!PlayerPrefs.HasKey(_keyPlayerPrefs) && !PlayerPrefs.HasKey("Sens")) { return; }
+        else
         {
-            Debug.LogError("{GameLog} => [Settings] - LoadFromFile -> File Not Found!");
-            return;
-        }
-
-        try
-        {
-            string json = File.ReadAllText(_savePath);
-            GameCoreStruct gameCoreStructFromJson = JsonUtility.FromJson<GameCoreStruct>(json);
+            GameCoreStruct gameCoreStructFromJson = JsonUtility.FromJson<GameCoreStruct>(PlayerPrefs.GetString(_keyPlayerPrefs));
 
             _musicState = gameCoreStructFromJson.MysicState;
             _volumeSounds = gameCoreStructFromJson.Volume;
@@ -109,10 +98,7 @@ public class Settings : MonoBehaviour
             _alarmNumber = gameCoreStructFromJson.NumberAlarm;
             _results = gameCoreStructFromJson.Results.ToList();
 
-        }
-        catch (Exception e)
-        {
-            Debug.Log("{GameLog} => [Settings] - (<color = red>Error</color>) - SaveToFile -> " + e.Message);
+            _sensitivity = PlayerPrefs.GetFloat("Sens");
         }
     }
 }

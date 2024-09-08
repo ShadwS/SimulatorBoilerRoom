@@ -2060,8 +2060,8 @@ MonoBehaviour:
   - {fileID: 668361435}
   - {fileID: 2078424442}
   _alarms:
-  - {fileID: 6442603087374311366, guid: 450e0dbaf3227e948820e46829fce04e, type: 3}
   - {fileID: 6057732719083932652, guid: ed91204c01d804245b01ad39bf1b5a5c, type: 3}
+  - {fileID: 6442603087374311366, guid: 450e0dbaf3227e948820e46829fce04e, type: 3}
   - {fileID: 6057732719083932652, guid: 6fe137007eed0f340b25ea983395b381, type: 3}
   - {fileID: 6057732719083932652, guid: 6fe137007eed0f340b25ea983395b381, type: 3}
   - {fileID: 6057732719083932652, guid: 6fe137007eed0f340b25ea983395b381, type: 3}
@@ -8590,8 +8590,8 @@ MonoBehaviour:
   _currentComplexity: 0
   _sensitivity: 500
   _volumeSounds: 100
-  _savePath: 
   _savedFileName: Save.json
+  _keyPlayerPrefs: Save
 --- !u!1 &1268749880
 GameObject:
   m_ObjectHideFlags: 0
