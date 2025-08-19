@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class GameCanvas : MonoBehaviour
 {
     public static event Action SynchronizationOptions;
-    public static event Action<bool> OnСontrol;
+    public static event Action<bool> OnРЎontrol;
     public static event Action<InteractionInformation> UpdateInteractionInformation;
     public static event Action BackGame;
     public event Action<float, float, ComplexityGame, string> OnWin;
@@ -122,7 +122,7 @@ public class GameCanvas : MonoBehaviour
         _panels[4].SetActive(_complexitySelect.DisplayingTask);
         _panels[7].SetActive(true);
         if (_panels[4].activeSelf) _panels[1].SetActive(true);
-        OnСontrol?.Invoke(true);
+        OnРЎontrol?.Invoke(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         BackGame?.Invoke();
@@ -150,12 +150,12 @@ public class GameCanvas : MonoBehaviour
         if (_panels[9].activeSelf ==  false)
         {
             _timeText.gameObject.SetActive(false);
-            _pointText.text = string.Format("Ваши очки -" + "{0:0}" + "/100", _corectPoint);
+            _pointText.text = string.Format("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ -" + "{0:0}" + "/100", _corectPoint);
         }
         else
         {
-            _timeText.text = string.Format("Ваше время прохождения - " + "{0:0}" + "с", time);
-            _pointText.text = string.Format("Ваши очки -" + "{0:0}" + "/100", _corectPoint);
+            _timeText.text = string.Format("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - " + "{0:0}" + "пїЅ", time);
+            _pointText.text = string.Format("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ -" + "{0:0}" + "/100", _corectPoint);
         }
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -183,7 +183,7 @@ public class GameCanvas : MonoBehaviour
             _timer -= 0.1f;
             _timerText.text = string.Format("{0:0}", _timer);
         }
-        OnPanelLoos("Время вышло");
+        OnPanelLoos("пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ");
     }
 
     private void TextUpdateOn(string text, bool value)
@@ -196,7 +196,7 @@ public class GameCanvas : MonoBehaviour
     private void InteractionObject(string name, string description, Sprite imageObject, InteractionInformation interactionInfoSelection)
     {
         UpdateInteractionInformation?.Invoke(interactionInfoSelection);
-        OnСontrol?.Invoke(false);
+        OnРЎontrol?.Invoke(false);
         _panels[1].SetActive(false);
         _panels[7].SetActive(false);
         _panels[4].SetActive(false);

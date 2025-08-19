@@ -32,8 +32,8 @@ public class Settings : MonoBehaviour
     [Header("Settings")]
 
     [SerializeField] private ComplexityGame _currentComplexity;
-    [SerializeField, Range(1, 500)] private float _sensitivity;
-    [SerializeField, Range(0, 100)] private float _volumeSounds;
+    [SerializeField] private float _sensitivity;
+    [SerializeField] private float _volumeSounds;
 
     [Header("Save Config")]
 
@@ -54,19 +54,20 @@ public class Settings : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
-#if !UNITY_EDITOR
         if (Time.realtimeSinceStartup < 30 && SceneManager.GetActiveScene().name == "Menu")
         {
             LoadFromFile();
         }
-#endif
     }
 
     public void QuitGame()
     {
-#if !UNITY_EDITOR
-         SaveToFile();
-#endif
+        Application.Quit();
+    }
+
+    private void OnApplicationQuit()
+    {
+        SaveToFile();
     }
 
     private void SaveToFile()
@@ -82,23 +83,24 @@ public class Settings : MonoBehaviour
 
         PlayerPrefs.SetString(_keyPlayerPrefs, JsonUtility.ToJson(gameCore));
         PlayerPrefs.SetFloat("Sens", _sensitivity);
-        Application.Quit();
     }
 
     private void LoadFromFile()
     {
-        if (!PlayerPrefs.HasKey(_keyPlayerPrefs) && !PlayerPrefs.HasKey("Sens")) { return; }
+        if (!PlayerPrefs.HasKey(_keyPlayerPrefs) || !PlayerPrefs.HasKey("Sens")) { return; }
         else
         {
             GameCoreStruct gameCoreStructFromJson = JsonUtility.FromJson<GameCoreStruct>(PlayerPrefs.GetString(_keyPlayerPrefs));
 
             _musicState = gameCoreStructFromJson.MysicState;
-            _volumeSounds = gameCoreStructFromJson.Volume;
-            _sensitivity = gameCoreStructFromJson.Sensivity;
+            VolumeSounds = gameCoreStructFromJson.Volume;
+            Sensitivity = gameCoreStructFromJson.Sensivity;
             _alarmNumber = gameCoreStructFromJson.NumberAlarm;
             _results = gameCoreStructFromJson.Results.ToList();
 
-            _sensitivity = PlayerPrefs.GetFloat("Sens");
+            Sensitivity = PlayerPrefs.GetFloat("Sens");
+
+            print(_sensitivity);
         }
     }
 }

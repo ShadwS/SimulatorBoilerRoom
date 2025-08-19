@@ -17,9 +17,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake() => _controller = _player.gameObject.GetComponent<CharacterController>();
 
-    private void Start() => GameCanvas.OnÑontrol += MovementProhibition;
+    private void Start() => GameCanvas.Onï¿½ontrol += MovementProhibition;
 
-    private void OnDestroy() => GameCanvas.OnÑontrol -= MovementProhibition;
+    private void OnDestroy() => GameCanvas.Onï¿½ontrol -= MovementProhibition;
 
     private void Update() => Move();
 

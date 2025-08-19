@@ -71,7 +71,7 @@ public abstract class Alarm : MonoBehaviour
                 break;
             case false:
                 if (_interactionInfoSelect.ObjectNotInfluencing) { return; }
-                _alarmCanvas.Defeat("Вы сбились с последовательности");
+                _alarmCanvas.Defeat("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
                 break;
 
         }
@@ -117,7 +117,7 @@ public abstract class Alarm : MonoBehaviour
         }
         else if (_badButtons >= _rightAnswers.Length)
         {
-            _alarmCanvas.Defeat("Вы не ответили не на один вопрос");
+            _alarmCanvas.Defeat("пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ");
         }
     }
 
