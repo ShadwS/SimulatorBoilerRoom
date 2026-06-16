@@ -17,10 +17,10 @@ public class PlayerRayCast : MonoBehaviour
     private void Start()
     {
         _camera = GetComponent<Camera>();
-        GameCanvas.OnÑontrol += RayCastProhibition;
+        GameCanvas.OnControl += RayCastProhibition;
     }
 
-    private void OnDestroy() => GameCanvas.OnÑontrol -= RayCastProhibition;
+    private void OnDestroy() => GameCanvas.OnControl -= RayCastProhibition;
 
     protected virtual void FixedUpdate()
     {
