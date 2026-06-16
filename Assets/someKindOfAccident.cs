@@ -1,7 +1,7 @@
 
 public class someKindOfAccident : Alarm
 {
-    //для теста созданный скрипт
+    //пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     protected override void Start()
     {
         base.Start();
